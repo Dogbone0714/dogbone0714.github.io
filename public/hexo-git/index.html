@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+
+
+<script data-ad-client="ca-pub-9671856733786866" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"hhk.one","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+<!-- jquery -->
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <meta name="description" content="前言本篇主要介紹如何使用 Hexo 並搭配 GitHub 來快速架設網誌。從介紹什麼是 Hexo 框架，該如何安裝、建立環境，接著介紹一些常用指令，以及如何部署到 GitHub 上。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何使用 Hexo + GitHub Pages 架設部落格">
+<meta property="og:url" content="https://hhk.one/hexo-git/index.html">
+<meta property="og:site_name" content="康康的斜槓人生">
+<meta property="og:description" content="前言本篇主要介紹如何使用 Hexo 並搭配 GitHub 來快速架設網誌。從介紹什麼是 Hexo 框架，該如何安裝、建立環境，接著介紹一些常用指令，以及如何部署到 GitHub 上。">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://i.loli.net/2021/03/25/VmRfF23iavugDAw.png">
+<meta property="og:image" content="https://i.loli.net/2021/03/25/q3NSDMxYzvVR9Ff.png">
+<meta property="og:image" content="https://i.loli.net/2021/03/25/FmozyeT9AnMaHP1.png">
+<meta property="og:image" content="https://i.loli.net/2021/03/25/NQj4z1pdt2VBHrs.png">
+<meta property="og:image" content="https://i.loli.net/2021/03/25/1e2a3U68gdVGbju.png">
+<meta property="og:image" content="https://i.loli.net/2021/03/25/lsItXzkNq7WSAFM.png">
+<meta property="og:image" content="https://i.loli.net/2021/03/25/qC9bK3YujxiXvnB.png">
+<meta property="og:image" content="https://i.loli.net/2021/03/25/WcfavZCA5ltITuY.png">
+<meta property="og:image" content="https://i.loli.net/2021/03/25/JvsiS43cBn7bFZw.png">
+<meta property="og:image" content="https://i.loli.net/2021/03/25/Tda6HWPFlDNKMSf.png">
+<meta property="og:image" content="https://i.loli.net/2021/03/25/j8HONvCiuUlsx13.png">
+<meta property="og:image" content="https://i.loli.net/2021/03/25/IEUTxA3uLGJscfY.png">
+<meta property="article:published_time" content="2021-03-24T14:04:25.000Z">
+<meta property="article:modified_time" content="2021-03-27T13:23:50.294Z">
+<meta property="article:author" content="康康 HHK">
+<meta property="article:tag" content="教學">
+<meta property="article:tag" content="Hexo 部落格">
+<meta property="article:tag" content="git">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/03/25/VmRfF23iavugDAw.png">
+
+<link rel="canonical" href="https://hhk.one/hexo-git/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+
+  <title>如何使用 Hexo + GitHub Pages 架設部落格 | 康康的斜槓人生</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DMF3F131NL"></script>
+    <script data-pjax>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DMF3F131NL');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">康康的斜槓人生</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">一個從生活到創業故事的地方</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://hhk.one/hexo-git/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="康康 HHK">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="康康的斜槓人生">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          如何使用 Hexo + GitHub Pages 架設部落格
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2021-03-24 22:04:25" itemprop="dateCreated datePublished" datetime="2021-03-24T22:04:25+08:00">2021-03-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2021-03-27 21:23:50" itemprop="dateModified" datetime="2021-03-27T21:23:50+08:00">2021-03-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hexo-%E9%83%A8%E8%90%BD%E6%A0%BC/" itemprop="url" rel="index"><span itemprop="name">Hexo 部落格</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="閱讀次數" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">閱讀次數：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/hexo-git/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/hexo-git/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本篇主要介紹如何使用 Hexo 並搭配 GitHub 來快速架設網誌。從介紹什麼是 Hexo 框架，該如何安裝、建立環境，接著介紹一些常用指令，以及如何部署到 GitHub 上。</p>
+<a id="more"></a>
+
+<p>文章可分為下列幾個部分：</p>
+<ul>
+<li>什麼是 Hexo？</li>
+<li>前置作業<ul>
+<li>安裝需求</li>
+</ul>
+</li>
+<li>Hexo 環境建置</li>
+<li>常用指令</li>
+<li>部署到 GitHub<ul>
+<li>建立 GitHub 專案</li>
+<li>將檔案發布到 GitHub</li>
+</ul>
+</li>
+</ul>
+<h2 id="什麼是-Hexo？"><a href="#什麼是-Hexo？" class="headerlink" title="什麼是 Hexo？"></a>什麼是 Hexo？</h2><blockquote>
+<p>引用<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo">官網介紹</a>：A fast, simple &amp; powerful blog framework, powered by Node.js.</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://hexo.io/zh-tw/">Hexo</a> 其實就是一個基於 Node.js 開發的網誌框架，具有下列幾項特點：</p>
+<ul>
+<li>編譯速度非常快</li>
+<li>能夠支援 Markdown 語法解析文章，並透過主題渲染靜態檔案</li>
+<li>具有豐富的外掛套件</li>
+<li>支援一鍵部署到 GitHub Pages 或 Heroku 等支援靜態網頁的空間</li>
+</ul>
+<h2 id="前置作業"><a href="#前置作業" class="headerlink" title="前置作業"></a>前置作業</h2><h3 id="安裝需求"><a href="#安裝需求" class="headerlink" title="安裝需求"></a>安裝需求</h3><p>在開始安裝 Hexo 之前，必須先在電腦安裝下列工具：</p>
+<ul>
+<li><h4 id="Node-js：提供-npm-來安裝所需的套件。這裡可選擇安裝左側-14-16-0-LTS-版本"><a href="#Node-js：提供-npm-來安裝所需的套件。這裡可選擇安裝左側-14-16-0-LTS-版本" class="headerlink" title="Node.js：提供 npm 來安裝所需的套件。這裡可選擇安裝左側 14.16.0 LTS 版本"></a><a target="_blank" rel="noopener" href="https://nodejs.org/en/">Node.js</a>：提供 npm 來安裝所需的套件。這裡可選擇安裝左側 14.16.0 LTS 版本</h4></li>
+</ul>
+<blockquote>
+<p>Hexo 官網建議使用 Node.js 10.0 及以上版本，若不確定下載哪個版本，可在終端機輸入 <code>npm versin</code> 查看版本號。</p>
+</blockquote>
+<p><img src="https://i.loli.net/2021/03/25/VmRfF23iavugDAw.png"></p>
+<ul>
+<li><h4 id="Git：用來將檔案發布到-GitHub-Page"><a href="#Git：用來將檔案發布到-GitHub-Page" class="headerlink" title="Git：用來將檔案發布到 GitHub Page"></a><a target="_blank" rel="noopener" href="https://git-scm.com/">Git</a>：用來將檔案發布到 GitHub Page</h4></li>
+</ul>
+<p><img src="https://i.loli.net/2021/03/25/q3NSDMxYzvVR9Ff.png"></p>
+<h2 id="Hexo-環境建置"><a href="#Hexo-環境建置" class="headerlink" title="Hexo 環境建置"></a>Hexo 環境建置</h2><p>完成前置作業後，接著就要來建立 Hexo 環境，步驟如下：</p>
+<blockquote>
+<p>若對 CLI 不熟悉，可參考：Command Line 入門 &amp; 基本指令</p>
+</blockquote>
+<h3 id="Step1-安裝-Hexo"><a href="#Step1-安裝-Hexo" class="headerlink" title="Step1. 安裝 Hexo"></a>Step1. 安裝 Hexo</h3><p><img src="https://i.loli.net/2021/03/25/FmozyeT9AnMaHP1.png"></p>
+<p>開啟 CLI 介面（例如 cmd、git-bash 等終端機），並輸入下列指令安裝 Hexo：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2021/03/25/NQj4z1pdt2VBHrs.png"></p>
+<p>安裝完後，可輸入 <code>hexo version</code> 或 <code>hexo -v</code> 查看 Hexo 版本，確認是否有安裝成功：</p>
+<p><img src="https://i.loli.net/2021/03/25/1e2a3U68gdVGbju.png"></p>
+<h3 id="Step2-初始化-Hexo"><a href="#Step2-初始化-Hexo" class="headerlink" title="Step2. 初始化 Hexo"></a>Step2. 初始化 Hexo</h3><p>接著要初始化 Hexo，這裡有兩種做法：</p>
+<ol>
+<li>直接輸入下面指令，會自動於所在目錄建立一個新資料夾以操作 Hexo。記得將括號內修改成自己的資料夾名稱，若不指定資料夾名稱，則會直接初始化當前目錄：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;資料夾名稱&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2021/03/25/lsItXzkNq7WSAFM.png"></p>
+<ol>
+<li>也可以先建立好資料夾，並在該資料夾輸入上述指令，同樣能進行初始化。可使用 cd 指令來切換路徑：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd &lt;資料夾名稱 or 資料夾路徑&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2021/03/25/qC9bK3YujxiXvnB.png"></p>
+<h3 id="Step3-在資料夾安裝所需檔案"><a href="#Step3-在資料夾安裝所需檔案" class="headerlink" title="Step3. 在資料夾安裝所需檔案"></a>Step3. 在資料夾安裝所需檔案</h3><p>確認 CLI 上的路徑是在資料夾中，接著執行下列指令，安裝所需的 npm 套件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>也可以直接在資料夾目錄輸入 cmd，按下 enter 後就會在這個路徑開啟終端機。</p>
+</blockquote>
+<p>安裝完成後，進入資料夾會看到下方這些檔案和資料夾：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
+
+<h4 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h4><ul>
+<li>有關網站配置的檔案，可修改各種配置設定。例如：網站標題、網站的網址、使用主題名稱等等</li>
+<li>詳細內容可以參考<a target="_blank" rel="noopener" href="https://hexo.io/zh-tw/docs/configuration">官方文件</a></li>
+</ul>
+<h4 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h4><p>記錄所有載入的應用程式資料，也就是專案中需要的所有模組。</p>
+<h4 id="scaffolds-模板"><a href="#scaffolds-模板" class="headerlink" title="scaffolds 模板"></a>scaffolds 模板</h4><ul>
+<li>當我們建立新文章時，Hexo 會根據 scaffolds 中的模板建立相對應的檔案</li>
+<li>資料夾中有三種預設<a target="_blank" rel="noopener" href="https://hexo.io/zh-tw/docs/writing.html">佈局</a>：post、page 和 draft，分別對應：要發布的文章、頁面、草稿</li>
+</ul>
+<h4 id="themes-主題"><a href="#themes-主題" class="headerlink" title="themes 主題"></a>themes 主題</h4><ul>
+<li>用來存放主題的資料夾</li>
+<li>Hexo 會根據主題來解析 scouce 資料夾中的檔案並產生靜態頁面。預設主題為 <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-theme-landscape">landscape</a></li>
+</ul>
+<h4 id="source-資源"><a href="#source-資源" class="headerlink" title="source 資源"></a>source 資源</h4><ul>
+<li>用來存放原始檔案的地方，例如 Markdown 檔、圖片、各種頁面（分頁、關於等）</li>
+<li>通常資料夾命名開頭會加上底線 <code>_</code>，例如 <code>_imgs</code></li>
+<li>以 <code>_</code> 開頭的檔案、資料夾或隱藏檔案會被忽略，除了 <code>_posts</code> 資料夾以外</li>
+<li>Markdown 檔和 HTML 檔會被解析，並放到 public 資料夾，而其他檔案則會被拷貝過去</li>
+</ul>
+<h4 id="source-amp-public-amp-deploy-git-的差別"><a href="#source-amp-public-amp-deploy-git-的差別" class="headerlink" title="source &amp; public &amp; .deploy_git 的差別"></a>source &amp; public &amp; .deploy_git 的差別</h4><ul>
+<li>執行 <code>$ hexo generate</code> 之後，會將 scorce 文件夾中的 Markdown 檔和 HTML 檔進行解析，再結合主題進行渲染，生成我們看到的靜態網站</li>
+<li>執行 <code>$ hexo deploy</code> 之後，則會將 public 文件夾中的內容部署到 GitHub，並生成 .deploy_git 資料夾，因此內容與 public 幾乎相同</li>
+<li>這三者的關係可想成：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source -&gt; public -&gt; .deploy_git</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h2><p>接著介紹一些 Hexo 常會用到的相關指令語法，更多詳細指令可參考<a target="_blank" rel="noopener" href="https://hexo.io/zh-tw/docs/commands">官方文件</a>。</p>
+<h3 id="new-新增文章"><a href="#new-新增文章" class="headerlink" title="new 新增文章"></a>new 新增文章</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post &lt;title&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>如果標題有包含空格，需使用引號括住，例如<code>&quot; title&quot;</code></li>
+<li>接著可直接到 <code>/source/_posts/title.md</code> 中編輯文章內容</li>
+<li>檔案名稱盡量以英文命名，避免出現亂碼</li>
+</ul>
+<blockquote>
+<p>若是對 Markdown 相關語法不熟悉，可參考這篇筆記：<a href="https://hhk.one/2021/03/23/hexo-markdown/">Markdown 格式介紹</a></p>
+</blockquote>
+<h3 id="clean-清除靜態檔案與快取"><a href="#clean-清除靜態檔案與快取" class="headerlink" title="clean 清除靜態檔案與快取"></a>clean 清除靜態檔案與快取</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+
+<p>在每次儲存修正後的檔案之前，會建議先輸入此指令，清除快取檔案 （db.json）和已產生的靜態檔案（public）。</p>
+<h3 id="generate-產生靜態檔案"><a href="#generate-產生靜態檔案" class="headerlink" title="generate 產生靜態檔案"></a>generate 產生靜態檔案</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>可簡寫成 <code>hexo g</code>，生成靜態檔案。</p>
+<h3 id="server-啟動伺服器"><a href="#server-啟動伺服器" class="headerlink" title="server 啟動伺服器"></a>server 啟動伺服器</h3><ul>
+<li>在本地端啟動 Hexo 伺服器，預設路徑為：<code>http://localhost:4000/</code></li>
+<li>可在自己電腦上預覽設定結果，按 Ctrl + C 即可關閉</li>
+</ul>
+<blockquote>
+<p>localhost：代表只能從本地瀏覽此網站，無法從外部瀏覽</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<p>可簡寫成 <code>hexo s</code></p>
+<p><img src="https://i.loli.net/2021/03/25/WcfavZCA5ltITuY.png"></p>
+<h2 id="部署到-GitHub"><a href="#部署到-GitHub" class="headerlink" title="部署到 GitHub"></a>部署到 GitHub</h2><h3 id="建立-GitHub-專案"><a href="#建立-GitHub-專案" class="headerlink" title="建立 GitHub 專案"></a>建立 GitHub 專案</h3><p>在架設網誌之前，還必須準備一個存放網站的空間，例如架設主機，或是選擇現有的平台，例如 GitHub Pages 或 Heroku 等，本篇以 GitHub 作為範例。</p>
+<p>接著可依照下列步驟在 GitHub 新增專案：</p>
+<h4 id="Step1-註冊-GitHub-帳號並登入"><a href="#Step1-註冊-GitHub-帳號並登入" class="headerlink" title="Step1. 註冊 GitHub 帳號並登入"></a>Step1. 註冊 <a target="_blank" rel="noopener" href="https://github.com/">GitHub</a> 帳號並登入</h4><h4 id="Step2-點選-New-新增一個-Repository（專案）"><a href="#Step2-點選-New-新增一個-Repository（專案）" class="headerlink" title="Step2. 點選 New 新增一個 Repository（專案）"></a>Step2. 點選 New 新增一個 Repository（專案）</h4><p><img src="https://i.loli.net/2021/03/25/JvsiS43cBn7bFZw.png"></p>
+<h4 id="Step3-將專案名稱命名為-username-github-io，username-記得改成自己的帳號名稱"><a href="#Step3-將專案名稱命名為-username-github-io，username-記得改成自己的帳號名稱" class="headerlink" title="Step3. 將專案名稱命名為 username.github.io，username 記得改成自己的帳號名稱"></a>Step3. 將專案名稱命名為 <code>username.github.io</code>，username 記得改成自己的帳號名稱</h4><p><img src="https://i.loli.net/2021/03/25/Tda6HWPFlDNKMSf.png"></p>
+<p>這樣就成功建立了一個網域：<code>username.github.io</code></p>
+<h3 id="將檔案發布到-GitHub"><a href="#將檔案發布到-GitHub" class="headerlink" title="將檔案發布到 GitHub"></a>將檔案發布到 GitHub</h3><h4 id="Step1-安裝-Git-相關套件"><a href="#Step1-安裝-Git-相關套件" class="headerlink" title="Step1. 安裝 Git 相關套件"></a>Step1. 安裝 Git 相關套件</h4><p>回到 hexo 資料夾，在終端機輸入下列指令安裝部署所需套件：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<h4 id="Step2-修改-config-yml-檔案的-Deployment-設定"><a href="#Step2-修改-config-yml-檔案的-Deployment-設定" class="headerlink" title="Step2. 修改 _config.yml 檔案的 Deployment 設定"></a>Step2. 修改 _config.yml 檔案的 Deployment 設定</h4><p>接著是修改 _config.yml 設定檔中，有關 deploy 的設定。</p>
+<blockquote>
+<p>需注意這裡指的 _config.yml 檔案是根目錄的，而不是 themes 主題中的。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;username&#x2F;username.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>type：選擇部屬模式，這裡填 git</li>
+<li>repo：GitHub repository 的連結，記得將 username 修改成自己的帳號名稱</li>
+<li>branch：選擇分支，預設為 master</li>
+</ul>
+<p><img src="https://i.loli.net/2021/03/25/j8HONvCiuUlsx13.png"></p>
+<h4 id="Step3-輸入部署指令"><a href="#Step3-輸入部署指令" class="headerlink" title="Step3. 輸入部署指令"></a>Step3. 輸入部署指令</h4><p>使用下列指令即可部署檔案到網站上，第一次輸入可能會要求登入 GitHub 帳號：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>通常在完成每次修改後，會依序輸入 clean -&gt; generate -&gt; deploy 三行指令，避免更新不完全：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo cl    &#x2F;&#x2F; 清除之前建立的靜態檔案</span><br><span class="line">hexo g     &#x2F;&#x2F; 建立靜態頁面</span><br><span class="line">hexo d     &#x2F;&#x2F; 部署至 GitHub</span><br></pre></td></tr></table></figure>
+
+<p>或是合併第二、三行指令：<code>hexo g -d</code> 即可在產生靜態頁面後立刻部署。</p>
+<p>這樣就完成部署網誌到 GitHub 了！可在個人頁面 <code>https://username.github.io</code> 確認是否有發布成功，預設畫面如下：</p>
+<p><img src="https://i.loli.net/2021/03/25/IEUTxA3uLGJscfY.png"></p>
+<hr>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>這篇算是簡單介紹了 Hexo 的安裝過程，整體來說不難，照著步驟一步一步操作，基本上是沒問題的。Hexo 的主題及插件非常之多，大家可以多多去玩看看。之後找時間再整理一篇關於更換主題，及我在過程中遇到的問題之之後的解法。</p>
+<p>參考資料：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://ed521.github.io/2019/07/hexo-install/">架設 Hexo+GitHub</a></li>
+<li><a target="_blank" rel="noopener" href="https://blackmaple.me/hexo-tutorial/">Hexo+GitHub，新手也可以快速建立部落格</a></li>
+<li><a target="_blank" rel="noopener" href="http://shenzekun.cn/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.html">hexo的next主题个性化教程:打造炫酷网站</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+<div>
+		
+		<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文結束<i class="fa fa-paw"></i>感謝您的閱讀-------------</div>
+    
+</div>
+		
+	</div>
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    捐贈
+  </button>
+  <div id="qr" style="display: none;">
+      <div style="display: inline-block;">
+        <img src="/images/donate.png" alt="康康 HHK Donate">
+        <p>Donate</p>
+      </div>
+
+  </div>
+</div>
+
+
+	<div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文標題:</span><a href="/hexo-git/">如何使用 Hexo + GitHub Pages 架設部落格</a></p>
+  <p><span>文章作者:</span>Hao-Hsiung Kang 康皓雄</a></p>
+  <p><span>發布時間:</span>2021年03月24日 - 22:04</p>
+  <p><span>最後更新:</span>2021年03月27日 - 21:23</p>
+  <p><span>原始連結:</span><a href="/hexo-git/" title="如何使用 Hexo + GitHub Pages 架設部落格">https://hhk.one/hexo-git/</a>
+    <span class="copy-path"  title="點擊複製文章連結"><i class="fa fa-clipboard" data-clipboard-text="https://hhk.one/hexo-git/"  aria-label="複製成功！"></i></span>
+  </p>
+  <p><span>許可協議:</span><i class="fa fa-creative-commons" aria-hidden="true"> </i><a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商業性使用-禁止演繹 4.0 國際</a> 轉載請保留連結並註明作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '複製成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+	});
+    });  
+</script>
+
+      
+	</div>
+        
+
+  <div class="followme">
+    <p>歡迎關注我的其它發布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://www.facebook.com/dogbone0714">
+            <span class="icon">
+              <i class="fab fa-facebook"></i>
+            </span>
+
+            <span class="label">FB</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://instagram.com/dogbone_0714">
+            <span class="icon">
+              <i class="fab fa-instagram"></i>
+            </span>
+
+            <span class="label">IG</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+	
+    
+			<script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+			<div class="commentbox.swig"></div>
+			<script type="text/javascript" src="/js/src/commentbox.js"></script>
+    
+	
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%95%99%E5%AD%B8/" rel="tag"><i class="fa fa-tag"></i> 教學</a>
+              <a href="/tags/Hexo-%E9%83%A8%E8%90%BD%E6%A0%BC/" rel="tag"><i class="fa fa-tag"></i> Hexo 部落格</a>
+              <a href="/tags/git/" rel="tag"><i class="fa fa-tag"></i> git</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/innoserve/" rel="prev" title="從文組生到闖進資服競賽全國前三名 - 24屆 Innoserve競賽全紀錄">
+      <i class="fa fa-chevron-left"></i> 從文組生到闖進資服競賽全國前三名 - 24屆 Innoserve競賽全紀錄
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/crawler-ptt-codejob/" rel="next" title="PTT Code_job 文章訂閱通知">
+      PTT Code_job 文章訂閱通知 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E9%BA%BC%E6%98%AF-Hexo%EF%BC%9F"><span class="nav-number">2.</span> <span class="nav-text">什麼是 Hexo？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E7%BD%AE%E4%BD%9C%E6%A5%AD"><span class="nav-number">3.</span> <span class="nav-text">前置作業</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%9D%E9%9C%80%E6%B1%82"><span class="nav-number">3.1.</span> <span class="nav-text">安裝需求</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Node-js%EF%BC%9A%E6%8F%90%E4%BE%9B-npm-%E4%BE%86%E5%AE%89%E8%A3%9D%E6%89%80%E9%9C%80%E7%9A%84%E5%A5%97%E4%BB%B6%E3%80%82%E9%80%99%E8%A3%A1%E5%8F%AF%E9%81%B8%E6%93%87%E5%AE%89%E8%A3%9D%E5%B7%A6%E5%81%B4-14-16-0-LTS-%E7%89%88%E6%9C%AC"><span class="nav-number">3.1.1.</span> <span class="nav-text">Node.js：提供 npm 來安裝所需的套件。這裡可選擇安裝左側 14.16.0 LTS 版本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Git%EF%BC%9A%E7%94%A8%E4%BE%86%E5%B0%87%E6%AA%94%E6%A1%88%E7%99%BC%E5%B8%83%E5%88%B0-GitHub-Page"><span class="nav-number">3.1.2.</span> <span class="nav-text">Git：用來將檔案發布到 GitHub Page</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-%E7%92%B0%E5%A2%83%E5%BB%BA%E7%BD%AE"><span class="nav-number">4.</span> <span class="nav-text">Hexo 環境建置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Step1-%E5%AE%89%E8%A3%9D-Hexo"><span class="nav-number">4.1.</span> <span class="nav-text">Step1. 安裝 Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step2-%E5%88%9D%E5%A7%8B%E5%8C%96-Hexo"><span class="nav-number">4.2.</span> <span class="nav-text">Step2. 初始化 Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step3-%E5%9C%A8%E8%B3%87%E6%96%99%E5%A4%BE%E5%AE%89%E8%A3%9D%E6%89%80%E9%9C%80%E6%AA%94%E6%A1%88"><span class="nav-number">4.3.</span> <span class="nav-text">Step3. 在資料夾安裝所需檔案</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#config-yml"><span class="nav-number">4.3.1.</span> <span class="nav-text">_config.yml</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#package-json"><span class="nav-number">4.3.2.</span> <span class="nav-text">package.json</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#scaffolds-%E6%A8%A1%E6%9D%BF"><span class="nav-number">4.3.3.</span> <span class="nav-text">scaffolds 模板</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#themes-%E4%B8%BB%E9%A1%8C"><span class="nav-number">4.3.4.</span> <span class="nav-text">themes 主題</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#source-%E8%B3%87%E6%BA%90"><span class="nav-number">4.3.5.</span> <span class="nav-text">source 資源</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#source-amp-public-amp-deploy-git-%E7%9A%84%E5%B7%AE%E5%88%A5"><span class="nav-number">4.3.6.</span> <span class="nav-text">source &amp; public &amp; .deploy_git 的差別</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4"><span class="nav-number">5.</span> <span class="nav-text">常用指令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#new-%E6%96%B0%E5%A2%9E%E6%96%87%E7%AB%A0"><span class="nav-number">5.1.</span> <span class="nav-text">new 新增文章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#clean-%E6%B8%85%E9%99%A4%E9%9D%9C%E6%85%8B%E6%AA%94%E6%A1%88%E8%88%87%E5%BF%AB%E5%8F%96"><span class="nav-number">5.2.</span> <span class="nav-text">clean 清除靜態檔案與快取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#generate-%E7%94%A2%E7%94%9F%E9%9D%9C%E6%85%8B%E6%AA%94%E6%A1%88"><span class="nav-number">5.3.</span> <span class="nav-text">generate 產生靜態檔案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#server-%E5%95%9F%E5%8B%95%E4%BC%BA%E6%9C%8D%E5%99%A8"><span class="nav-number">5.4.</span> <span class="nav-text">server 啟動伺服器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E5%88%B0-GitHub"><span class="nav-number">6.</span> <span class="nav-text">部署到 GitHub</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BB%BA%E7%AB%8B-GitHub-%E5%B0%88%E6%A1%88"><span class="nav-number">6.1.</span> <span class="nav-text">建立 GitHub 專案</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Step1-%E8%A8%BB%E5%86%8A-GitHub-%E5%B8%B3%E8%99%9F%E4%B8%A6%E7%99%BB%E5%85%A5"><span class="nav-number">6.1.1.</span> <span class="nav-text">Step1. 註冊 GitHub 帳號並登入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Step2-%E9%BB%9E%E9%81%B8-New-%E6%96%B0%E5%A2%9E%E4%B8%80%E5%80%8B-Repository%EF%BC%88%E5%B0%88%E6%A1%88%EF%BC%89"><span class="nav-number">6.1.2.</span> <span class="nav-text">Step2. 點選 New 新增一個 Repository（專案）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Step3-%E5%B0%87%E5%B0%88%E6%A1%88%E5%90%8D%E7%A8%B1%E5%91%BD%E5%90%8D%E7%82%BA-username-github-io%EF%BC%8Cusername-%E8%A8%98%E5%BE%97%E6%94%B9%E6%88%90%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B8%B3%E8%99%9F%E5%90%8D%E7%A8%B1"><span class="nav-number">6.1.3.</span> <span class="nav-text">Step3. 將專案名稱命名為 username.github.io，username 記得改成自己的帳號名稱</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%87%E6%AA%94%E6%A1%88%E7%99%BC%E5%B8%83%E5%88%B0-GitHub"><span class="nav-number">6.2.</span> <span class="nav-text">將檔案發布到 GitHub</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Step1-%E5%AE%89%E8%A3%9D-Git-%E7%9B%B8%E9%97%9C%E5%A5%97%E4%BB%B6"><span class="nav-number">6.2.1.</span> <span class="nav-text">Step1. 安裝 Git 相關套件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Step2-%E4%BF%AE%E6%94%B9-config-yml-%E6%AA%94%E6%A1%88%E7%9A%84-Deployment-%E8%A8%AD%E5%AE%9A"><span class="nav-number">6.2.2.</span> <span class="nav-text">Step2. 修改 _config.yml 檔案的 Deployment 設定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Step3-%E8%BC%B8%E5%85%A5%E9%83%A8%E7%BD%B2%E6%8C%87%E4%BB%A4"><span class="nav-number">6.2.3.</span> <span class="nav-text">Step3. 輸入部署指令</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B5%90%E8%AA%9E"><span class="nav-number">7.</span> <span class="nav-text">結語</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="康康 HHK"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">康康 HHK</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/dogbone0714" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;dogbone0714" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:jameskang0714@gmail.com" title="E-Mail → mailto:jameskang0714@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://plus.google.com/dogbone0714" title="Google → https:&#x2F;&#x2F;plus.google.com&#x2F;dogbone0714" rel="noopener" target="_blank"><i class="fab fa-google fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/dogbone0714" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;dogbone0714" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/dogbone0714" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;dogbone0714" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/dogbone_0714" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;dogbone_0714" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-gw-3+1f-3d+2z"
+     data-ad-client="ca-pub-9671856733786866"
+     data-ad-slot="4368622637"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">康康 HHK</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="訪客總數">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="總瀏覽次數">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : true,
+      appId      : 'y2XobmI5J3xxVXKBCU3ohxxL-MdYXbMMI',
+      appKey     : 'UjiR0x4pQWUCPGVxeqWtQAfA',
+      placeholder: "都來了，不留言一下嗎？",
+      avatar     : 'retro',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-TW',
+      path       : location.pathname,
+      recordIP   : true,
+      serverURLs : ''
+	  
+	  
+    });
+  }, window.Valine);
+});
+</script>
+
+    </div>
+  
+</body>
+</html>
+
