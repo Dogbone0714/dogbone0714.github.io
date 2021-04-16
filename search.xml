@@ -1,0 +1,1185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Text2MindMap 文字大綱轉心智圖超簡易線上工具</title>
+    <url>/First-Page/</url>
+    <content><![CDATA[<p>心智圖軟體上萬種<br>Text2MindMap 倒是簡單得很有特色 !</p>
+<a id="more"></a>
+
+<p><img src="https://2.bp.blogspot.com/-MF5sOrSdJM4/W4pCxYRq1WI/AAAAAAAAmmU/VoHlto3mCtcGHRpoixgTrFUXEKaECkUMACPcBGAYYCw/s1600/1.PNG" alt="心智圖示意圖"></p>
+<p>「 Text2MindMap 」沒有複雜的心智圖功能，或者應該說，他沒有任何心智圖功能，但是可以將簡單的文字大綱，「即時呈現」為動態的心智圖。並且雖然是線上工具，卻也不需要註冊登入，也不雲端儲存。</p>
+<p>那麼「 Text2MindMap 」要用來做什麼呢？可以想成他就是一個「把腦中想法即時轉換為心智圖看看」的視覺化「顯示器」。</p>
+<p>例如來說當你在構思或開會時，你可以線上打開「 Text2MindMap 」，因為不須註冊登入，所以速度很快，在左方貼上想法大綱，或是打字整理開會重點，右方就會即時呈現出視覺化的心智圖。一邊補充左方內容，一邊右方的心智圖也會變動，讓大家看到想法。</p>
+<p><img src="https://2.bp.blogspot.com/-8EN5PgPPsH0/W4pGCchFnzI/AAAAAAAAmmg/hkk1fGoVLNkNq_3sJdI8Pe_DSQZDVjNDwCLcBGAs/s1600/2.PNG" alt="心智圖示意圖"></p>
+<p>「 Text2MindMap 」就是一個「轉換」工具，可以編輯與儲存的部分，是左方的大綱清單。而右方的心智圖是為了查看，不能另外下載成心智圖檔案。<br>這樣簡單的工具，也應該能滿足特定需求，例如像我一樣的學生，分享給大家。</p>
+<p><a href="https://tobloef.com/text2mindmap/">Text2MindMap</a> 網站</p>
+]]></content>
+      <categories>
+        <category>軟體介紹</category>
+      </categories>
+      <tags>
+        <tag>軟體介紹</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Scrcpy 將 Android 手機畫面投影到電腦中，同時還可雙向操控</title>
+    <url>/Scrcpy/</url>
+    <content><![CDATA[<p>雖然Windows10內建投影功能，可將Android手機的畫面投影到電腦中，但礙於梅干的筆電不支援Miracast，就無法使用，因此梅干找了好久，最後發現另一套小工具Scrcpy，就可將Android手機畫面投影到電腦中，且是透過USB的方式，因此無論在傳輸還是畫質，相對上都要來的好許多。</p>
+<p>甚至透過Scrcpy這個小工具，除了可將Android手機的畫面投影到電腦螢幕外，還可透過電腦直來操控Android手機，真的是超方便的，但要使用Scrcpy這工具作投影時，Android的版本需要5.0以上，同時要開啟USB偵錯模式才能使用，因此想要將Android手機的畫面投影到電腦的朋友，現在也一塊來看看囉！</p>
+<a id="more"></a>
+
+<hr>
+<h2 id="Scrcpy"><a href="#Scrcpy" class="headerlink" title="Scrcpy"></a>Scrcpy</h2><p><img src="https://i.loli.net/2021/03/27/MnBwbP2WRIGQSaH.jpg" alt="操作示意圖"></p>
+<pre><code>軟體名稱：Scrcpy
+適用平台：Windows/macOS/Liunx
+軟體下載：https://github.com/Genymobile/scrcpy</code></pre>
+<h3 id="Step1"><a href="#Step1" class="headerlink" title="Step1"></a>Step1</h3><p>首先，進到Scrcpy的下載畫面後，再點選Windows的版本。</p>
+<p><img src="https://photo.minwt.com/img/Content/android/Scrcpy-control-android/Scrcpy-control-android_01.jpg" alt="windows-download"></p>
+<h3 id="Step2"><a href="#Step2" class="headerlink" title="Step2"></a>Step2</h3><p>下載完畢後，解壓縮。</p>
+<p><img src="https://photo.minwt.com/img/Content/android/Scrcpy-control-android/Scrcpy-control-android_02.jpg" alt="7zip"></p>
+<h3 id="Step3"><a href="#Step3" class="headerlink" title="Step3"></a>Step3</h3><p>接著將手機切到開發人員，再把 USB 除錯功能開啟。</p>
+<p><img src="https://photo.minwt.com/img/Content/android/Scrcpy-control-android/Scrcpy-control-android_03.jpg" alt="developer"></p>
+<h3 id="Step4"><a href="#Step4" class="headerlink" title="Step4"></a>Step4</h3><p>再把手機與電腦連接。</p>
+<p><img src="https://photo.minwt.com/img/Content/android/Scrcpy-control-android/Scrcpy-control-android_04.jpg" alt="connect"></p>
+<h3 id="Step5"><a href="#Step5" class="headerlink" title="Step5"></a>Step5</h3><p>這時手機會跳出允許畫面，再按<strong>確定</strong>。</p>
+<p><img src="https://photo.minwt.com/img/Content/android/Scrcpy-control-android/Scrcpy-control-android_05.jpg" alt="yes"></p>
+<h3 id="Step6"><a href="#Step6" class="headerlink" title="Step6"></a>Step6</h3><p>接著再雙擊剛解壓資料夾中的<font color=#FF00FF>scrcpy.exe</font>。</p>
+<p><img src="https://photo.minwt.com/img/Content/android/Scrcpy-control-android/Scrcpy-control-android_06.jpg" alt="open"></p>
+<h3 id="Step7"><a href="#Step7" class="headerlink" title="Step7"></a>Step7</h3><p>這時電腦就會出現Android的畫面啦！</p>
+<p><img src="https://photo.minwt.com/img/Content/android/Scrcpy-control-android/Scrcpy-control-android_07.jpg" alt="view"></p>
+<h3 id="Step8"><a href="#Step8" class="headerlink" title="Step8"></a>Step8</h3><p>這時雙向都可控制，同時螢幕也會即時的顯示，且無論在畫質還是順暢度，表現都相當的不錯，因此有需要的朋友，不妨也可試試看囉！</p>
+<p><img src="https://photo.minwt.com/img/Content/android/Scrcpy-control-android/Scrcpy-control-android_08.jpg" alt="control"></p>
+<blockquote>
+<p>全文轉載自 <a href="https://www.minwt.com/pc/21817.html">梅問題教學網</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>軟體介紹</category>
+      </categories>
+      <tags>
+        <tag>軟體介紹</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TRA 臺灣關係法</title>
+    <url>/TRA/</url>
+    <content><![CDATA[<p>《臺灣關係法》（Taiwan Relations Act，縮寫為TRA）是一部現行的美國國內法。1979年1月1日，美國政府終止與中華民國政府間的所有正式外交關係，轉而承認中華人民共和國政府後，美國國會制定此法並由美國總統吉米·卡特簽署生效，以規範往後的美國與臺灣關係。《臺灣關係法》中提到，此法為國會授權美國政府繼續維持美國人民與在台灣人民間之商業、文化及其他關係，以促進美國外交政策。</p>
+<a id="more"></a>
+
+<p>該法案規定，台灣根據美國法律應與「外國、外國政府或類似實體」一視同仁，從而將台灣視為具有主權的亞主權國家。該法案規定，就美國政府的大多數實際目的而言，缺乏外交關係和承認將不會產生任何影響。</p>
+<p>《臺灣關係法》並不保證美國會在中華人民共和國襲擊或入侵台灣時進行軍事干預，但也沒有明令放棄它，因為該法的主要目的是確保總統不會單方面改變美國的台灣政策並確保任何捍衛國防的決定，台灣會獲得國會的承認。該法令規定：「美國將向台灣提供必要數量的防衛物資及技術服務，以使台灣能夠維持足夠的自衛能力。」但是，有關美國將向台灣提供的防衛物資及服務的種類及數量的決定將由總統和國會決定。美國的政策被稱為「戰略模糊」，它的目的是阻止台灣單方面宣布獨立，並阻止中華人民共和國單方面統一台灣。</p>
+]]></content>
+      <categories>
+        <category>社會議題</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>淺談暗網入門及常用入口網站介紹</title>
+    <url>/darkweb-newbie/</url>
+    <content><![CDATA[<p>「暗網」一詞，對於現今的大多數人都不陌生，或許我們都在某個場合某個時間聽說過這個詞，但絕大多數的人對於暗網的了解也只限於聽說，口口相傳之下，就愈發顯得神秘，今天，我們以最淺顯的語言解釋下什麼是暗網以及暗網的由來。</p>
+<a id="more"></a>
+
+<h2 id="什麼是暗網？"><a href="#什麼是暗網？" class="headerlink" title="什麼是暗網？"></a>什麼是暗網？</h2><p>我們日常訪問的，可以通過Yahoo、谷歌這些搜尋引擎訪問到的網路被稱之為表層網絡，為「明網」，而表層網路在真正的網路世界中，只占了很小的比重，具體多少沒有定論，有說不到十分之一的，有說不到二十分之一的，總而言之，很少。</p>
+<p>更多的網絡是搜尋引擎無法直接抓取訪問的，而是需要通過一定的操作手段來獲取其中的信息，這部分沉於表面之下的網路，被稱之為「深網」，即深層網路，雖然深層網路無法直接進行訪問，但也沒有太多的訪問門檻。我們要說的「暗網」指的不是那些登錄之後的才能觀看的深網內容，而是深網中被人刻意隱藏起來的部分。</p>
+<p>表層網路、深層網路以及暗網的關係就像冰山，海平面上的部分是我們日常接觸的明網，海平面之下的都是深網，而最下方、隱藏最深的部分，則為暗網。</p>
+<p><img src="https://i.loli.net/2021/03/24/OZ2dpCoqP6Ev9bV.jpg"></p>
+<h2 id="如何進入暗網"><a href="#如何進入暗網" class="headerlink" title="如何進入暗網"></a>如何進入暗網</h2><p>通常我們都使用一款軟體叫做 Tor (洋蔥瀏覽器)。</p>
+<p>可能很多人不曉得tor的伺服器運作方式，基本上是把請求連線的資料，透過分割(節點)，然後送到目標網頁，較難追蹤。</p>
+<p>但是還是有部分高技術的人，透過分析節點去做追蹤的動作，因為tor是單一節點的連線方式。tor有一項功能，會自動關閉網頁上存在的scripts 基本上不要下載任何.exe .rar即可。</p>
+<p>每個人都可以在tor上 建立.onion的網頁，有一部分的網頁都是網誌或個人部落格，當然還有大量的詐騙網站。</p>
+<h2 id="CP"><a href="#CP" class="headerlink" title="CP ?"></a>CP ?</h2><p><strong>CP</strong> (Child Porn)可能有人質疑FBI查那麼兇，真的還有CP網站能存活嗎? 我能先說結論，一定有，肯定有，且目前存在中。</p>
+<p>2013年FBI查殺了很多CP網頁，大部分被查殺的位於能直接輸入網址進入的深網，而真正利用i2p連線的基本上都還是正常運作著。</p>
+<p>2016年，很多CP再次出現在深網裡面，很多版主經過之前的查殺行動，開始利用多重網頁，就是不同網址的運作方式，一直到現在CP已經到處都是了，而且都是免費的。</p>
+<h2 id="常用入口網站"><a href="#常用入口網站" class="headerlink" title="常用入口網站"></a><strong>常用入口網站</strong></h2><h3 id="聊天取向"><a href="#聊天取向" class="headerlink" title="聊天取向"></a>聊天取向</h3><ul>
+<li><a href="http://notbumpz34bgbz4yfdigxvd6vzwtxc3zpt5imukgl6bvip2nikdmdaad.onion/">http://notbumpz34bgbz4yfdigxvd6vzwtxc3zpt5imukgl6bvip2nikdmdaad.onion/</a></li>
+</ul>
+<h3 id="搜尋引擎"><a href="#搜尋引擎" class="headerlink" title="搜尋引擎"></a>搜尋引擎</h3><ul>
+<li><a href="http://deeeepv4bfndyatwkdzeciebqcwwlvgqa6mofdtsvwpon4elfut7lfqd.onion/">http://deeeepv4bfndyatwkdzeciebqcwwlvgqa6mofdtsvwpon4elfut7lfqd.onion/</a></li>
+<li><a href="http://torlinkswwqg3lwt.onion/">http://torlinkswwqg3lwt.onion/</a></li>
+</ul>
+<h3 id="交易社群"><a href="#交易社群" class="headerlink" title="交易社群"></a>交易社群</h3><ul>
+<li><a href="http://xxxxxxxxxs6qbnahsbvxbghsnqh4rj6whbyblqtnmetf7vell2fmxmad.onion/index.php">http://xxxxxxxxxs6qbnahsbvxbghsnqh4rj6whbyblqtnmetf7vell2fmxmad.onion/index.php</a>   | 中文暗網交易網</li>
+<li><a href="http://2222222222vf2a2e.onion/">http://2222222222vf2a2e.onion</a>   |  自由城</li>
+<li><a href="http://7zj4oshsyhokgus6fyk7pmdiubu4mkjpjjprjkvopnhnwylr522tymqd.onion/">http://7zj4oshsyhokgus6fyk7pmdiubu4mkjpjjprjkvopnhnwylr522tymqd.onion/</a>   |  茶馬古道</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>暗網</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>撰寫 Hexo 文章 - Markdown 語法大全</title>
+    <url>/hexo-markdown/</url>
+    <content><![CDATA[<p>Markdown 的目標是實現「易讀易寫」，並強調它的「可讀性」，因此 Markdown 的語法全由標點符號所組成，並經過嚴謹慎選，是為了讓它們看起來就像所要表達的意思；以下是 Markdown 大部分的語法。</p>
+<a id="more"></a>
+
+<h1 id="常用語法-文字樣式"><a href="#常用語法-文字樣式" class="headerlink" title="常用語法 - 文字樣式 "></a><strong><font color=#0000FF>常用語法 - 文字樣式 </font></strong></h1><h2 id="文字字體"><a href="#文字字體" class="headerlink" title="文字字體"></a><strong><font color=#FF6600>文字字體</font></strong></h2><table>
+<thead>
+<tr>
+<th><strong>類別</strong></th>
+<th><strong>語法</strong></th>
+<th><strong>顯示結果</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>粗體</td>
+<td><code>**我是粗體**</code></td>
+<td><strong>我是粗體</strong></td>
+</tr>
+<tr>
+<td>斜體</td>
+<td><code>*我是斜體*</code></td>
+<td><em>我是斜體</em></td>
+</tr>
+<tr>
+<td>粗斜體</td>
+<td><code>***我是粗斜體***</code></td>
+<td><strong><em>我是粗斜體</em></strong></td>
+</tr>
+<tr>
+<td>刪除線</td>
+<td><code>~~我是刪除線~~</code></td>
+<td><del>我是刪除線</del></td>
+</tr>
+<tr>
+<td>底線</td>
+<td><code>&lt;u&gt;我是底線&lt;u&gt;</code></td>
+<td><u>我是底線</u></td>
+</tr>
+</tbody></table>
+<h2 id="文字顏色"><a href="#文字顏色" class="headerlink" title="文字顏色"></a><strong><font color=#FF6600>文字顏色</font></strong></h2><p>Markdown 並沒有更改文字顏色的語法，因此只能我們靠自己加入 HTML 語法來修改文字顏色，只要在欲更改文字顏色的地方加入 <code>&lt;font color=#008000&gt;我是深綠色&lt;/font&gt;</code> ：<font color=#008000>我是深綠色</font>。</p>
+<p>在此附上一些常用的顏色，使用者也可以到 <a href="https://www.ifreesite.com/color/web-color-code.htm">常用顏色表</a> 這個網站來找尋自己喜歡的顏色。</p>
+<table>
+<thead>
+<tr>
+<th align="left">語法</th>
+<th align="left">顯示結果</th>
+<th align="left">語法</th>
+<th align="left">顯示結果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>&lt;font color=#800000&gt;酒紅色&lt;/font&gt;</code></td>
+<td align="left"><font color=#800000>酒紅色</font></td>
+<td align="left"><code>&lt;font color=#FF0000&gt;紅色&lt;/font&gt;</code></td>
+<td align="left"><font color=#FF0000>紅色</font></td>
+</tr>
+<tr>
+<td align="left"><code>&lt;font color=#FF6600&gt;橘色&lt;/font&gt;</code></td>
+<td align="left"><font color=#FF6600>橘色</font></td>
+<td align="left"><code>&lt;font color=#FFD700&gt;金色&lt;/font&gt;</code></td>
+<td align="left"><font color=#FFD700>金色</font></td>
+</tr>
+<tr>
+<td align="left"><code>&lt;font color=#FFFF00&gt;黃色&lt;/font&gt;</code></td>
+<td align="left"><font color=#FFFF00>黃色</font></td>
+<td align="left"><code>&lt;font color=#00FF00&gt;綠色&lt;/font&gt;</code></td>
+<td align="left"><font color=#00FF00>綠色</font></td>
+</tr>
+<tr>
+<td align="left"><code>&lt;font color=#008000&gt;墨綠色&lt;/font&gt;</code></td>
+<td align="left"><font color=#008000>墨綠色</font></td>
+<td align="left"><code>&lt;font color=#00FFFF&gt;青色&lt;/font&gt;</code></td>
+<td align="left"><font color=#00FFFF>青色</font></td>
+</tr>
+<tr>
+<td align="left"><code>&lt;font color=#0000FF&gt;深藍色&lt;/font&gt;</code></td>
+<td align="left"><font color=#0000FF>深藍色</font></td>
+<td align="left"><code>&lt;font color=#FF00FF&gt;粉紅色&lt;/font&gt;</code></td>
+<td align="left"><font color=#FF00FF>粉紅色</font></td>
+</tr>
+<tr>
+<td align="left"><code>&lt;font color=#800080&gt;紫色&lt;/font&gt;</code></td>
+<td align="left"><font color=#800080>紫色</font></td>
+<td align="left"><code>&lt;font color=#808080&gt;灰色&lt;/font&gt;</code></td>
+<td align="left"><font color=#808080>灰色</font></td>
+</tr>
+</tbody></table>
+<h2 id="標題"><a href="#標題" class="headerlink" title="標題"></a><strong><font color=#FF6600>標題</font></strong></h2><p>使用 <code>#</code> 來表示等級一的標題，總共有六個等級，且 # 字符號和文字間<strong>要空一格</strong>。語法依此類推：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># 等級一標題</span></span><br><span class="line"><span class="section">## 等級二標題</span></span><br><span class="line"><span class="section">### 等級三標題</span></span><br><span class="line"><span class="section">#### 等級四標題</span></span><br><span class="line"><span class="section">##### 等級五標題</span></span><br><span class="line"><span class="section">###### 等級六標題</span></span><br></pre></td></tr></table></figure>
+
+<p>其結果顯示如下圖：</p>
+<p><img src="https://i.loli.net/2021/03/24/jmgKkYVIx7vbFT4.png"></p>
+<h2 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼"></a><strong><font color=#FF6600>程式碼</font></strong></h2><ul>
+<li><strong><font color=#008000>文字間程式碼</font></strong></li>
+</ul>
+<p><strong>插入在文字間</strong>的程式碼請使用以下語法，也就是用鍵盤 Tab 鍵上方的反引號來包住：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">C語言的輸入請使用 &#96;scanf()&#96; 函式。</span><br></pre></td></tr></table></figure>
+
+<p>其結果顯示如下：</p>
+<p>C語言的輸入請使用 <code>scanf()</code> 函式。</p>
+<ul>
+<li><strong><font color=#008000>段落程式碼</font></strong></li>
+</ul>
+<p>若要以整行或整段來顯示程式碼，請使用也就是用鍵盤 Tab 上方的三個反引號來包住，且可以**<font color=#800080>在第一列最後方指定程式語言類型(也能不指定)，這樣會在特殊函式或語法上標示特殊顏色</font>**。</p>
+<p>例如使用 C 語言：</p>
+<p><img src="https://i.loli.net/2021/03/24/WzI2tvr5NmEMaAF.png"></p>
+<p>其結果顯示如下：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">// HelloWorld 程式</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">( )</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;HelloWorld\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>作者查到支援的程式碼列表如下，在反引號後輸入下面括弧前的文字（<a href="https://support.codebasehq.com/articles/tips-tricks/syntax-highlighting-in-markdown">參考網站</a>）：</p>
+<ul>
+<li>Cucumber (‘*.feature’)</li>
+<li>abap (‘*.abap’)</li>
+<li>ada (‘*.adb’, ‘*.ads’, ‘*.ada’)</li>
+<li>ahk (‘*.ahk’, ‘*.ahkl’)</li>
+<li>apacheconf (‘.htaccess’, ‘apache.conf’, ‘apache2.conf’)</li>
+<li>applescript (‘*.applescript’)</li>
+<li>as (‘*.as’)</li>
+<li>as3 (‘*.as’)</li>
+<li>asy (‘*.asy’)</li>
+<li>bash (‘*.sh’, ‘*.ksh’, ‘*.bash’, ‘*.ebuild’, ‘*.eclass’)</li>
+<li>bat (‘*.bat’, ‘*.cmd’)</li>
+<li>befunge (‘*.befunge’)</li>
+<li>blitzmax (‘*.bmx’)</li>
+<li>boo (‘*.boo’)</li>
+<li>brainfuck (‘*.bf’, ‘*.b’)</li>
+<li>c (‘*.c’, ‘*.h’)</li>
+<li>cfm (‘*.cfm’, ‘*.cfml’, ‘*.cfc’)</li>
+<li>cheetah (‘*.tmpl’, ‘*.spt’)</li>
+<li>cl (‘*.cl’, ‘*.lisp’, ‘*.el’)</li>
+<li>clojure (‘*.clj’, ‘*.cljs’)</li>
+<li>cmake (‘*.cmake’, ‘CMakeLists.txt’)</li>
+<li>coffeescript (‘*.coffee’)</li>
+<li>console (‘*.sh-session’)</li>
+<li>control (‘control’)</li>
+<li>cpp (‘*.cpp’, ‘*.hpp’, ‘*.c++’, ‘*.h++’, ‘*.cc’, ‘*.hh’, ‘*.cxx’, ‘*.hxx’, ‘*.pde’)</li>
+<li>csharp (‘*.cs’)</li>
+<li>css (‘*.css’)</li>
+<li>cython (‘*.pyx’, ‘*.pxd’, ‘*.pxi’)</li>
+<li>d (‘*.d’, ‘*.di’)</li>
+<li>delphi (‘*.pas’)</li>
+<li>diff (‘*.diff’, ‘*.patch’)</li>
+<li>dpatch (‘*.dpatch’, ‘*.darcspatch’)</li>
+<li>duel (‘*.duel’, ‘*.jbst’)</li>
+<li>dylan (‘*.dylan’, ‘*.dyl’)</li>
+<li>erb (‘*.erb’)</li>
+<li>erl (‘*.erl-sh’)</li>
+<li>erlang (‘*.erl’, ‘*.hrl’)</li>
+<li>evoque (‘*.evoque’)</li>
+<li>factor (‘*.factor’)</li>
+<li>felix (‘*.flx’, ‘*.flxh’)</li>
+<li>fortran (‘*.f’, ‘*.f90’)</li>
+<li>gas (‘*.s’, ‘*.S’)</li>
+<li>genshi (‘*.kid’)</li>
+<li>glsl (‘*.vert’, ‘*.frag’, ‘*.geo’)</li>
+<li>gnuplot (‘*.plot’, ‘*.plt’)</li>
+<li>go (‘*.go’)</li>
+<li>groff (‘*.(1234567)’, ‘*.man’)</li>
+<li>haml (‘*.haml’)</li>
+<li>haskell (‘*.hs’)</li>
+<li>html (‘*.html’, ‘*.htm’, ‘*.xhtml’, ‘*.xslt’)</li>
+<li>hx (‘*.hx’)</li>
+<li>hybris (‘*.hy’, ‘*.hyb’)</li>
+<li>ini (‘*.ini’, ‘*.cfg’)</li>
+<li>io (‘*.io’)</li>
+<li>ioke (‘*.ik’)</li>
+<li>irc (‘*.weechatlog’)</li>
+<li>jade (‘*.jade’)</li>
+<li>java (‘*.java’)</li>
+<li>js (‘*.js’)</li>
+<li>jsp (‘*.jsp’)</li>
+<li>lhs (‘*.lhs’)</li>
+<li>llvm (‘*.ll’)</li>
+<li>logtalk (‘*.lgt’)</li>
+<li>lua (‘*.lua’, ‘*.wlua’)</li>
+<li>make (‘*.mak’, ‘Makefile’, ‘makefile’, ‘Makefile.*‘, ‘GNUmakefile’)</li>
+<li>mako (‘*.mao’)</li>
+<li>maql (‘*.maql’)</li>
+<li>mason (‘*.mhtml’, ‘*.mc’, ‘*.mi’, ‘autohandler’, ‘dhandler’)</li>
+<li>markdown (‘*.md’)</li>
+<li>modelica (‘*.mo’)</li>
+<li>modula2 (‘*.def’, ‘*.mod’)</li>
+<li>moocode (‘*.moo’)</li>
+<li>mupad (‘*.mu’)</li>
+<li>mxml (‘*.mxml’)</li>
+<li>myghty (‘*.myt’, ‘autodelegate’)</li>
+<li>nasm (‘*.asm’, ‘*.ASM’)</li>
+<li>newspeak (‘*.ns2’)</li>
+<li>objdump (‘*.objdump’)</li>
+<li>objectivec (‘*.m’)</li>
+<li>objectivej (‘*.j’)</li>
+<li>ocaml (‘*.ml’, ‘*.mli’, ‘*.mll’, ‘*.mly’)</li>
+<li>ooc (‘*.ooc’)</li>
+<li>perl (‘*.pl’, ‘*.pm’)</li>
+<li>php (‘*.php’, ‘*.php(345)’)</li>
+<li>postscript (‘*.ps’, ‘*.eps’)</li>
+<li>pot (‘*.pot’, ‘*.po’)</li>
+<li>pov (‘*.pov’, ‘*.inc’)</li>
+<li>prolog (‘*.prolog’, ‘*.pro’, ‘*.pl’)</li>
+<li>properties (‘*.properties’)</li>
+<li>protobuf (‘*.proto’)</li>
+<li>py3tb (‘*.py3tb’)</li>
+<li>pytb (‘*.pytb’)</li>
+<li>python (‘*.py’, ‘*.pyw’, ‘*.sc’, ‘SConstruct’, ‘SConscript’, ‘*.tac’)</li>
+<li>rb (‘*.rb’, ‘*.rbw’, ‘Rakefile’, ‘*.rake’, ‘*.gemspec’, ‘*.rbx’, ‘*.duby’)</li>
+<li>rconsole (‘*.Rout’)</li>
+<li>rebol (‘*.r’, ‘*.r3’)</li>
+<li>redcode (‘*.cw’)</li>
+<li>rhtml (‘*.rhtml’)</li>
+<li>rst (‘*.rst’, ‘*.rest’)</li>
+<li>sass (‘*.sass’)</li>
+<li>scala (‘*.scala’)</li>
+<li>scaml (‘*.scaml’)</li>
+<li>scheme (‘*.scm’)</li>
+<li>scss (‘*.scss’)</li>
+<li>smalltalk (‘*.st’)</li>
+<li>smarty (‘*.tpl’)</li>
+<li>sourceslist (‘sources.list’)</li>
+<li>splus (‘*.S’, ‘*.R’)</li>
+<li>sql (‘*.sql’)</li>
+<li>sqlite3 (‘*.sqlite3-console’)</li>
+<li>squidconf (‘squid.conf’)</li>
+<li>ssp (‘*.ssp’)</li>
+<li>tcl (‘*.tcl’)</li>
+<li>tcsh (‘*.tcsh’, ‘*.csh’)</li>
+<li>tex (‘*.tex’, ‘*.aux’, ‘*.toc’)</li>
+<li>text (‘*.txt’)</li>
+<li>v (‘*.v’, ‘*.sv’)</li>
+<li>vala (‘*.vala’, ‘*.vapi’)</li>
+<li>vbnet (‘*.vb’, ‘*.bas’)</li>
+<li>velocity (‘*.vm’, ‘*.fhtml’)</li>
+<li>vim (‘*.vim’, ‘.vimrc’)</li>
+<li>xml (‘*.xml’, ‘*.xsl’, ‘*.rss’, ‘*.xslt’, ‘*.xsd’, ‘*.wsdl’)</li>
+<li>xquery (‘*.xqy’, ‘*.xquery’)</li>
+<li>xslt (‘*.xsl’, ‘*.xslt’)</li>
+<li>yaml (‘*.yaml’, ‘*.yml’)</li>
+</ul>
+<h1 id="常用語法-其它"><a href="#常用語法-其它" class="headerlink" title="常用語法 - 其它 "></a><strong><font color=#0000FF>常用語法 - 其它 </font></strong></h1><h2 id="分隔線"><a href="#分隔線" class="headerlink" title="分隔線"></a><strong><font color=#FF6600>分隔線</font></strong></h2><p>一整列中輸入三個以上的 <code>***</code> 或三個以上的 <code>---</code>，且<font color=#800080>整列<strong>不能有其它文字</strong></font>，結果顯示如下：</p>
+<hr>
+<h2 id="項目符號-編號"><a href="#項目符號-編號" class="headerlink" title="項目符號/編號"></a><strong><font color=#FF6600>項目符號/編號</font></strong></h2><p><strong><font color=#v3509>項目符號</font>**可以用 <code>*</code>、<code>+</code> 或 <code>-</code>，放在整列的開頭當作項目符號，且符號和文字間<font color=#800080>**要空一格</strong></font>，語法範例如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">+ aaa</span><br><span class="line">+ bbb</span><br><span class="line">+ ccc</span><br></pre></td></tr></table></figure>
+
+<p>其結果顯示如下：</p>
+<ul>
+<li><p>aaa</p>
+</li>
+<li><p>bbb</p>
+</li>
+<li><p>ccc</p>
+</li>
+</ul>
+<p>而**<font color=#v3509>編號</font><strong>就是使用數字在加上 <code>.</code>，且 <code>.</code> 和文字間<font color=#800080>**要空一格</strong></font>，語法範例如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. aaa</span><br><span class="line">2. bbb</span><br><span class="line">3. ccc</span><br></pre></td></tr></table></figure>
+
+<p>其結果顯示如下：</p>
+<ol>
+<li>aaa</li>
+<li>bbb</li>
+<li>ccc</li>
+</ol>
+<p>若使用**<font color=#008000>「階層式」的項目符號/編號</font>**，只要記得空的格數要整齊即可。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">+ 益者三友</span><br><span class="line">  + 友直</span><br><span class="line">  + 友諒</span><br><span class="line">  + 友多聞</span><br><span class="line">     + 益矣</span><br><span class="line">+ 損者三友</span><br><span class="line">  + 友便辟</span><br><span class="line">  + 友善柔</span><br><span class="line">  + 友便佞</span><br><span class="line">     + 損矣</span><br></pre></td></tr></table></figure>
+
+<p>其結果顯示如下：</p>
+<ul>
+<li>益者三友<ul>
+<li>友直</li>
+<li>友諒</li>
+<li>友多聞<ul>
+<li>益矣</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>損者三友<ul>
+<li>友便辟</li>
+<li>友善柔</li>
+<li>友便佞<ul>
+<li>損矣</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="代辦事項"><a href="#代辦事項" class="headerlink" title="代辦事項"></a><strong><font color=#FF6600>代辦事項</font></strong></h2><p>代辦事項的語法如下，若要在框框中打勾，則需在 [ ] 中輸入 <code>x</code>。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">- [ ] 空心菜</span><br><span class="line">- [x] 玉米</span><br><span class="line">- [x] 醬油</span><br><span class="line">- [ ] 豬肉</span><br></pre></td></tr></table></figure>
+
+<p>其結果顯示如下：</p>
+<ul>
+<li> 空心菜</li>
+<li> 玉米</li>
+<li> 醬油</li>
+<li> 豬肉</li>
+</ul>
+<h2 id="引用區塊"><a href="#引用區塊" class="headerlink" title="引用區塊"></a><strong><font color=#FF6600>引用區塊</font></strong></h2><p>使用 <code>&gt;</code> 放在整列的開頭當作引用區塊，<font color=#800080>且 <code>&gt;</code> 和文字間<strong>要空一格</strong></font>，語法範例如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt; 人遠比自己想象的要堅強</span><br><span class="line">&gt; 特別是當你回頭看看的時候</span><br><span class="line">&gt; 你會發現自己走了一段自己都沒想到的路</span><br></pre></td></tr></table></figure>
+
+<p>其結果顯示如下：</p>
+<blockquote>
+<p>人遠比自己想象的要堅強<br>特別是當你回頭看看的時候<br>你會發現自己走了一段自己都沒想到的路</p>
+</blockquote>
+<p>而”引用”也支援「階層式」顯示：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt; 人生就像一杯茶</span><br><span class="line">&gt; &gt; 不會苦一輩子</span><br><span class="line">&gt; &gt; &gt; 但總會苦一陣子</span><br></pre></td></tr></table></figure>
+
+<p>其結果顯示如下：</p>
+<blockquote>
+<p>人生就像一杯茶</p>
+<blockquote>
+<p>不會苦一輩子</p>
+<blockquote>
+<p>但總會苦一陣子</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="文字超連結"><a href="#文字超連結" class="headerlink" title="文字超連結"></a><strong><font color=#FF6600>文字超連結</font></strong></h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">奇摩首頁</span>](<span class="link">https://tw.yahoo.com/</span>)</span><br><span class="line">[<span class="string">Google首頁</span>](<span class="link">https://www.google.com/</span>)</span><br><span class="line">[<span class="string">Facebook</span>](<span class="link">https://www.facebook.com/</span>)</span><br></pre></td></tr></table></figure>
+
+<p>其結果顯示如下：</p>
+<p><a href="https://tw.yahoo.com/">奇摩首頁</a><br><a href="https://www.google.com/">Google首頁</a><br><a href="https://www.facebook.com/">Facebook</a></p>
+<h2 id="圖片"><a href="#圖片" class="headerlink" title="圖片"></a><strong><font color=#FF6600>圖片</font></strong></h2><p>圖片的語法和文字超連結很像，只是在語法開頭再加上 <code>!</code>，中括弧內指的是圖片的”替代文字”(當圖片連結失效後會顯示的文字，如下面的 FB Logo)：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">奇摩首頁Logo</span>](<span class="link">https://s1.yimg.com/rz/d/yahoo_frontpage_zh-Hant-TW_s_f_p_bestfit_frontpage_2x.png</span>)</span><br><span class="line">![<span class="string">Google首頁Logo</span>](<span class="link">https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png</span>)</span><br><span class="line">![<span class="string">FB Logo</span>](<span class="link">123.png</span>)</span><br></pre></td></tr></table></figure>
+
+<p>其結果顯示如下：</p>
+<p><a href="https://s1.yimg.com/rz/d/yahoo_frontpage_zh-Hant-TW_s_f_p_bestfit_frontpage_2x.png"><img src="https://i.loli.net/2021/03/24/Z4HBulkyeSmEPKI.png" alt="奇摩首頁Logo"></a></p>
+<p><a href="https://s1.yimg.com/rz/d/yahoo_frontpage_zh-Hant-TW_s_f_p_bestfit_frontpage_2x.png">奇摩首頁Logo</a></p>
+<p><a href="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"><img src="https://i.loli.net/2021/03/24/3Js7OKap2CMDZIQ.png" alt="Google首頁Logo">Google首頁Logo</a><br><a href="123.png"><img src="123.png" alt="FB Logo">FB Logo</a></p>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a><strong><font color=#FF6600>表格</font></strong></h2><p>表格的基本語法如下，第一列是表格的標題列，然後第二列固定要是以 <code>---</code> 做區隔，加欄位都是使用 <code>|</code> 來添加。注意表格的每欄寬度會<strong>自動分配</strong>，所以可以忽略一切的空格(也就是每列的 <code>|</code> <strong>沒有對齊也沒關係</strong>，且加多少空格也不會影響每欄的寬度)。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">| Column 1 | Column 2 | Column 3 |</span><br><span class="line">| -------- | -------- | -------- |</span><br><span class="line">| Text1 | Text2 | Text3 |</span><br><span class="line">| Text4    | Text5    | Text6    |</span><br></pre></td></tr></table></figure>
+
+<p>其結果顯示如下：</p>
+<table>
+<thead>
+<tr>
+<th align="left">Column 1</th>
+<th align="left">Column 2</th>
+<th align="left">Column 3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Text1</td>
+<td align="left">Text2</td>
+<td align="left">Text3</td>
+</tr>
+<tr>
+<td align="left">Text4</td>
+<td align="left">Text5</td>
+<td align="left">Text6</td>
+</tr>
+</tbody></table>
+<p>而每欄可以決定要如何對齊，對齊方式取決於第二列的 <code>---</code>，再加上 <code>:</code> 符號：</p>
+<ul>
+<li><code>:---</code> 靠左對齊。</li>
+<li><code>---:</code> 靠右對齊。</li>
+<li><code>:---:</code> 置中對齊。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">| 預設對齊 | 靠左對齊 | 靠右對齊 | 置中對齊 |</span><br><span class="line">| ----- | :----- | -----: | :-----: |</span><br><span class="line">| Text1 | Text2 | Text3 | Text4 |</span><br><span class="line">| Text5 | Text6 | Text7 | Text8 |</span><br><span class="line">| Text9 | Text10 | Text11 | Text12 |</span><br></pre></td></tr></table></figure>
+
+<p>其結果顯示如下：</p>
+<table>
+<thead>
+<tr>
+<th align="left">預設對齊</th>
+<th align="left">靠左對齊</th>
+<th align="left">靠右對齊</th>
+<th align="left">置中對齊</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Text1</td>
+<td align="left">Text2</td>
+<td align="left">Text3</td>
+<td align="left">Text4</td>
+</tr>
+<tr>
+<td align="left">Text5</td>
+<td align="left">Text6</td>
+<td align="left">Text7</td>
+<td align="left">Text8</td>
+</tr>
+<tr>
+<td align="left">Text9</td>
+<td align="left">Text10</td>
+<td align="left">Text11</td>
+<td align="left">Text12</td>
+</tr>
+</tbody></table>
+<h1 id="注意事項"><a href="#注意事項" class="headerlink" title="注意事項 "></a><font color=#0000FF><strong>注意事項</strong> </font></h1><ul>
+<li>某些語法的外觀樣式如：引用、分隔線、項目符號等，<font color=#800080>會因為使用者套用的 Hexo 主題而有不同</font>。</li>
+<li>圖片可以放在 Hexo 資料夾一併上傳到 GitHub，例如圖片 123.jpg 放到 <strong>myblog/source/images</strong> 路徑下，然後圖片語法連結的地方輸入 <strong>/images/123.jpg</strong> ，就會顯示該圖片。<br>不過這種方法<strong>作者不建議</strong>(<font color=#800080>也就是不建議把 GitHub 當作圖床用</font>)，因為當文章一多，會有機會達到 GitHub Pages 的使用限制；因此可以搜尋各大免費圖床來使用，如 <a href="https://imgur.com/">Imgur</a>, <a href="https://upload.cc/">Upload.cc</a> 等。</li>
+<li><strong>HTML 語法盡量包在 Markdown 語法裡面</strong>，否則可能會造成一些顯示上的錯誤，舉例如下：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">語法撰寫範例一：將「今天天氣真好。」顯示粗體並更改為紅色</span><br><span class="line">**&lt;font color&#x3D;#FF0000&gt;今天天氣真好。&lt;&#x2F;font&gt;**</span><br><span class="line"></span><br><span class="line">語法撰寫範例二：將「Title」設定成等級一標題並更改為藍色</span><br><span class="line"># &lt;font color&#x3D;#0000FF&gt;Title&lt;&#x2F;font&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>呈上，因為 HTML 語法和 Markdown 語法交錯使用，在 hexo-admin 文章後台的編輯區和預覽區可能會有顯示問題，請先 publish 後，以 <strong>localhost 的文章頁面顯示為準</strong>。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Hexo 部落格</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>為甚麼我使用 Github Pages及 Hexo 搭建我的部落格</title>
+    <url>/why-use-hexo/</url>
+    <content><![CDATA[<h2 id="為什麼用-Github-Pages"><a href="#為什麼用-Github-Pages" class="headerlink" title="為什麼用 Github Pages"></a>為什麼用 Github Pages</h2><p>Github Pages的好處就是  網頁是建構在Github上的，所以一鍵部署及我不用額外租主機來架很省錢，沒辦法，學生就是窮 (汗顏 )    。</p>
+<p>但 GH Pages 的缺點就是只能架靜態網站，所以會員系統這種動態網站就沒辦法架了，但對於部落格這種簡單的網頁還是綽綽有餘的。</p>
+<a id="more"></a>
+
+<h2 id="為什麼用hexo"><a href="#為什麼用hexo" class="headerlink" title="為什麼用hexo"></a>為什麼用hexo</h2><p>以前都是直接在 Facebook 上寫文章，一直也是斷斷續續的。<br>後來自己買了個Godaddy一直想搞個自己的部落格，但懶的弄前端.就一直沒搞＝＝<br>現在看國內外大佬們部落格都是這種模板，才知道用的都是hexo生成的<br>不得不說真的很好用ㄏㄏ</p>
+<h2 id="hexo-git-安裝"><a href="#hexo-git-安裝" class="headerlink" title="hexo git 安裝"></a>hexo git 安裝</h2><p>hexo git 的安裝指南google一下有很多，而且在這篇介紹的話篇幅會過長，咱們下一篇再來介紹。</p>
+<h2 id="hexo-markdown的使用"><a href="#hexo-markdown的使用" class="headerlink" title="hexo markdown的使用"></a>hexo markdown的使用</h2><p>在github上建好部落格，能夠正常的訪問，第一步總算是完成了，接下來就是寫部落格</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">hexo new &quot;new article&quot;</span><br></pre></td></tr></table></figure>
+
+<p>創建部落格，在source/_posts/目錄下看到新建的new article.md</p>
+<p>我這邊編輯 markdown的編輯器是使用 <a href="https://typora.io/">Typora</a> ，非常直觀且易讀，推薦給大家使用，至於怎麼在本機端直接上傳圖片，我們之後來介紹給大家。</p>
+]]></content>
+      <categories>
+        <category>Hexo 部落格</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Typora 免費 Markdown 編輯器，直觀又簡約</title>
+    <url>/typora/</url>
+    <content><![CDATA[<p>之前跟大家有提到，Hexo 的語法是使用 Markdown ，而有編輯過 Markdown的人就知道其實他的語法不是非常直觀的，很多語法編輯出來跟顯示出來是完全不一樣的，而今天要跟大家介紹我最近在使用的Markdown編輯器 - <a href="https://typora.io/">Typora</a> ，他則是一款非常直觀又簡約風格的編輯器，重點是還<u><strong>免費</strong></u> 。 </p>
+<a id="more"></a>
+
+<p><img src="https://i.loli.net/2021/03/24/b6RwTEeNsG3kv72.png" alt="Typora示意圖"></p>
+<h2 id="軟體資訊"><a href="#軟體資訊" class="headerlink" title="軟體資訊"></a><strong>軟體資訊</strong></h2><blockquote>
+<p>軟體名稱：<strong>Typora</strong><br>軟體語系：英文、繁體中文<br>作業系統：Mac OS X，Windows、Linux<br>官方網站：<a href="https://typora.io/">http://typora.io/</a><br>軟體下載：<a href="https://typora.io/#download">官方網站下載</a></p>
+</blockquote>
+<p>Typora 主要特色是<strong>畫面非常簡潔、乾淨，能讓你專注於寫作或編寫程式。</strong>同時它也具備<strong>所見即所得</strong>特性（What You See Is What You Get），無須切換預覽模式，就能夠直接在應用程式裡顯示樣式或效果。</p>
+<p>Typora 提供閱讀者及創作者一個完美的體驗。沒有預覽視窗、切換模式、語法符號或原始碼等不必要的元素，避免分心，讓你的專注力能集中於當前的創作上。</p>
+<p>Typora 對於 Markdown 也就是 Md 格式支援良好，可在編輯器內快速插入圖片、項目清單、表格、程式碼、數學符號以及其他常用格式，跟其他類似編輯器一樣，Typora 也內建多種不同的佈景主題配色，讓你可以挑選最合適、舒服的閱讀色彩。</p>
+<h2 id="使用教學"><a href="#使用教學" class="headerlink" title="使用教學"></a>使用教學</h2><h2 id="STEP-1"><a href="#STEP-1" class="headerlink" title="STEP 1"></a>STEP 1</h2><p>開啟 Typora 官方網站，點選右上角的「<strong>Download</strong>」可以找到下載鏈結，當前 OS X 版本正在測試階段，可在 10.13.4 或更新版本使用，Windows 和 Linux 測試版則可自行選用。</p>
+<p><img src="https://i.loli.net/2021/03/24/YWs7c53huMGpUHT.png" alt="Typora官網"></p>
+<h2 id="STEP-2"><a href="#STEP-2" class="headerlink" title="STEP 2"></a>STEP 2</h2><p>Typora 除了把檔案儲存為 Md 格式外，也能夠匯出成 PDF 、 HTML 或 word 等檔案。</p>
+<p><img src="https://i.loli.net/2021/03/24/yZHkb2BFocj1CwK.png"></p>
+<blockquote>
+<p><strong>優點</strong></p>
+<ol>
+<li>可自由寫作、無干擾、即時預覽的免費 Markdown 編輯器</li>
+<li>內建小而強大的 Markdown 編輯工具</li>
+<li>透過 CSS 切換自訂佈景主題，內建六種樣式</li>
+</ol>
+</blockquote>
+]]></content>
+      <categories>
+        <category>軟體介紹</category>
+      </categories>
+      <tags>
+        <tag>軟體介紹</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PTT Code_job 文章訂閱通知</title>
+    <url>/crawler-ptt-codejob/</url>
+    <content><![CDATA[<p>在學程式設計一段時間，漸漸會碰到一個技術 - 網路爬蟲 ，爬蟲是個既好學又難學的東西，只要你搞懂了網頁的架構邏輯，那要爬任何網站還不是分分鐘的事情？今天我們先從簡單的爬蟲開始教學。</p>
+<a id="more"></a>
+
+<h2 id="緣由"><a href="#緣由" class="headerlink" title="緣由"></a>緣由</h2><p>作者除了是資工系學生以外，平時也常常在網路上接案貼補家用。但小弟我生性害羞，個人不太敢去網路上求案，所以通常都是在 Facebook社團 及 ptt code_job版上找case來做。雖然現在不少人會在 Tasker之類的網站接案，但那多都需要付費成為會員才能接案，所以並不在我們窮學生的選項內。</p>
+<p>而時間就是金錢，常常有人在板上發一些我有興趣或我有能力吃下的案子，但因為我總是太慢才看到，所以往往多變成「洽談中」或「已發案」的狀態了。所以前陣子就寫了一個小程式，每過一段時間就檢查有沒有符合我篩選後關鍵字的案子，有的話 Line Bot 就會自動傳訊息給我，從此之後，我就過著數錢數到手軟的生活 ( 但很可惜並沒有發生 )。</p>
+<h2 id="走訪探查"><a href="#走訪探查" class="headerlink" title="走訪探查"></a>走訪探查</h2><p>要逛ptt 基本上就是開cmd走 telnet，但小弟不才，所以那部分就沒有涉獵了，不知道要怎麼從telnet的渠道去爬蟲，好在 ptt 有網頁版，完美解決我們的問題。<img src="https://i.loli.net/2021/03/24/G1aVMyzfv3AgrkH.gif"></p>
+<p>Code_job 版網址是 <a href="https://www.ptt.cc/bbs/CodeJob/index.html">https://www.ptt.cc/bbs/CodeJob/index.html</a> ，看起來挺容易爬的，雖然有分頁，但 index 預設就是最新的。</p>
+<h3 id="尋找方法"><a href="#尋找方法" class="headerlink" title="尋找方法"></a>尋找方法</h3><p>那讓我們思考一下，我如何才能取得最新的文章呢？把公告濾掉，然後直接抓最後一篇或許是個直覺的方法，但考量到可能新發案會突然短時間發出兩、三篇，所以這個方式並不是個完美的方法。</p>
+<p>接著又想，若我能去記錄上一次爬蟲拿到的最後一篇文章，就能知道這次爬蟲新抓取的篇數。這樣確實可行，但不直觀，至少我要有個地方去記錄上次文章，要嘛就是 database，要嘛就是存 file，兩種都還要額外的地方去處理。</p>
+<p>然後再想，若上面有時間的話，那我可以去比對時間，例如爬蟲五分鐘爬一次，那我就能去算五分鐘內生成的文章有多少。但事情看起來沒那麼簡單，畫面上只有日期，日期範圍又太大了。</p>
+<h3 id="觀察物件"><a href="#觀察物件" class="headerlink" title="觀察物件"></a>觀察物件</h3><p><img src="https://i.loli.net/2021/03/25/pc2HxeFWXRfhD8Q.gif"></p>
+<p>持續觀察上面有的物件，突然瞄到一個有趣的東西，文章的連結。這個連結中，有一個 10 位數又 16 開頭的數字，憑著上學期國川教的東西，這肯定就是 timestamp。</p>
+<p><img src="https://i.loli.net/2021/03/25/9qtKiWvnVpedSMG.gif"></p>
+<h1 id="分解研究"><a href="#分解研究" class="headerlink" title="分解研究"></a>分解研究</h1><p>我們把動作分解成幾個：</p>
+<ol>
+<li>抓取網頁</li>
+<li>將文章列表抓出</li>
+<li>filter 5 分鐘內的文章</li>
+</ol>
+<p><img src="https://i.imgur.com/OIqTxF1.gif"></p>
+<p>想看看我 Javascript執行效果的人，可以參考下面這段程式碼。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">$(<span class="string">&#x27;.r-ent a&#x27;</span>).map(<span class="function">(<span class="params">index, obj</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        title: $(obj).text(),</span><br><span class="line">        link: $(obj).attr(<span class="string">&quot;href&quot;</span>),</span><br><span class="line">        timestamp: $(obj).attr(<span class="string">&#x27;href&#x27;</span>).substr(<span class="number">16.10</span>), </span><br><span class="line">        &#125; </span><br><span class="line">    &#125;).get()</span><br></pre></td></tr></table></figure>
+
+<p>因為單純是 get request，我想應該也沒有研究的必要了XDDD，就直接來研究抓取 dom 就可以了。確認可以抓到文章列表，那剩下的就是 filter 的事情了。</p>
+<h1 id="實作程式碼"><a href="#實作程式碼" class="headerlink" title="實作程式碼"></a>實作程式碼</h1><h3 id="Define-抓取時間"><a href="#Define-抓取時間" class="headerlink" title="Define 抓取時間"></a>Define 抓取時間</h3><p>先定義 一個 crontab 會抓取的時間數值</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> CrontabPeriod = <span class="number">60</span> * <span class="number">60</span> * <span class="number">24</span> * <span class="number">1</span> <span class="comment">// 先預設1天做測試，完成後再改回五分鐘</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="取得文章列表"><a href="#取得文章列表" class="headerlink" title="取得文章列表"></a>取得文章列表</h3><p>然後直接用 request 來抓取 code_job 版，然後再把文章 list 抓出來</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">request(<span class="string">&#x27;https://www.ptt.cc/bbs/CodeJob/index.html&#x27;</span>, <span class="function">(<span class="params">err, res, body</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">var</span> $ = cheerio.load(body)</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 抓取文章列表</span></span><br><span class="line">  <span class="keyword">var</span> list = $(<span class="string">&#x27;.r-ent a&#x27;</span>).map(<span class="function">(<span class="params">index, obj</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      title: $(obj).text(),</span><br><span class="line">      link: $(obj).attr(<span class="string">&#x27;href&#x27;</span>),</span><br><span class="line">      timestamp: $(obj).attr(<span class="string">&#x27;href&#x27;</span>).substr(<span class="number">15</span>, <span class="number">10</span>),</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;).get()</span><br><span class="line">  <span class="built_in">console</span>.log(list);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="filter"><a href="#filter" class="headerlink" title="filter"></a>filter</h3><p>最後加入 timestamp 的 filter</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// filter 時間</span></span><br><span class="line">list = list.filter(<span class="function">(<span class="params">post</span>)=&gt;</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> post.timestamp &gt; (<span class="built_in">Date</span>.now() / <span class="number">1000</span> - CrontabPeriod)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="完整程式碼"><a href="#完整程式碼" class="headerlink" title="完整程式碼"></a>完整程式碼</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> request = <span class="built_in">require</span>(<span class="string">&#x27;request&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> cheerio = <span class="built_in">require</span>(<span class="string">&#x27;cheerio&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> CrontabPeriod = <span class="number">60</span> * <span class="number">5</span> <span class="comment">// 五分鐘抓一次</span></span><br><span class="line"></span><br><span class="line">request(<span class="string">&#x27;https://www.ptt.cc/bbs/CodeJob/index.html&#x27;</span>, <span class="function">(<span class="params">err, res, body</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">var</span> $ = cheerio.load(body)</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 抓取文章列表</span></span><br><span class="line">  <span class="keyword">var</span> list = $(<span class="string">&#x27;.r-ent a&#x27;</span>).map(<span class="function">(<span class="params">index, obj</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      title: $(obj).text(),</span><br><span class="line">      link: $(obj).attr(<span class="string">&#x27;href&#x27;</span>),</span><br><span class="line">      timestamp: $(obj).attr(<span class="string">&#x27;href&#x27;</span>).substr(<span class="number">15</span>, <span class="number">10</span>),</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;).get()</span><br><span class="line"></span><br><span class="line">  <span class="comment">// filter 時間</span></span><br><span class="line">  list = list.filter(<span class="function">(<span class="params">post</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> post.timestamp &gt; (<span class="built_in">Date</span>.now() / <span class="number">1000</span> - CrontabPeriod)</span><br><span class="line">  &#125;)</span><br><span class="line"></span><br><span class="line">  <span class="built_in">console</span>.log(list);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h1 id="衍伸應用"><a href="#衍伸應用" class="headerlink" title="衍伸應用"></a>衍伸應用</h1><p>我們可以透過 crontab 來設定每五分鐘 trigger 一次，同時加上 heroku webhook 來達到自動通知，bot的部分我們可以選用 Line bot 或 Telegram bot會比較好上手。</p>
+<p>其實爬蟲並不是要多厲害的技術，而真正有價值的是在於解決問題和省下時間。像是這次介紹的 ptt code_job 主動發文通知，就是一種很簡單，實作不困難，但卻能為我們省下許多的時間。</p>
+]]></content>
+      <categories>
+        <category>教學</category>
+      </categories>
+      <tags>
+        <tag>教學</tag>
+        <tag>爬蟲</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何使用 Hexo + GitHub Pages 架設部落格</title>
+    <url>/hexo-git/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本篇主要介紹如何使用 Hexo 並搭配 GitHub 來快速架設網誌。從介紹什麼是 Hexo 框架，該如何安裝、建立環境，接著介紹一些常用指令，以及如何部署到 GitHub 上。</p>
+<a id="more"></a>
+
+<p>文章可分為下列幾個部分：</p>
+<ul>
+<li>什麼是 Hexo？</li>
+<li>前置作業<ul>
+<li>安裝需求</li>
+</ul>
+</li>
+<li>Hexo 環境建置</li>
+<li>常用指令</li>
+<li>部署到 GitHub<ul>
+<li>建立 GitHub 專案</li>
+<li>將檔案發布到 GitHub</li>
+</ul>
+</li>
+</ul>
+<h2 id="什麼是-Hexo？"><a href="#什麼是-Hexo？" class="headerlink" title="什麼是 Hexo？"></a>什麼是 Hexo？</h2><blockquote>
+<p>引用<a href="https://github.com/hexojs/hexo">官網介紹</a>：A fast, simple &amp; powerful blog framework, powered by Node.js.</p>
+</blockquote>
+<p><a href="https://hexo.io/zh-tw/">Hexo</a> 其實就是一個基於 Node.js 開發的網誌框架，具有下列幾項特點：</p>
+<ul>
+<li>編譯速度非常快</li>
+<li>能夠支援 Markdown 語法解析文章，並透過主題渲染靜態檔案</li>
+<li>具有豐富的外掛套件</li>
+<li>支援一鍵部署到 GitHub Pages 或 Heroku 等支援靜態網頁的空間</li>
+</ul>
+<h2 id="前置作業"><a href="#前置作業" class="headerlink" title="前置作業"></a>前置作業</h2><h3 id="安裝需求"><a href="#安裝需求" class="headerlink" title="安裝需求"></a>安裝需求</h3><p>在開始安裝 Hexo 之前，必須先在電腦安裝下列工具：</p>
+<ul>
+<li><h4 id="Node-js：提供-npm-來安裝所需的套件。這裡可選擇安裝左側-14-16-0-LTS-版本"><a href="#Node-js：提供-npm-來安裝所需的套件。這裡可選擇安裝左側-14-16-0-LTS-版本" class="headerlink" title="Node.js：提供 npm 來安裝所需的套件。這裡可選擇安裝左側 14.16.0 LTS 版本"></a><a href="https://nodejs.org/en/">Node.js</a>：提供 npm 來安裝所需的套件。這裡可選擇安裝左側 14.16.0 LTS 版本</h4></li>
+</ul>
+<blockquote>
+<p>Hexo 官網建議使用 Node.js 10.0 及以上版本，若不確定下載哪個版本，可在終端機輸入 <code>npm versin</code> 查看版本號。</p>
+</blockquote>
+<p><img src="https://i.loli.net/2021/03/25/VmRfF23iavugDAw.png"></p>
+<ul>
+<li><h4 id="Git：用來將檔案發布到-GitHub-Page"><a href="#Git：用來將檔案發布到-GitHub-Page" class="headerlink" title="Git：用來將檔案發布到 GitHub Page"></a><a href="https://git-scm.com/">Git</a>：用來將檔案發布到 GitHub Page</h4></li>
+</ul>
+<p><img src="https://i.loli.net/2021/03/25/q3NSDMxYzvVR9Ff.png"></p>
+<h2 id="Hexo-環境建置"><a href="#Hexo-環境建置" class="headerlink" title="Hexo 環境建置"></a>Hexo 環境建置</h2><p>完成前置作業後，接著就要來建立 Hexo 環境，步驟如下：</p>
+<blockquote>
+<p>若對 CLI 不熟悉，可參考：Command Line 入門 &amp; 基本指令</p>
+</blockquote>
+<h3 id="Step1-安裝-Hexo"><a href="#Step1-安裝-Hexo" class="headerlink" title="Step1. 安裝 Hexo"></a>Step1. 安裝 Hexo</h3><p><img src="https://i.loli.net/2021/03/25/FmozyeT9AnMaHP1.png"></p>
+<p>開啟 CLI 介面（例如 cmd、git-bash 等終端機），並輸入下列指令安裝 Hexo：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2021/03/25/NQj4z1pdt2VBHrs.png"></p>
+<p>安裝完後，可輸入 <code>hexo version</code> 或 <code>hexo -v</code> 查看 Hexo 版本，確認是否有安裝成功：</p>
+<p><img src="https://i.loli.net/2021/03/25/1e2a3U68gdVGbju.png"></p>
+<h3 id="Step2-初始化-Hexo"><a href="#Step2-初始化-Hexo" class="headerlink" title="Step2. 初始化 Hexo"></a>Step2. 初始化 Hexo</h3><p>接著要初始化 Hexo，這裡有兩種做法：</p>
+<ol>
+<li>直接輸入下面指令，會自動於所在目錄建立一個新資料夾以操作 Hexo。記得將括號內修改成自己的資料夾名稱，若不指定資料夾名稱，則會直接初始化當前目錄：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo init &lt;資料夾名稱&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2021/03/25/lsItXzkNq7WSAFM.png"></p>
+<ol>
+<li>也可以先建立好資料夾，並在該資料夾輸入上述指令，同樣能進行初始化。可使用 cd 指令來切換路徑：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd &lt;資料夾名稱 or 資料夾路徑&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2021/03/25/qC9bK3YujxiXvnB.png"></p>
+<h3 id="Step3-在資料夾安裝所需檔案"><a href="#Step3-在資料夾安裝所需檔案" class="headerlink" title="Step3. 在資料夾安裝所需檔案"></a>Step3. 在資料夾安裝所需檔案</h3><p>確認 CLI 上的路徑是在資料夾中，接著執行下列指令，安裝所需的 npm 套件：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>也可以直接在資料夾目錄輸入 cmd，按下 enter 後就會在這個路徑開啟終端機。</p>
+</blockquote>
+<p>安裝完成後，進入資料夾會看到下方這些檔案和資料夾：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
+
+<h4 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h4><ul>
+<li>有關網站配置的檔案，可修改各種配置設定。例如：網站標題、網站的網址、使用主題名稱等等</li>
+<li>詳細內容可以參考<a href="https://hexo.io/zh-tw/docs/configuration">官方文件</a></li>
+</ul>
+<h4 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h4><p>記錄所有載入的應用程式資料，也就是專案中需要的所有模組。</p>
+<h4 id="scaffolds-模板"><a href="#scaffolds-模板" class="headerlink" title="scaffolds 模板"></a>scaffolds 模板</h4><ul>
+<li>當我們建立新文章時，Hexo 會根據 scaffolds 中的模板建立相對應的檔案</li>
+<li>資料夾中有三種預設<a href="https://hexo.io/zh-tw/docs/writing.html">佈局</a>：post、page 和 draft，分別對應：要發布的文章、頁面、草稿</li>
+</ul>
+<h4 id="themes-主題"><a href="#themes-主題" class="headerlink" title="themes 主題"></a>themes 主題</h4><ul>
+<li>用來存放主題的資料夾</li>
+<li>Hexo 會根據主題來解析 scouce 資料夾中的檔案並產生靜態頁面。預設主題為 <a href="https://github.com/hexojs/hexo-theme-landscape">landscape</a></li>
+</ul>
+<h4 id="source-資源"><a href="#source-資源" class="headerlink" title="source 資源"></a>source 資源</h4><ul>
+<li>用來存放原始檔案的地方，例如 Markdown 檔、圖片、各種頁面（分頁、關於等）</li>
+<li>通常資料夾命名開頭會加上底線 <code>_</code>，例如 <code>_imgs</code></li>
+<li>以 <code>_</code> 開頭的檔案、資料夾或隱藏檔案會被忽略，除了 <code>_posts</code> 資料夾以外</li>
+<li>Markdown 檔和 HTML 檔會被解析，並放到 public 資料夾，而其他檔案則會被拷貝過去</li>
+</ul>
+<h4 id="source-amp-public-amp-deploy-git-的差別"><a href="#source-amp-public-amp-deploy-git-的差別" class="headerlink" title="source &amp; public &amp; .deploy_git 的差別"></a>source &amp; public &amp; .deploy_git 的差別</h4><ul>
+<li>執行 <code>$ hexo generate</code> 之後，會將 scorce 文件夾中的 Markdown 檔和 HTML 檔進行解析，再結合主題進行渲染，生成我們看到的靜態網站</li>
+<li>執行 <code>$ hexo deploy</code> 之後，則會將 public 文件夾中的內容部署到 GitHub，並生成 .deploy_git 資料夾，因此內容與 public 幾乎相同</li>
+<li>這三者的關係可想成：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">source -&gt; public -&gt; .deploy_git</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h2><p>接著介紹一些 Hexo 常會用到的相關指令語法，更多詳細指令可參考<a href="https://hexo.io/zh-tw/docs/commands">官方文件</a>。</p>
+<h3 id="new-新增文章"><a href="#new-新增文章" class="headerlink" title="new 新增文章"></a>new 新增文章</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new post &lt;title&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>如果標題有包含空格，需使用引號括住，例如<code>&quot; title&quot;</code></li>
+<li>接著可直接到 <code>/source/_posts/title.md</code> 中編輯文章內容</li>
+<li>檔案名稱盡量以英文命名，避免出現亂碼</li>
+</ul>
+<blockquote>
+<p>若是對 Markdown 相關語法不熟悉，可參考這篇筆記：<a href="https://hhk.one/2021/03/23/hexo-markdown/">Markdown 格式介紹</a></p>
+</blockquote>
+<h3 id="clean-清除靜態檔案與快取"><a href="#clean-清除靜態檔案與快取" class="headerlink" title="clean 清除靜態檔案與快取"></a>clean 清除靜態檔案與快取</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+
+<p>在每次儲存修正後的檔案之前，會建議先輸入此指令，清除快取檔案 （db.json）和已產生的靜態檔案（public）。</p>
+<h3 id="generate-產生靜態檔案"><a href="#generate-產生靜態檔案" class="headerlink" title="generate 產生靜態檔案"></a>generate 產生靜態檔案</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>可簡寫成 <code>hexo g</code>，生成靜態檔案。</p>
+<h3 id="server-啟動伺服器"><a href="#server-啟動伺服器" class="headerlink" title="server 啟動伺服器"></a>server 啟動伺服器</h3><ul>
+<li>在本地端啟動 Hexo 伺服器，預設路徑為：<code>http://localhost:4000/</code></li>
+<li>可在自己電腦上預覽設定結果，按 Ctrl + C 即可關閉</li>
+</ul>
+<blockquote>
+<p>localhost：代表只能從本地瀏覽此網站，無法從外部瀏覽</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<p>可簡寫成 <code>hexo s</code></p>
+<p><img src="https://i.loli.net/2021/03/25/WcfavZCA5ltITuY.png"></p>
+<h2 id="部署到-GitHub"><a href="#部署到-GitHub" class="headerlink" title="部署到 GitHub"></a>部署到 GitHub</h2><h3 id="建立-GitHub-專案"><a href="#建立-GitHub-專案" class="headerlink" title="建立 GitHub 專案"></a>建立 GitHub 專案</h3><p>在架設網誌之前，還必須準備一個存放網站的空間，例如架設主機，或是選擇現有的平台，例如 GitHub Pages 或 Heroku 等，本篇以 GitHub 作為範例。</p>
+<p>接著可依照下列步驟在 GitHub 新增專案：</p>
+<h4 id="Step1-註冊-GitHub-帳號並登入"><a href="#Step1-註冊-GitHub-帳號並登入" class="headerlink" title="Step1. 註冊 GitHub 帳號並登入"></a>Step1. 註冊 <a href="https://github.com/">GitHub</a> 帳號並登入</h4><h4 id="Step2-點選-New-新增一個-Repository（專案）"><a href="#Step2-點選-New-新增一個-Repository（專案）" class="headerlink" title="Step2. 點選 New 新增一個 Repository（專案）"></a>Step2. 點選 New 新增一個 Repository（專案）</h4><p><img src="https://i.loli.net/2021/03/25/JvsiS43cBn7bFZw.png"></p>
+<h4 id="Step3-將專案名稱命名為-username-github-io，username-記得改成自己的帳號名稱"><a href="#Step3-將專案名稱命名為-username-github-io，username-記得改成自己的帳號名稱" class="headerlink" title="Step3. 將專案名稱命名為 username.github.io，username 記得改成自己的帳號名稱"></a>Step3. 將專案名稱命名為 <code>username.github.io</code>，username 記得改成自己的帳號名稱</h4><p><img src="https://i.loli.net/2021/03/25/Tda6HWPFlDNKMSf.png"></p>
+<p>這樣就成功建立了一個網域：<code>username.github.io</code></p>
+<h3 id="將檔案發布到-GitHub"><a href="#將檔案發布到-GitHub" class="headerlink" title="將檔案發布到 GitHub"></a>將檔案發布到 GitHub</h3><h4 id="Step1-安裝-Git-相關套件"><a href="#Step1-安裝-Git-相關套件" class="headerlink" title="Step1. 安裝 Git 相關套件"></a>Step1. 安裝 Git 相關套件</h4><p>回到 hexo 資料夾，在終端機輸入下列指令安裝部署所需套件：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<h4 id="Step2-修改-config-yml-檔案的-Deployment-設定"><a href="#Step2-修改-config-yml-檔案的-Deployment-設定" class="headerlink" title="Step2. 修改 _config.yml 檔案的 Deployment 設定"></a>Step2. 修改 _config.yml 檔案的 Deployment 設定</h4><p>接著是修改 _config.yml 設定檔中，有關 deploy 的設定。</p>
+<blockquote>
+<p>需注意這裡指的 _config.yml 檔案是根目錄的，而不是 themes 主題中的。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;username&#x2F;username.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>type：選擇部屬模式，這裡填 git</li>
+<li>repo：GitHub repository 的連結，記得將 username 修改成自己的帳號名稱</li>
+<li>branch：選擇分支，預設為 master</li>
+</ul>
+<p><img src="https://i.loli.net/2021/03/25/j8HONvCiuUlsx13.png"></p>
+<h4 id="Step3-輸入部署指令"><a href="#Step3-輸入部署指令" class="headerlink" title="Step3. 輸入部署指令"></a>Step3. 輸入部署指令</h4><p>使用下列指令即可部署檔案到網站上，第一次輸入可能會要求登入 GitHub 帳號：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>通常在完成每次修改後，會依序輸入 clean -&gt; generate -&gt; deploy 三行指令，避免更新不完全：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo cl    &#x2F;&#x2F; 清除之前建立的靜態檔案</span><br><span class="line">hexo g     &#x2F;&#x2F; 建立靜態頁面</span><br><span class="line">hexo d     &#x2F;&#x2F; 部署至 GitHub</span><br></pre></td></tr></table></figure>
+
+<p>或是合併第二、三行指令：<code>hexo g -d</code> 即可在產生靜態頁面後立刻部署。</p>
+<p>這樣就完成部署網誌到 GitHub 了！可在個人頁面 <code>https://username.github.io</code> 確認是否有發布成功，預設畫面如下：</p>
+<p><img src="https://i.loli.net/2021/03/25/IEUTxA3uLGJscfY.png"></p>
+<hr>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>這篇算是簡單介紹了 Hexo 的安裝過程，整體來說不難，照著步驟一步一步操作，基本上是沒問題的。Hexo 的主題及插件非常之多，大家可以多多去玩看看。之後找時間再整理一篇關於更換主題，及我在過程中遇到的問題之之後的解法。</p>
+<p>參考資料：</p>
+<ul>
+<li><a href="https://ed521.github.io/2019/07/hexo-install/">架設 Hexo+GitHub</a></li>
+<li><a href="https://blackmaple.me/hexo-tutorial/">Hexo+GitHub，新手也可以快速建立部落格</a></li>
+<li><a href="http://shenzekun.cn/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.html">hexo的next主题个性化教程:打造炫酷网站</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Hexo 部落格</category>
+      </categories>
+      <tags>
+        <tag>教學</tag>
+        <tag>Hexo 部落格</tag>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>從文組生到闖進資服競賽全國前三名 - 24屆 Innoserve競賽全紀錄</title>
+    <url>/innoserve/</url>
+    <content><![CDATA[<p>Innoserve大專校院資訊應用服務創新競賽，是由資管學會所舉辦之全國性軟體開發競賽，最初是每年均由各校資管學系從參與專題課程之隊伍中，遴選出代表隊來進行校際比賽。而我們，一群高中生，文組(我)+理組的散打隊就這樣來闖了。</p>
+<a id="more"></a>
+
+<h1 id="緣由"><a href="#緣由" class="headerlink" title="緣由"></a>緣由</h1><p>這要追溯到四年前，2017年，我剛上高中，選擇的是文組班，在一般人的眼中，文組班是跟程式設計沒有關聯的。而我，其實剛從國中畢業的我，國中時期待的是程式設計專班出身的，國中三年都在專科大樓獨棟，每日訓練日復一日，但最終我選擇文組班，只因為我的自然領域非常之爛。</p>
+<p>開學後2個月，學校開了一個3D列印及Arduino的課程，在當天我的表現是比其他學生算是比較突出的，所以下課後就被那時候原先的隊友 - 丁丁找上，丁丁跟我認識熟後，把我拉進團隊的群組，介紹我認識了隊長 - 曹曹，至此開始了密集的篩選及訓練。</p>
+<p><img src="https://i.loli.net/2021/03/25/4RmvCuJYFWTgQk7.jpg" alt="科技天燈"></p>
+<h1 id="篩選"><a href="#篩選" class="headerlink" title="篩選"></a>篩選</h1><p>過了三個月，丁丁拉了他們班同學及女友 - Abby 進來，首先我們面對到的就是隊長的第一次篩選人，其實題目並不難，對於我們這種碰過三年以上程式設計的人，只要有觀念在，就可以寫出來了。但丁丁他們班雖然是AI專班，但他們班其實大多不會寫程式，他們班只要有錢就進得去，得獎的比賽，主辦單位也都是學校的附屬基金會所辦的。</p>
+<p><img src="https://i.loli.net/2021/03/25/rUvfouH41Vn9DJB.png" alt="曹曹好狠"></p>
+<p>很明顯的專班的人最終被隊長踢掉了，只剩丁丁和他女友，之後加入了隊長他們班同學。</p>
+<h1 id="爭鬥"><a href="#爭鬥" class="headerlink" title="爭鬥"></a>爭鬥</h1><p>那時，隊長拉了一個比賽認識的人進來，結果喧賓奪主，把曹曹的隊長職位奪走，然後整個題目改變，踢掉大家，拿著我們已有的基礎自己創立了新隊伍。這時候的曹曹已經放棄了比賽。</p>
+<h1 id="再次相遇"><a href="#再次相遇" class="headerlink" title="再次相遇"></a>再次相遇</h1><p>到了2019年的夏天，我去私訊曹曹有沒有心想要重新組建隊伍，他跟我說「只要你找的到隊友，我就可以」，於是這支隊伍就這樣產生了 - 高中假日甜點隊。隊員有Abby、曹曹、我、冠文跟仔仔(從左至右排)。</p>
+<p><img src="https://i.loli.net/2021/03/25/E2VQvLZibHrwaSB.jpg" alt="Hackathon Taiwan Junior 5th合照"></p>
+<p>圖為 Hackathon Taiwan Junior 5th的時候拍的。</p>
+<h1 id="訓練"><a href="#訓練" class="headerlink" title="訓練"></a>訓練</h1><p>接下來2個月過著瘋狂訓練，寫code的生活，兼同時想主題，雖然很硬，但我們最終還是撐過來了。</p>
+<p>最終題目定調為「Housfor 租房提醒小幫手」及「AI Guardian 行車小幫手」，至於為甚麼是兩個呢，因為曹曹說多報幾個比較容易得獎。</p>
+<p>由於我負責整體文案撰寫、系統說明書和PM，所以我需要時時刻刻關注每個人的進度，這也使得我與大家的關係幾乎都是非常好。</p>
+<h1 id="趕工"><a href="#趕工" class="headerlink" title="趕工"></a>趕工</h1><p>其實要在半年內趕出兩個Project是非常硬的，所以那個時候，我們天天從桃園往三重跑，去冠文家的會議室討論及工作，每天從早8趕到12點，每次都趕台鐵最後一班區間車回家。</p>
+<p>後來漸漸的發現技術上的問題，於是我們開始學習如何使用selenium、怎麼寫Chrome extension、開始發現資金短缺，急急忙忙借了一台電腦開始train 我們的 module ，蒐集網路上坑洞的照片及手動人工在路面拍攝下雨天及晴天不同的樣貌，各種角度在我們訓練模型後，最終達到86.75%的準確率。</p>
+<p>學習opencv的確是件很難的事，但更難的事是我們必須從0開始，在沒有任何老師的協助下，我們一步一腳印，完成我們的夢。</p>
+<h1 id="初賽"><a href="#初賽" class="headerlink" title="初賽"></a>初賽</h1><p>初賽很簡單，只要準備 產品說明書、Powerpoint 及 影片介紹寄給<a href="https://innoserve.tca.org.tw/">主辦單位</a>一切就結束了，兩周後，很快的我們就得知我們進了決賽，報了既高興又需急忙趕工更完善我們的產品的心情，準備迎接 2019/11/06的挑戰。</p>
+<p>以下是我們當初提交出去的影片，第一個是「AI Guardian 行車小幫手」：</p>
+<p><a href="http://www.youtube.com/watch?v=y6QjbazqSvQ"><img src="http://img.youtube.com/vi/y6QjbazqSvQ/0.jpg"></a></p>
+<p>第二個是「Housfor 租房提醒小幫手」：</p>
+<p><a href="http://www.youtube.com/watch?v=s067jgvPZxM"><img src="http://img.youtube.com/vi/s067jgvPZxM/0.jpg"></a></p>
+<h1 id="決賽"><a href="#決賽" class="headerlink" title="決賽"></a>決賽</h1><p>很快地來到 11/6 ，一早就來到臺大體育館的我們，穿著西裝，努力的打理好自己，我們知道，此戰即終戰，努力背好報告內容，想辦法讓自己不要緊張，但看到現場幾千人的狀態下，我們還是感到很慌張。</p>
+<p>在上場前一刻，我看到了桃園虎頭山最近正在建設無人駕駛車園區的新聞，緊急跟仔仔說，把他插進我們報告的內容，沒想到教授真的很吃這個，加了不少分，因為我們講了一個連教授還不知道的消息。</p>
+<p>到了頒獎的時候，我們聽到我們的名字的時候，興奮到快哭了，因為大家其實都很沒信心，尤其是曹曹一直覺得他搞砸了一切，非常愧疚。最終我們獲得了「高中職組第二名」及「大桃園開放資料組第三名」。</p>
+<p><img src="https://i.loli.net/2021/03/25/RCWw9MT6msqgfS7.jpg"></p>
+<p><img src="https://i.loli.net/2021/03/25/C4KqdF1ib9LJQgD.jpg"></p>
+<h1 id="終語"><a href="#終語" class="headerlink" title="終語"></a>終語</h1><p>很高興最終能在94校808隊中脫穎而出，雖然在準備比賽這段時間我們家人並不支持我，直到我要去打決賽，需要買西裝時，他們才認真知道，我終於打出成功了。但這一路上，還是非常感謝班導在我一直請假過程中，幫我跟學校說話，感謝臺大資工系張傑帆老師在Python程式設計班認真教學，讓我用了不少技巧在這次比賽中，最感謝的還是我們隊友，互相扶持彼此，我們才能走到今天這一步。</p>
+<p>如果有機會，未來有一天，我們再團聚，希望可以再一次一起打比賽。</p>
+<p><img src="https://i.loli.net/2021/03/25/b5AhWvVf9zLYlKc.jpg"></p>
+]]></content>
+      <categories>
+        <category>資訊競賽</category>
+      </categories>
+      <tags>
+        <tag>經驗分享</tag>
+        <tag>資訊競賽</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo 全攻略 - 如何新增多個標籤及分類</title>
+    <url>/add-tags/</url>
+    <content><![CDATA[<p>本教程針對的是Windows環境下，Next主題的文章分類和標籤設置，其他主題也應該是類似的。添加成功後會在側邊欄或導航欄生成“分類”和“標籤”這兩個選項，看下圖：</p>
+<a id="more"></a>
+
+<p><img src="https://i.loli.net/2021/03/25/T9p28IBmJQCyPrj.png"></p>
+<p>點擊「分類」後的頁面：</p>
+<p><img src="https://i.loli.net/2021/03/25/7DUFadJQO3Z5Tks.png"></p>
+<p>點擊「標籤」後的頁面：</p>
+<p><img src="https://i.loli.net/2021/03/25/HdhS2Dj6aBvbGE5.png"></p>
+<h3 id="創建「分類」選項"><a href="#創建「分類」選項" class="headerlink" title="創建「分類」選項"></a>創建「分類」選項</h3><h4 id="生成「分類」頁並添加type屬性"><a href="#生成「分類」頁並添加type屬性" class="headerlink" title="生成「分類」頁並添加type屬性"></a>生成「分類」頁並添加type屬性</h4><p>打開命令行，進入博客所在文件夾。執行命令</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+
+<p>成功後會提示：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">INFO Created: ~&#x2F;Documents&#x2F;blog&#x2F;source&#x2F;categories&#x2F;index.md</span><br></pre></td></tr></table></figure>
+
+<p>根據上面的路徑，找到<code>index.md</code>這個文件，打開後默認內容是這樣的：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分類</span><br><span class="line">date: 2017-05-27 13:47:40</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>添加<code>type: &quot;categories&quot;</code>到內容中，添加後是這樣的：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分類</span><br><span class="line">date: 2017-05-27 13:47:40</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>保存並關閉文件。</p>
+<h4 id="給文章添加“categories”屬性"><a href="#給文章添加“categories”屬性" class="headerlink" title="給文章添加“categories”屬性"></a>給文章添加“categories”屬性</h4><p>打開需要添加分類的文章，為其添加categories屬性。下方的<code>categories: Hexo 部落格</code>表示添加這篇文章到「Hexo 部落格」這個分類。注意：hexo一篇文章只能屬於一個分類，也就是說如果在「- Hexo 部落格」下方添加「-xxx」，hexo不會產生兩個分類，而是把分類嵌套（即該文章屬於「- Hexo 部落格」下的「-xxx」分類）。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 從文組生到闖進資服競賽全國前三名 - 24屆 Innoserve競賽全紀錄</span><br><span class="line">copyright: true</span><br><span class="line">date: 2021-03-24 22:03:18</span><br><span class="line">tags: </span><br><span class="line">- 經驗分享</span><br><span class="line">- 資訊競賽</span><br><span class="line">categories: 資訊競賽</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>至此，成功給文章添加分類，點擊首頁的“分類”可以看到該分類下的所有文章。當然，只有添加了<code>categories: xxx</code>的文章才會被收錄到首頁的“分類”中。</p>
+<h3 id="創建「標籤」選項"><a href="#創建「標籤」選項" class="headerlink" title="創建「標籤」選項"></a>創建「標籤」選項</h3><h4 id="生成「標籤」頁並添加type屬性"><a href="#生成「標籤」頁並添加type屬性" class="headerlink" title="生成「標籤」頁並添加type屬性"></a>生成「標籤」頁並添加type屬性</h4><p>打開命令行，進入博客所在文件夾。執行命令</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+
+<p>成功後會提示：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">INFO Created: ~&#x2F;Documents&#x2F;blog&#x2F;source&#x2F;tags&#x2F;index.md</span><br></pre></td></tr></table></figure>
+
+<p>根據上面的路徑，找到<code>index.md</code>這個文件，打開後默認內容是這樣的：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 標籤</span><br><span class="line">date: 2017-05-27 14:22:08</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>添加<code>type: &quot;tags&quot;</code>到內容中，添加後是這樣的：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分類</span><br><span class="line">date: 2017-05-27 13:47:40</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>保存並關閉文件。</p>
+<h4 id="給文章添加「tags」屬性"><a href="#給文章添加「tags」屬性" class="headerlink" title="給文章添加「tags」屬性"></a>給文章添加「tags」屬性</h4><p>打開需要添加標籤的文章，為其添加tags屬性。下方的<code>tags:</code>下方的<code>- 經驗分享</code> <code>- 資訊競賽</code>就是這篇文章的標籤了</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 從文組生到闖進資服競賽全國前三名 - 24屆 Innoserve競賽全紀錄</span><br><span class="line">copyright: true</span><br><span class="line">date: 2021-03-24 22:03:18</span><br><span class="line">tags: </span><br><span class="line">- 經驗分享</span><br><span class="line">- 資訊競賽</span><br><span class="line">categories: 資訊競賽</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>至此，成功給文章添加分類，點擊首頁的「標籤」可以看到該標籤下的所有文章。當然，只有添加了<code>tags: xxx</code>的文章才會被收錄到首頁的「標籤」中。</p>
+<p>細心的朋友可能已經發現，這兩個的設置幾乎一模一樣！是的，沒錯，思路都是一樣的。所以我們可以打開scaffolds/post.md文件，在tages:上面加入categories:,保存後，之後執行<code>hexo new 文章名</code>命令生成的文件，頁面裡就有<code>categories:</code>項了。</p>
+<p>scaffolds目錄下，是新建頁面的模板，執行新建命令時，是根據這裡的模板頁來完成的，所以可以在這裡根據你自己的需求添加一些默認值。</p>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><p><a href="https://github.com/hexojs/hexo/issues/351">Issue：如何設置多標籤??</a></p>
+]]></content>
+      <categories>
+        <category>Hexo 部落格</category>
+      </categories>
+      <tags>
+        <tag>教學</tag>
+        <tag>Hexo 部落格</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何在 Hexo 裡面插入 YouTube 連結</title>
+    <url>/md-add-youtube/</url>
+    <content><![CDATA[<p>你是否曾想在 Hexo 裡插入 <a href="https://www.youtube.com/">YouTube</a> 連結，但怎麼試，卻發現YouTube沒辦法播放，這是因為 markdown 語法並不支援插入影片的格式。但在這裡我教你一個簡單的小方法也可以同樣達到你想要的效果。</p>
+<a id="more"></a>
+
+<h2 id="Youtube-影片"><a href="#Youtube-影片" class="headerlink" title="Youtube 影片"></a>Youtube 影片</h2><p>雖然你無法直接置入 Youtube 影片，但可以採用圖片連結的模式：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;http://www.youtube.com/watch?feature=player_embedded&amp;v=YOUTUBE_VIDEO_ID_HERE</span></span></span></span><br><span class="line"><span class="xml">&quot; target=&quot;_blank&quot;&gt;</span><span class="xml"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg&quot;</span></span></span></span><br><span class="line"><span class="xml">alt=&quot;IMAGE ALT TEXT HERE&quot; width=&quot;240&quot; height=&quot;180&quot; border=&quot;10&quot; /&gt;</span><span class="xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>你也可以直接在 Markdown 這樣寫，但會失去尺寸與邊線的設定：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">![IMAGE ALT TEXT HERE</span>](<span class="link">http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg</span>)](<span class="link">http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE</span>)</span><br></pre></td></tr></table></figure>
+
+<p>將 YouTube 封面照片顯示出來，再將圖片超連結至影片連結，這樣就能快速達到跳轉哦 !</p>
+]]></content>
+      <categories>
+        <category>Hexo 部落格</category>
+      </categories>
+      <tags>
+        <tag>教學</tag>
+        <tag>Hexo 部落格</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>專案管理的好幫手 - Gantt 甘特圖</title>
+    <url>/gantt/</url>
+    <content><![CDATA[<p><strong>甘特圖是什麼</strong>？「甘特圖」(Gantt chart) 是專案管理中進度排程、資源分配的專業工具。專業的甘特圖軟體，用來計算專案的人力、時間資源，並且可以進行動態排程。加上甘特圖簡易好學，因此也是專案管理中最常見的工具之一。那今天就來為大家簡單介紹一下甘特圖是什麼吧！</p>
+<a id="more"></a>
+
+<blockquote>
+<p>甘特圖是什麼？</p>
+<p><strong><a href="https://zh.wikipedia.org/wiki/%E7%94%98%E7%89%B9%E5%9B%BE">甘特圖</a></strong> 又稱作條狀圖（Bar chart），於1910年由**<a href="https://zh.wikipedia.org/wiki/%E4%BA%A8%E5%88%A9%C2%B7%E7%94%98%E7%89%B9">亨利·甘特</a>（Henry Laurence Gantt）<strong>發明，是執行專案最常使用的時間管理工具之一。<br>其特色就是能</strong>「<font color=#ca3501>顯示多個任務、專案之間預定與實際進展的關係</font>」<strong>，</strong>以橫軸作為時間，縱軸表示活動或項目<strong>，中間的線條則代表</strong>計畫的開始與結束** 。</p>
+</blockquote>
+<h1 id="Gantt-chart-甘特圖是甚麼？"><a href="#Gantt-chart-甘特圖是甚麼？" class="headerlink" title="Gantt chart 甘特圖是甚麼？"></a>Gantt chart 甘特圖是甚麼？</h1><p><img src="https://i.loli.net/2021/03/25/l2bj7QgS3KOezYW.jpg"> </p>
+<p>( Photo by <a href="https://unsplash.com/@kmuza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Carlos Muza</a> on <a href="https://unsplash.com/s/photos/gantt-chart?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>  )</p>
+<p>下面這張圖，是我在 Vegaslide 上抓的 Gantt chart <a href="https://vegaslide.com/12-months-gantt-chart-with-flat-colors-powerpoint-template/">範本</a>，很顯而易見的，甘特圖，可以用許多東西來製作，但其精細度及上手度也不同。</p>
+<p><img src="https://i.loli.net/2021/03/25/e4NE7BYMUdg6Oa5.png"></p>
+<p><strong>最左邊一排代表工作項目，右側的橫條則對應了任務須執行的時間</strong></p>
+<p>藉由甘特圖，管理者可以非常清楚知道所有任務項目的<strong>活動順序</strong>與<strong>持續時間</strong>，從時間上把握所有進度。</p>
+<p>並且判斷任務是否可以提前完成或可能延後進行，讓每項任務以最有效率的方式運用時間以降低專案執行的變動性，是相當理想又簡易的<strong>時間管理工具！</strong></p>
+<p><strong>甘特圖重點整理：</strong></p>
+<ul>
+<li><p><strong><font color=gs3512>甘特圖就是將任務以圖形或表格方式呈現</font></strong></p>
+</li>
+<li><p><strong><font color=gs3512>甘特圖的意義就是「我要完成這件事要花多少時間?」</font></strong></p>
+</li>
+<li><p><strong><font color=gs3512>甘特圖基本架構有包含：橫軸時間（日曆天or持續時間）、縱軸任務項目。</font></strong></p>
+</li>
+</ul>
+<p><strong>甘特圖優缺點整理</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong><font color=b3210>甘特圖優點</font></strong></th>
+<th><strong><font color=b3210>甘特圖缺點</font></strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>容易上手，不需要花很長時間訓練進度能依照「預計」與「實際」對照電腦化容易，有許多軟體可以繪製甘特圖適合作為報告素材，能表達豐富資訊能把複雜的專案拆成小份執行</td>
+<td>不適合用於過度複雜的專案不適合會頻繁更動的專案看不出專案所有細節，無法立即了解問題無法精確管理人力物力</td>
+</tr>
+</tbody></table>
+<h1 id="甘特圖軟體？"><a href="#甘特圖軟體？" class="headerlink" title="甘特圖軟體？"></a>甘特圖軟體？</h1><p>在這邊我首推 「Gantt.io」，這是一個免費的線上繪製甘特圖工具，幫助我們 5 分鐘內畫出簡單清楚、漂亮美觀的甘特圖「圖檔」。</p>
+<p>工具目的不是要製作一個長期管理的專業甘特圖，而是提供了可以快速套用的範本、版面，讓你我都能「快速畫」一張「簡單清楚」、「漂亮美觀」的甘特圖「圖片」。</p>
+<p>而且方法簡單，讓即使不熟甘特圖的人，都能快速畫出好看且具體的進度表。</p>
+<p><img src="https://i.loli.net/2021/03/25/5hoXy9zR2WgDKBe.png"></p>
+<h3 id="3-分鐘完成一張甘特圖「簡報圖」："><a href="#3-分鐘完成一張甘特圖「簡報圖」：" class="headerlink" title="3 分鐘完成一張甘特圖「簡報圖」："></a>3 分鐘完成一張甘特圖「簡報圖」：</h3><p>讓我來示範「<a href="https://www.gantt.io/"> Gantt.io </a>」的操作流程。首先，要註冊一組帳號密碼。</p>
+<p>進入線上工具介面，開始新增第一張甘特圖圖片，可以選擇從空白甘特圖開始建立。</p>
+<p>也可以選擇透過(範本（Template）)來修改。</p>
+<p><img src="https://i.loli.net/2021/03/25/sbVAdSpQzMtWwrX.png"></p>
+<p>下面這張我透過預設的範本，修改文字、風格、調整時間，大概 3分鐘就可以完成一張！</p>
+<p><img src="https://1.bp.blogspot.com/-q5uis7TZ_Hw/XeNyJ87XwcI/AAAAAAAG49s/bKctkybhAb02YmZmzRa_q5ChklCYWNWEQCNcBGAsYHQ/s1600/ScreenClip%2B%255B12%255D.png"></p>
+]]></content>
+      <categories>
+        <category>軟體介紹</category>
+      </categories>
+      <tags>
+        <tag>軟體介紹</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>彰化田尾鹿港兩天一夜遊排程</title>
+    <url>/travel-2021-2/</url>
+    <content><![CDATA[<p>在這邊分享一個康康我前陣子帶家人去彰化玩的行程規劃。其實帶家人出去是件很麻煩的事情，因為每個家人的習性不同、想法不同、對於旅行這件事著重的點也不同。所以這篇主要是針對我各個家人的需求之總整理出的旅行文。</p>
+<a id="more"></a>
+
+<h1 id="事前調查"><a href="#事前調查" class="headerlink" title="事前調查"></a>事前調查</h1><h2 id="家人習性"><a href="#家人習性" class="headerlink" title="家人習性"></a>家人習性</h2><ul>
+<li><p>父親：標準那種自己不規劃，出去玩前都沒問題，但出去玩當下碎碎念一堆，一堆毛病的人。</p>
+<blockquote>
+<p>解決方式：</p>
+<ol>
+<li>抗壓力高</li>
+<li>忽略大法</li>
+<li>你說的都對</li>
+</ol>
+</blockquote>
+</li>
+<li><p>母親：</p>
+<ol>
+<li>很隨和</li>
+<li>想要去回憶回憶</li>
+<li>想去一些平常沒機會去的</li>
+</ol>
+</li>
+<li><p>姊姊：</p>
+<ol>
+<li>標準觀光客</li>
+<li>喜歡散步</li>
+<li>對吃不太有要求</li>
+<li>不喜歡一直曬太陽</li>
+<li>不能枯等太久</li>
+</ol>
+</li>
+<li><p>哥哥：</p>
+<ol>
+<li>認同一切姐姐說的話</li>
+<li>不方便一直走路</li>
+</ol>
+</li>
+<li><p>我：</p>
+<ol>
+<li>可以讓我輕鬆地出去玩就好嗎</li>
+</ol>
+</li>
+</ul>
+<h1 id="行程規劃"><a href="#行程規劃" class="headerlink" title="行程規劃"></a>行程規劃</h1><blockquote>
+<p>原先規劃一早8點就出門，但沒搶到高鐵票，一度沒辦法去玩，結果最後我靠腳本搶到了11點的高鐵，故行程稍微修改了一部份，但整體框架是沒怎麼動到的。</p>
+</blockquote>
+<p>家裡狀況：不會開車，無法使用租車服務，故行程安排都是以一次走路可以在10~15分鐘內走到為安排。即使有良好的點也會先捨棄，因為不滿足我們沒車族的需求。</p>
+<p><img src="https://i.loli.net/2021/03/27/6x7etCrOIKZAspW.png"></p>
+<p>這張是我用 Google的我的地圖製作的行程詳情，裡面把每個點在地圖上的位置等等的都標示出來了。</p>
+<p>這邊是我這次出去的<a href="https://www.google.com/maps/d/u/0/edit?mid=1ro0dnSv4wLBSiIURCT7R8AJnMsy1aIXJ&usp=sharing">行程地圖</a>，需要的可以點進來看看。</p>
+<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><p>由於11:30才到高鐵彰化站，所以決定先搭車去吃午餐。至於為甚麼是先去田尾而不是彰化市或鹿港鎮，這是因為母親說她好幾十年沒去過公路花園了，於是原先規劃是要去騎腳踏車。但考量到天氣太熱，就決定徒步在田尾路上走走就好。</p>
+<h3 id="菁芳園"><a href="#菁芳園" class="headerlink" title="菁芳園"></a>菁芳園</h3><p>首先去的是菁芳園觀光農場，考量到姊姊跟母親非常喜歡休閒農場類型的景點安排，於是選擇在這裡吃午餐，風景跟預想到的一樣美麗，主打落羽松的農場。</p>
+<p><img src="https://i.loli.net/2021/03/28/AuqTfBGnbmjIJew.jpg"></p>
+<p>而午餐雖然是觀光農場的價格，但他的入門票200元，是可以拿來折抵餐點的，所以還是相當划算，選擇相當多，但建議要先訂位，不然現場人眾多，可能會沒法現場安排上。餐點分量很足，建議不用加套餐，不過套餐的南瓜湯是他們自己種的有機南瓜，口感相當扎實，及麵包是他們門口販賣的手工麵包，不過說實在的，我吃不太出來竹炭麵包，跟一般麵包的差異在哪，不過口感都相當蓬鬆，吃得出來是品質還不錯的麵包。</p>
+<p><img src="https://i.loli.net/2021/03/28/rqMfTmiBoYIQu39.jpg"></p>
+<p>園區說大不大，說小不小，在這裡用餐加逛的時間，還是可以耗掉2~3小時的。</p>
+<p><img src="https://i.loli.net/2021/03/28/thCslyxz3XY9ueL.jpg"></p>
+<p>看的出來，在春節期間，人數還是很多的，是在一個類似溫室植栽的地方用餐。</p>
+<p><img src="https://i.loli.net/2021/03/28/HkOyRbA5BaIvGLK.jpg"></p>
+<p>大約下午四點時，我們就叫了計程車準備前往鹿港鎮，但在春節期間，其實田尾是不好叫車的，於是我使用台灣大車隊APP指定叫車，因為一般車子保險是只有保險四個人，第五人是沒有的，所以加上保險金50元，春節假期，計程車加價100元，總共758元，真的很便宜。然而我是APP綁定支付的，信用卡公司提供5%的回饋金，算是省很多。</p>
+<blockquote>
+<p>現在註冊55688台灣大車隊APP，輸入優惠碼CP454可以折扣50元。</p>
+<p>綁定聯邦銀行信用卡甚至有5%回饋金。</p>
+</blockquote>
+<p>由於我們訂的民宿在鹿港鎮公所附近，於是我們請他開到鎮公所放我們下來。</p>
+<h3 id="一日鹿港人"><a href="#一日鹿港人" class="headerlink" title="一日鹿港人"></a>一日鹿港人</h3><p>家人比較偏好住民宿類型的，於是我挑了一間2020年暑假才新開的民宿，設備、裝潢都非常新，而且離鹿港老街、安排的吃飯地點都很近。</p>
+<p>這間民宿 - 一日鹿港人，位於鎮公所旁邊的一條小巷弄中，有點不起眼，沒注意還真的就不小心走過頭了。</p>
+<p><img src="https://i.loli.net/2021/03/28/r62aWiumPq9Cz5T.jpg"></p>
+<p>老闆跟老闆娘非常親切，老闆娘還是東海大學化學系的老師。所以目前仍然只有假日有開，做興趣的，原本是買來退休來住的，結果拿來做民宿。</p>
+<p>他們晚上是沒有住在這裡的，所以如果有事要打上面那隻電話過去，他們才能幫忙處理。</p>
+<p>由於晚上沒有住在這的緣故，所以大門8點以後會鎖住，要用密碼來開。(塗掉的是大門密碼)</p>
+<p><img src="https://i.loli.net/2021/03/28/lAqL4WNYMEewmpK.png"></p>
+<p>由於為了保持房間整潔，所以房間是只能喝水的，所以在一樓大廳他們有提供給住宿的人吃東西跟聊天的地方。我們就是晚上從鹿港老街逛回來後，帶著豆花坐在大廳吃宵夜。</p>
+<p><img src="https://i.loli.net/2021/03/28/6zvwRSa1slKiIxD.jpg"></p>
+<p>我覺得很酷的地方是，他們一樓大廳的地板是透明的，底下是魚池，可以一早起來看到底下的魚游來游去的。</p>
+<p>然而他們也有提供早餐，是自製的餐點，每個人會有一杯飲料(可以選擇要柳橙汁或者是咖啡)、一個水果沙拉，一顆水煮蛋、一根香腸以及一個麵包，說其實的原本以為早餐會很少，但吃起來很飽。</p>
+<p><img src="https://i.loli.net/2021/03/28/XAsGWpIdeqLCRFy.jpg"></p>
+<p>在大門到民宿本體之間，他的前院有一個很大棵的楊桃樹，旁邊還有一個小花園，種了不少東西、養了不少魚，還有一個提供人休憩的小桌子。</p>
+<h3 id="老皇家泰式餐廳"><a href="#老皇家泰式餐廳" class="headerlink" title="老皇家泰式餐廳"></a>老皇家泰式餐廳</h3><p>會挑這間的主要原因是，那個時間點原先是要挑一些大間的鹿港小吃或海產來吃，但那時候都訂不到。所以我就轉問他們想吃泰式料理還是火鍋。聽了鹿港當地的朋友滿推這家的，就選了。且這間的位置離民宿只要走路七分鐘左右而已，這間是屬於要事先訂位，事先付訂金的型態，我們選了春宴4人份的，想說不用吃得太飽，吃完可再去天后宮附近買宵夜，這家的訂金是固定預付2000元的。</p>
+<p><img src="https://i.loli.net/2021/03/29/ITpldVj5KuazSRo.jpg"></p>
+<p>我覺得吃精緻型的餐點也沒有不好，但這家的上餐速度非常之慢，照理來說，我們已經預訂18:00的了，也線上點好基本菜色了，基本上到了就可以開始送菜了，但他們讓我們等到18:30才開始送前菜、白飯等。實在是太久了，想來吃的，要自己評估一下時間。</p>
+<p><img src="https://i.loli.net/2021/03/29/gNZLYWmsvx8lJBS.png"></p>
+<p>不過他的飯滿好吃的，我覺得泰國米真的滿對我跟我哥的口味。由於大家都很餓，所以就連平常吃很少的姊姊也有多盛一碗飯。</p>
+<p>但證實了我們家都庶民嘴，因為我們吃不出九孔跟鮑魚的差別，飯不夠是可以請他們再加的，但我不知道是我們在溝通上跟傳達上有甚麼誤解或問題，原先在訊息點菜時，我本來以為是一人一份的，所以飲料想分開選，她告訴我是一壺的，故無法給我選擇，但真正上菜時卻是一人一杯的，讓我有點問號，不過奶茶很好喝，連奶茶協會貴賓都覺得是不錯的奶茶。</p>
+<p>個人覺得他們的清蒸石斑跟草蝦湯很不錯，有機會可以點點看。以泰式料理來說，一個人500元的價格實在是稱不上貴，是個滿意的一餐，雖然等的時間真的有點太久了。但整體來說是推薦大家的。</p>
+<h3 id="鹿港天后宮"><a href="#鹿港天后宮" class="headerlink" title="鹿港天后宮"></a>鹿港天后宮</h3><p>吃完飯，就按照我的原先規劃從中正路轉鹿草路一段到天后宮逛逛，基本的拜拜了解宮廟文化及歷史，姐姐的拍照時間，開始買宵夜。雖然我不知道為什麼他們很鬼的，吃飽飯還吃得下蚵仔煎，但我們的確沿街開始買東西，烤杏包菇等等的。</p>
+<p><img src="https://pic.pimg.tw/joan7844/1559290197-645032768_n.jpg"></p>
+<p>接著轉進文開路，開始欣賞夜間的鹿港老街，老街在晚上與白天的風貌是非常不一樣的，寧靜且歷史的痕跡都展露在建築上，倘若是白天來根本沒法仔細地欣賞這個被媽祖庇護的小鎮。</p>
+<p>最後過了街，走進第一市場，買了在鹿港50年老店的豆花，就慢慢地晃回民宿，10點整，跟原先的規劃一樣，輕鬆地聊個天，洗漱後，在庭園中看著慢慢星空，置身在這個寧靜的小巷弄，12點準時睡覺。早上八點準時起床吃早餐。</p>
+<h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><h3 id="龍山寺"><a href="#龍山寺" class="headerlink" title="龍山寺"></a>龍山寺</h3><p>吃完早餐後，跟老闆娘寒暄一下，借放個行李，就起身前往龍山寺，首先縣在路上買個伴手禮，標準觀光客一下。這裡要注意的是玉珍齋是不能刷卡的，只能現金，且一早人就很多，想買熱門商品的請盡早來。穿越過第一市場，走進龍山寺。基本的拜拜，看一下龍山寺的文物，接著就去吃午餐了，由於才剛吃完早餐不久，所以吃個簡單的麵線糊，就準備去彰化了，老店的實力還是在的，滿滿的人，翻桌率大概一個人5分鐘吧。</p>
+<p>後來帶他們走了一下白天版的鹿港老街，全部都是觀光客，攤販也都擺出來了，根本就是被人推著動，姊姊在路邊看到一個賣手環的，是了很久就買了一個了。</p>
+<h3 id="扇形車庫"><a href="#扇形車庫" class="headerlink" title="扇形車庫"></a>扇形車庫</h3><p>到了彰化市後，首先先去放個行李，就走去扇形車庫了，但實際上，我覺得扇形車庫還好(?)，就湯瑪士小火車的場景，個人感受不深，可是還是很多人，如果人數少一點，也許我就能感受到，很多部落客所描述到的悸動吧。</p>
+<h3 id="八卦山"><a href="#八卦山" class="headerlink" title="八卦山"></a>八卦山</h3><p>去的路上，順道繞過去買個木瓜牛乳上去，不然說實在的天氣那麼熱，真的會走到過世，看到門牌後，爬上去，由於因為還沒真的上去，所以沒看到大佛，結果就被罵了，說我走錯路了，但事實證明我沒有走錯路。</p>
+<p>不過各觀光景點真的好多人，八卦山越來越像娛樂業了，甚至有夾娃娃機，覺得有點可惜。</p>
+<p><img src="https://i.loli.net/2021/03/29/EWHRhFmpCXK3rP9.jpg"></p>
+<p>下來之後，去買個大元餅行的鹹麻糬就返程了。</p>
+<h1 id="總結"><a href="#總結" class="headerlink" title="總結"></a>總結</h1><p>高中後，基本上每年的行程都是我規劃的，每年都很累，但也越來越輕鬆，可能是習慣了且上手了吧。</p>
+<p>這次的行程規劃是比較趕的，在出去玩前一周才知道要去哪裡玩，才開始急急忙忙訂旅館、訂車票，規劃行程。但整體來說，看起來不算太差(?)。下一次應該就是去苗栗三義了，那個行程規畫就是比較放鬆在旅館的行程。</p>
+<p>就 John。。</p>
+]]></content>
+      <categories>
+        <category>旅遊</category>
+      </categories>
+      <tags>
+        <tag>旅遊</tag>
+        <tag>彰化</tag>
+        <tag>田尾</tag>
+        <tag>鹿港</tag>
+        <tag>菁芳園</tag>
+        <tag>景點</tag>
+        <tag>一日鹿港人</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何讓 Hexo 發布 免手動登入github</title>
+    <url>/hexo-auto-loginin/</url>
+    <content><![CDATA[<p>是否每次 <code>hexo g -d</code> 時要登入github帳號密碼，讓你時常感到厭煩？</p>
+<p>在這裡簡單教學你，一個步驟，輕鬆省去手動登入的繁雜。</p>
+<a id="more"></a>
+
+<h1 id="緣由"><a href="#緣由" class="headerlink" title="緣由"></a>緣由</h1><p>康康我在每次 <code>hexo g -d</code> 時 cmd都會跳出 github的登入視窗，但往往打完密碼後，卻會顯示出 login failed :</p>
+<p><img src="https://i.loli.net/2021/03/27/gdTyVprkauQM248.png"></p>
+<p>每次都只能在cmd上登入 (目前仍未知原因)，雖然不是個大問題，但打久了，還是會感到厭煩。</p>
+<h1 id="解決方式"><a href="#解決方式" class="headerlink" title="解決方式"></a>解決方式</h1><p>我在這邊找到一個方法可以解決這個問題，也可以省去每次 deploy都要登入的困擾。</p>
+<h2 id="Step-1"><a href="#Step-1" class="headerlink" title="Step 1"></a>Step 1</h2><p>修改_config.yml站點檔案,在repo值的https://後加 (Github)<strong>使用者名稱:密碼@</strong> 即可。</p>
+<p><img src="https://i.loli.net/2021/03/27/8GWyeCvZbocdJzB.jpg"></p>
+<p>恭喜完成！</p>
+]]></content>
+      <categories>
+        <category>Hexo 部落格</category>
+      </categories>
+      <tags>
+        <tag>教學</tag>
+        <tag>Hexo 部落格</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>手機測量尺 - Moasure 不用額外裝置就可快速量大尺寸物件</title>
+    <url>/moasure/</url>
+    <content><![CDATA[<p> 是否常常需要量物體卻手邊沒有捲尺？是否下載一堆AR尺，卻發現很不準？那這款可能能達到你的需求，不僅可以用手機測量，又可以精準計算空間，更不用花任何錢！</p>
+<a id="more"></a>
+
+<h2 id="軟體資訊"><a href="#軟體資訊" class="headerlink" title="軟體資訊"></a><strong>軟體資訊</strong></h2><blockquote>
+<p>軟體名稱：<strong>Moasure</strong><br>軟體語系：英文、繁體中文<br>作業系統：Android、ios<br>官方網站：<a href="https://www.moasure.com/">http://www.moasure.com/</a><br>軟體下載：<a href="https://www.moasure.com/pages/download-the-moasure-app">官方網站下載</a></p>
+</blockquote>
+<p>目前常見的手機測量APP有手機直尺和AR拍照測距兩種，如下圖。<img src="https://i.loli.net/2021/03/29/pDKqdVH3L7YBZ2j.png"></p>
+<p><img src="https://i.loli.net/2021/03/29/2ZgiQToRW7BMqwy.jpg"></p>
+<p>這兩種測量方式的缺點顯而易見：手機直尺的量程取決於手機的長度，只能拿來量個小物件；AR拍照測距雖然能量很長距離，但精確度基本只能靠猜了。</p>
+<p>那麼有沒有一種測量方式能兼顧量程和精度呢？</p>
+<p>今天介紹的Moasure 就是一款這樣的測量工具，除了支持長、高等測量外，Moasure 還支持角度、傾斜等特殊測量場景。(多數功能需使用專用器材，但量長寬高及面積則不需使用，手機即可)</p>
+<p><img src="https://i.loli.net/2021/03/29/5dVs9zyaRYC3J7r.jpg"></p>
+<h2 id="軟體特色"><a href="#軟體特色" class="headerlink" title="軟體特色"></a>軟體特色</h2><ul>
+<li><p>快速輕鬆地測量 10 cm 至 300 m ( 4 至 1000 ) 的距離。</p>
+</li>
+<li><p>獨家採用多步測量模式，使其成為唯一可在距離大於 10m / 30ft 時保持精度的一項應用程式。</p>
+</li>
+<li><p>5 種不同的測量模式，可測量外部尺寸、內部尺寸、高度差和角度。</p>
+</li>
+<li><p>亦可有效測量圓形障礙物 – 非常適合測量室內尺寸。</p>
+</li>
+<li><p>可測量任何表面。</p>
+</li>
+<li><p>標記並儲存測量以供未來參考，並可透過簡訊或電郵列印並與他人分享。</p>
+</li>
+<li><p>以公製或英制單位顯示。</p>
+</li>
+<li><p>測量直線或曲面之間的角度。</p>
+</li>
+<li><p>iPhone 7 上的距離精度精度優於 1%，iPhone 6 上的距離精度精度優於 2 %。角度精度優於 1 度。</p>
+</li>
+</ul>
+<h2 id="功能介紹"><a href="#功能介紹" class="headerlink" title="功能介紹"></a>功能介紹</h2><h3 id="Feature-1"><a href="#Feature-1" class="headerlink" title="Feature 1"></a>Feature 1</h3><p><img src="https://i.loli.net/2021/03/29/SDNvAOTlsUEJkHw.jpg"></p>
+<h3 id="Feature-2"><a href="#Feature-2" class="headerlink" title="Feature 2"></a>Feature 2</h3><p><img src="https://i.loli.net/2021/03/29/IkfxPdisHhrAa9m.jpg"></p>
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>Moasure利用了智慧型手機都有的加速度計和陀螺儀傳感器。當用戶手持手機移動時，其過程其實是一個變加速運動，也就是已知瞬時加速度a(t)求位移量s(t)這樣一個大學物理題，手機的加速度計可以提供瞬時加速度a(t)的數據，對時間積分便可以得到v(t)，再次對時間積分便可以得到位移量s(t)。通過程序消除移動過程中產生的偏移誤差後便能得到最終的測量結果。</p>
+<p><img src="https://i.loli.net/2021/03/29/pnZGkESIObBQz2F.jpg" alt="img"></p>
+<h2 id="使用教學"><a href="#使用教學" class="headerlink" title="使用教學"></a>使用教學</h2><p>Moasure初次啟動時會加載引導設置，包括六個校準步驟和測量單位設定，只需設定一次，為了方便以後使用，建議安裝完成後立即進行設置。</p>
+<h3 id="Step-1"><a href="#Step-1" class="headerlink" title="Step 1"></a>Step 1</h3><p><img src="https://i.loli.net/2021/03/29/LtnHuvXICld4x8p.png"></p>
+<h3 id="Step-2"><a href="#Step-2" class="headerlink" title="Step 2"></a>Step 2</h3><p>Moasure的使用方法非常簡單，在測量的起點放好手機，點擊開始測量，接著移動手機到測量終點，點擊完成即可。如果需測量的物體長度較長，Moasure 還提供了分步測量方式。只需在測量過程中根據軟體提示暫停來分段測量。</p>
+<p><img src="https://i.loli.net/2021/03/29/fSvgjELhloQwW9P.png"></p>
+<h2 id="總結"><a href="#總結" class="headerlink" title="總結"></a>總結</h2><p>這款特點在於方便且使用上軟體內建教學影片，及詳細介紹，推薦給大家。</p>
+]]></content>
+      <categories>
+        <category>軟體介紹</category>
+      </categories>
+      <tags>
+        <tag>軟體介紹</tag>
+        <tag>手機</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>特殊選才備審攻略 - 以資工系為例</title>
+    <url>/application-packet/</url>
+    <content><![CDATA[<p> 近年來，特殊選才愈來越盛行。而康康我也是特殊選才上的，但網路上對於備審的資料通常都只有針對個人申請的，很少人專門介紹特選的備審該怎麼做，該注意甚麼。今天我就來整理我在特選期間遇到的問題及準備。</p>
+<a id="more"></a>
+
+<blockquote>
+<p>特殊選才不是一條簡單的道路，這是前人的足跡。</p>
+<p>希望我們的過去可以幫助未來的你們。</p>
+</blockquote>
+<h1 id="特選前準備"><a href="#特選前準備" class="headerlink" title="特選前準備"></a>特選前準備</h1><p>大約在高一時，我就已決定我要走特殊選才，一方面是我學業狀況不好，另一方面是因為我高中是連兩年的機器人社社長兼教學長，我發現我對於程式設計這方面有一定的熱忱，雖然那時候的只是LEGO EV3的圖形程式而已。</p>
+<p>而高一我就在校內參與不少比賽及課程，雖然我選擇的是文組，但我總是代表我們班，文組的班，拿到校內資訊學科競賽前三名，去打北二區複賽。所以總總經歷上，是足夠的</p>
+<h2 id="高一"><a href="#高一" class="headerlink" title="高一"></a>高一</h2><p>在高一時，建議各位多多參加大大小小的比賽，雖然說特殊選才的狀況，因為大家都很厲害，所以基 本沒有全國賽以上的得獎紀錄是不太容易進的，但你讓教授看到你是持續在散發你的熱忱跟努力上進，我相信還是有機會的。</p>
+<p>還有多多去參加大學或一些協會開的免費課程或工作坊，例如3D列印工作坊，這裡不僅僅是獲得參與證明這個經歷，也同時可以認識一些同樣在這個圈子跟你一起努力的人。不僅可以互相切磋、交流，未來甚至是可以一起去參加比賽跟合作專案。</p>
+<h2 id="高二"><a href="#高二" class="headerlink" title="高二"></a>高二</h2>]]></content>
+      <categories>
+        <category>經驗分享</category>
+      </categories>
+      <tags>
+        <tag>經驗分享</tag>
+        <tag>特殊選才</tag>
+      </tags>
+  </entry>
+</search>

@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+
+
+<script data-ad-client="ca-pub-9671856733786866" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"hhk.one","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+<!-- jquery -->
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <meta name="description" content="在學程式設計一段時間，漸漸會碰到一個技術 - 網路爬蟲 ，爬蟲是個既好學又難學的東西，只要你搞懂了網頁的架構邏輯，那要爬任何網站還不是分分鐘的事情？今天我們先從簡單的爬蟲開始教學。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PTT Code_job 文章訂閱通知">
+<meta property="og:url" content="https://hhk.one/crawler-ptt-codejob/index.html">
+<meta property="og:site_name" content="康康的斜槓人生">
+<meta property="og:description" content="在學程式設計一段時間，漸漸會碰到一個技術 - 網路爬蟲 ，爬蟲是個既好學又難學的東西，只要你搞懂了網頁的架構邏輯，那要爬任何網站還不是分分鐘的事情？今天我們先從簡單的爬蟲開始教學。">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://i.loli.net/2021/03/24/G1aVMyzfv3AgrkH.gif">
+<meta property="og:image" content="https://i.loli.net/2021/03/25/pc2HxeFWXRfhD8Q.gif">
+<meta property="og:image" content="https://i.loli.net/2021/03/25/9qtKiWvnVpedSMG.gif">
+<meta property="og:image" content="https://i.imgur.com/OIqTxF1.gif">
+<meta property="article:published_time" content="2021-03-24T15:14:02.000Z">
+<meta property="article:modified_time" content="2021-03-27T13:24:56.416Z">
+<meta property="article:author" content="康康 HHK">
+<meta property="article:tag" content="教學">
+<meta property="article:tag" content="爬蟲">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/03/24/G1aVMyzfv3AgrkH.gif">
+
+<link rel="canonical" href="https://hhk.one/crawler-ptt-codejob/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+
+  <title>PTT Code_job 文章訂閱通知 | 康康的斜槓人生</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DMF3F131NL"></script>
+    <script data-pjax>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DMF3F131NL');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">康康的斜槓人生</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">一個從生活到創業故事的地方</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://hhk.one/crawler-ptt-codejob/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="康康 HHK">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="康康的斜槓人生">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          PTT Code_job 文章訂閱通知
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2021-03-24 23:14:02" itemprop="dateCreated datePublished" datetime="2021-03-24T23:14:02+08:00">2021-03-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2021-03-27 21:24:56" itemprop="dateModified" datetime="2021-03-27T21:24:56+08:00">2021-03-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%99%E5%AD%B8/" itemprop="url" rel="index"><span itemprop="name">教學</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="閱讀次數" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">閱讀次數：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/crawler-ptt-codejob/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/crawler-ptt-codejob/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>在學程式設計一段時間，漸漸會碰到一個技術 - 網路爬蟲 ，爬蟲是個既好學又難學的東西，只要你搞懂了網頁的架構邏輯，那要爬任何網站還不是分分鐘的事情？今天我們先從簡單的爬蟲開始教學。</p>
+<a id="more"></a>
+
+<h2 id="緣由"><a href="#緣由" class="headerlink" title="緣由"></a>緣由</h2><p>作者除了是資工系學生以外，平時也常常在網路上接案貼補家用。但小弟我生性害羞，個人不太敢去網路上求案，所以通常都是在 Facebook社團 及 ptt code_job版上找case來做。雖然現在不少人會在 Tasker之類的網站接案，但那多都需要付費成為會員才能接案，所以並不在我們窮學生的選項內。</p>
+<p>而時間就是金錢，常常有人在板上發一些我有興趣或我有能力吃下的案子，但因為我總是太慢才看到，所以往往多變成「洽談中」或「已發案」的狀態了。所以前陣子就寫了一個小程式，每過一段時間就檢查有沒有符合我篩選後關鍵字的案子，有的話 Line Bot 就會自動傳訊息給我，從此之後，我就過著數錢數到手軟的生活 ( 但很可惜並沒有發生 )。</p>
+<h2 id="走訪探查"><a href="#走訪探查" class="headerlink" title="走訪探查"></a>走訪探查</h2><p>要逛ptt 基本上就是開cmd走 telnet，但小弟不才，所以那部分就沒有涉獵了，不知道要怎麼從telnet的渠道去爬蟲，好在 ptt 有網頁版，完美解決我們的問題。<img src="https://i.loli.net/2021/03/24/G1aVMyzfv3AgrkH.gif"></p>
+<p>Code_job 版網址是 <a target="_blank" rel="noopener" href="https://www.ptt.cc/bbs/CodeJob/index.html">https://www.ptt.cc/bbs/CodeJob/index.html</a> ，看起來挺容易爬的，雖然有分頁，但 index 預設就是最新的。</p>
+<h3 id="尋找方法"><a href="#尋找方法" class="headerlink" title="尋找方法"></a>尋找方法</h3><p>那讓我們思考一下，我如何才能取得最新的文章呢？把公告濾掉，然後直接抓最後一篇或許是個直覺的方法，但考量到可能新發案會突然短時間發出兩、三篇，所以這個方式並不是個完美的方法。</p>
+<p>接著又想，若我能去記錄上一次爬蟲拿到的最後一篇文章，就能知道這次爬蟲新抓取的篇數。這樣確實可行，但不直觀，至少我要有個地方去記錄上次文章，要嘛就是 database，要嘛就是存 file，兩種都還要額外的地方去處理。</p>
+<p>然後再想，若上面有時間的話，那我可以去比對時間，例如爬蟲五分鐘爬一次，那我就能去算五分鐘內生成的文章有多少。但事情看起來沒那麼簡單，畫面上只有日期，日期範圍又太大了。</p>
+<h3 id="觀察物件"><a href="#觀察物件" class="headerlink" title="觀察物件"></a>觀察物件</h3><p><img src="https://i.loli.net/2021/03/25/pc2HxeFWXRfhD8Q.gif"></p>
+<p>持續觀察上面有的物件，突然瞄到一個有趣的東西，文章的連結。這個連結中，有一個 10 位數又 16 開頭的數字，憑著上學期國川教的東西，這肯定就是 timestamp。</p>
+<p><img src="https://i.loli.net/2021/03/25/9qtKiWvnVpedSMG.gif"></p>
+<h1 id="分解研究"><a href="#分解研究" class="headerlink" title="分解研究"></a>分解研究</h1><p>我們把動作分解成幾個：</p>
+<ol>
+<li>抓取網頁</li>
+<li>將文章列表抓出</li>
+<li>filter 5 分鐘內的文章</li>
+</ol>
+<p><img src="https://i.imgur.com/OIqTxF1.gif"></p>
+<p>想看看我 Javascript執行效果的人，可以參考下面這段程式碼。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">&#x27;.r-ent a&#x27;</span>).map(<span class="function">(<span class="params">index, obj</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        title: $(obj).text(),</span><br><span class="line">        link: $(obj).attr(<span class="string">&quot;href&quot;</span>),</span><br><span class="line">        timestamp: $(obj).attr(<span class="string">&#x27;href&#x27;</span>).substr(<span class="number">16.10</span>), </span><br><span class="line">        &#125; </span><br><span class="line">    &#125;).get()</span><br></pre></td></tr></table></figure>
+
+<p>因為單純是 get request，我想應該也沒有研究的必要了XDDD，就直接來研究抓取 dom 就可以了。確認可以抓到文章列表，那剩下的就是 filter 的事情了。</p>
+<h1 id="實作程式碼"><a href="#實作程式碼" class="headerlink" title="實作程式碼"></a>實作程式碼</h1><h3 id="Define-抓取時間"><a href="#Define-抓取時間" class="headerlink" title="Define 抓取時間"></a>Define 抓取時間</h3><p>先定義 一個 crontab 會抓取的時間數值</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> CrontabPeriod = <span class="number">60</span> * <span class="number">60</span> * <span class="number">24</span> * <span class="number">1</span> <span class="comment">// 先預設1天做測試，完成後再改回五分鐘</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="取得文章列表"><a href="#取得文章列表" class="headerlink" title="取得文章列表"></a>取得文章列表</h3><p>然後直接用 request 來抓取 code_job 版，然後再把文章 list 抓出來</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">request(<span class="string">&#x27;https://www.ptt.cc/bbs/CodeJob/index.html&#x27;</span>, <span class="function">(<span class="params">err, res, body</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">var</span> $ = cheerio.load(body)</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 抓取文章列表</span></span><br><span class="line">  <span class="keyword">var</span> list = $(<span class="string">&#x27;.r-ent a&#x27;</span>).map(<span class="function">(<span class="params">index, obj</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      title: $(obj).text(),</span><br><span class="line">      link: $(obj).attr(<span class="string">&#x27;href&#x27;</span>),</span><br><span class="line">      timestamp: $(obj).attr(<span class="string">&#x27;href&#x27;</span>).substr(<span class="number">15</span>, <span class="number">10</span>),</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;).get()</span><br><span class="line">  <span class="built_in">console</span>.log(list);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="filter"><a href="#filter" class="headerlink" title="filter"></a>filter</h3><p>最後加入 timestamp 的 filter</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// filter 時間</span></span><br><span class="line">list = list.filter(<span class="function">(<span class="params">post</span>)=&gt;</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> post.timestamp &gt; (<span class="built_in">Date</span>.now() / <span class="number">1000</span> - CrontabPeriod)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="完整程式碼"><a href="#完整程式碼" class="headerlink" title="完整程式碼"></a>完整程式碼</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> request = <span class="built_in">require</span>(<span class="string">&#x27;request&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> cheerio = <span class="built_in">require</span>(<span class="string">&#x27;cheerio&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> CrontabPeriod = <span class="number">60</span> * <span class="number">5</span> <span class="comment">// 五分鐘抓一次</span></span><br><span class="line"></span><br><span class="line">request(<span class="string">&#x27;https://www.ptt.cc/bbs/CodeJob/index.html&#x27;</span>, <span class="function">(<span class="params">err, res, body</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">var</span> $ = cheerio.load(body)</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 抓取文章列表</span></span><br><span class="line">  <span class="keyword">var</span> list = $(<span class="string">&#x27;.r-ent a&#x27;</span>).map(<span class="function">(<span class="params">index, obj</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      title: $(obj).text(),</span><br><span class="line">      link: $(obj).attr(<span class="string">&#x27;href&#x27;</span>),</span><br><span class="line">      timestamp: $(obj).attr(<span class="string">&#x27;href&#x27;</span>).substr(<span class="number">15</span>, <span class="number">10</span>),</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;).get()</span><br><span class="line"></span><br><span class="line">  <span class="comment">// filter 時間</span></span><br><span class="line">  list = list.filter(<span class="function">(<span class="params">post</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> post.timestamp &gt; (<span class="built_in">Date</span>.now() / <span class="number">1000</span> - CrontabPeriod)</span><br><span class="line">  &#125;)</span><br><span class="line"></span><br><span class="line">  <span class="built_in">console</span>.log(list);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h1 id="衍伸應用"><a href="#衍伸應用" class="headerlink" title="衍伸應用"></a>衍伸應用</h1><p>我們可以透過 crontab 來設定每五分鐘 trigger 一次，同時加上 heroku webhook 來達到自動通知，bot的部分我們可以選用 Line bot 或 Telegram bot會比較好上手。</p>
+<p>其實爬蟲並不是要多厲害的技術，而真正有價值的是在於解決問題和省下時間。像是這次介紹的 ptt code_job 主動發文通知，就是一種很簡單，實作不困難，但卻能為我們省下許多的時間。</p>
+
+    </div>
+
+    
+    
+    
+
+<div>
+		
+		<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文結束<i class="fa fa-paw"></i>感謝您的閱讀-------------</div>
+    
+</div>
+		
+	</div>
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    捐贈
+  </button>
+  <div id="qr" style="display: none;">
+      <div style="display: inline-block;">
+        <img src="/images/donate.png" alt="康康 HHK Donate">
+        <p>Donate</p>
+      </div>
+
+  </div>
+</div>
+
+
+	<div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文標題:</span><a href="/crawler-ptt-codejob/">PTT Code_job 文章訂閱通知</a></p>
+  <p><span>文章作者:</span>Hao-Hsiung Kang 康皓雄</a></p>
+  <p><span>發布時間:</span>2021年03月24日 - 23:14</p>
+  <p><span>最後更新:</span>2021年03月27日 - 21:24</p>
+  <p><span>原始連結:</span><a href="/crawler-ptt-codejob/" title="PTT Code_job 文章訂閱通知">https://hhk.one/crawler-ptt-codejob/</a>
+    <span class="copy-path"  title="點擊複製文章連結"><i class="fa fa-clipboard" data-clipboard-text="https://hhk.one/crawler-ptt-codejob/"  aria-label="複製成功！"></i></span>
+  </p>
+  <p><span>許可協議:</span><i class="fa fa-creative-commons" aria-hidden="true"> </i><a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商業性使用-禁止演繹 4.0 國際</a> 轉載請保留連結並註明作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '複製成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+	});
+    });  
+</script>
+
+      
+	</div>
+        
+
+  <div class="followme">
+    <p>歡迎關注我的其它發布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://www.facebook.com/dogbone0714">
+            <span class="icon">
+              <i class="fab fa-facebook"></i>
+            </span>
+
+            <span class="label">FB</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://instagram.com/dogbone_0714">
+            <span class="icon">
+              <i class="fab fa-instagram"></i>
+            </span>
+
+            <span class="label">IG</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+	
+    
+			<script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+			<div class="commentbox.swig"></div>
+			<script type="text/javascript" src="/js/src/commentbox.js"></script>
+    
+	
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%95%99%E5%AD%B8/" rel="tag"><i class="fa fa-tag"></i> 教學</a>
+              <a href="/tags/%E7%88%AC%E8%9F%B2/" rel="tag"><i class="fa fa-tag"></i> 爬蟲</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/hexo-git/" rel="prev" title="如何使用 Hexo + GitHub Pages 架設部落格">
+      <i class="fa fa-chevron-left"></i> 如何使用 Hexo + GitHub Pages 架設部落格
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/add-tags/" rel="next" title="Hexo 全攻略 - 如何新增多個標籤及分類">
+      Hexo 全攻略 - 如何新增多個標籤及分類 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B7%A3%E7%94%B1"><span class="nav-number">1.</span> <span class="nav-text">緣由</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B5%B0%E8%A8%AA%E6%8E%A2%E6%9F%A5"><span class="nav-number">2.</span> <span class="nav-text">走訪探查</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%8B%E6%89%BE%E6%96%B9%E6%B3%95"><span class="nav-number">2.1.</span> <span class="nav-text">尋找方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%80%E5%AF%9F%E7%89%A9%E4%BB%B6"><span class="nav-number">2.2.</span> <span class="nav-text">觀察物件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%86%E8%A7%A3%E7%A0%94%E7%A9%B6"><span class="nav-number"></span> <span class="nav-text">分解研究</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AF%A6%E4%BD%9C%E7%A8%8B%E5%BC%8F%E7%A2%BC"><span class="nav-number"></span> <span class="nav-text">實作程式碼</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Define-%E6%8A%93%E5%8F%96%E6%99%82%E9%96%93"><span class="nav-number">0.1.</span> <span class="nav-text">Define 抓取時間</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%96%E5%BE%97%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8"><span class="nav-number">0.2.</span> <span class="nav-text">取得文章列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#filter"><span class="nav-number">0.3.</span> <span class="nav-text">filter</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%8C%E6%95%B4%E7%A8%8B%E5%BC%8F%E7%A2%BC"><span class="nav-number">0.4.</span> <span class="nav-text">完整程式碼</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A1%8D%E4%BC%B8%E6%87%89%E7%94%A8"><span class="nav-number"></span> <span class="nav-text">衍伸應用</span></a></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="康康 HHK"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">康康 HHK</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">18</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/dogbone0714" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;dogbone0714" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:jameskang0714@gmail.com" title="E-Mail → mailto:jameskang0714@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://plus.google.com/dogbone0714" title="Google → https:&#x2F;&#x2F;plus.google.com&#x2F;dogbone0714" rel="noopener" target="_blank"><i class="fab fa-google fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/dogbone0714" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;dogbone0714" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/dogbone0714" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;dogbone0714" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/dogbone_0714" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;dogbone_0714" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-gw-3+1f-3d+2z"
+     data-ad-client="ca-pub-9671856733786866"
+     data-ad-slot="4368622637"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">康康 HHK</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="訪客總數">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="總瀏覽次數">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : true,
+      appId      : 'y2XobmI5J3xxVXKBCU3ohxxL-MdYXbMMI',
+      appKey     : 'UjiR0x4pQWUCPGVxeqWtQAfA',
+      placeholder: "都來了，不留言一下嗎？",
+      avatar     : 'retro',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-TW',
+      path       : location.pathname,
+      recordIP   : true,
+      serverURLs : ''
+	  
+	  
+    });
+  }, window.Valine);
+});
+</script>
+
+    </div>
+  
+</body>
+</html>
+
