@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hhk.one/typora-upload-images/</loc>
+    
+    <lastmod>2021-04-22</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://hhk.one/ap-1/</loc>
     
     <lastmod>2021-04-22</lastmod>
@@ -304,6 +311,13 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://hhk.one/tags/Typora/</loc>
+    <lastmod>2021-04-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
@@ -350,6 +364,13 @@
   
   <url>
     <loc>https://hhk.one/categories/%E7%B6%93%E9%A9%97%E5%88%86%E4%BA%AB/</loc>
+    <lastmod>2021-04-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hhk.one/categories/%E6%95%99%E5%AD%B8/%E8%BB%9F%E9%AB%94%E5%88%86%E4%BA%AB/</loc>
     <lastmod>2021-04-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
