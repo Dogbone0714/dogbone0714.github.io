@@ -1277,6 +1277,8 @@
     <title>HTC LineageOS 18.1 刷機教學</title>
     <url>/flash-LineageOS-18-1/</url>
     <content><![CDATA[<h1 id="刷機教學"><a href="#刷機教學" class="headerlink" title="刷機教學"></a>刷機教學</h1><p><strong><font color=#FF0530>注意事項</font></strong><br><strong><font color=#FF0000>Upgrade to Stock Oreo Rom!</font></strong></p>
+<a id="more"></a>
+
 <h2 id="Step-1"><a href="#Step-1" class="headerlink" title="Step 1"></a>Step 1</h2><p>解鎖手機 off(??)<br>Unlock Bootloader<br>開發者模式打開USB連線</p>
 <h2 id="Step-2"><a href="#Step-2" class="headerlink" title="Step 2"></a>Step 2</h2><p>下載 Recovery.img (刷機資源#1)<br>下載 ADB工具 (刷機資源#2)</p>
 <h2 id="Step-3"><a href="#Step-3" class="headerlink" title="Step 3"></a>Step 3</h2><p>手機USB連結電腦<br>開啟 ADB資料夾 -&gt; 用 CMD模式<br>輸入「adb reboot bootloader」指令<br>輸入「fastboot flash recovery <em>映像檔路徑</em>」指令<br>輸入「fastboot reboot」</p>
