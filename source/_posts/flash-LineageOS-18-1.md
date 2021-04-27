@@ -43,6 +43,8 @@ Unlock Bootloader
 2. [ADB](https://developer.android.com/studio/command-line/adb)
 3. [boot.img](https://androidfilehost.com/?w=files&flid=318536&sort_by=date&sort_dir=DESC)
 #### 資料參考
-1. [朋朋給我的教程](https://forum.xda-developers.com/t/rom-11-0-unofficial-oce-lineageos-18-1-stable.4175765/)
-2. [ADB TWRP 教學](https://www.moonlol.com/adb-fastboot%E5%B7%A5%E5%85%B7%E7%B7%9A%E5%88%B7twrp-recovery-5954.html)
-3. [ADB ROM boot 教學](https://tedliou.com/archives/zenfone-5z-unlock-and-root/)
+* [朋朋給我的教程](https://forum.xda-developers.com/t/rom-11-0-unofficial-oce-lineageos-18-1-stable.4175765/)
+
+* [ADB TWRP 教學](https://www.moonlol.com/adb-fastboot%E5%B7%A5%E5%85%B7%E7%B7%9A%E5%88%B7twrp-recovery-5954.html)
+
+* [ADB ROM boot 教學](https://tedliou.com/archives/zenfone-5z-unlock-and-root/)
