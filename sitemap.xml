@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hhk.one/thysa-tw/</loc>
+    
+    <lastmod>2021-05-03</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://hhk.one/basic-business/</loc>
     
     <lastmod>2021-05-03</lastmod>
@@ -369,6 +376,20 @@
   
   <url>
     <loc>https://hhk.one/tags/%E8%81%AF%E5%A4%A7/</loc>
+    <lastmod>2021-05-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hhk.one/tags/%E6%A1%83%E5%AD%B8%E8%81%AF/</loc>
+    <lastmod>2021-05-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hhk.one/tags/%E6%A1%83%E5%9C%92%E5%B8%82%E9%AB%98%E4%B8%AD%E8%81%B7%E5%AD%B8%E7%94%9F%E8%81%AF%E5%90%88%E6%9C%83/</loc>
     <lastmod>2021-05-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
