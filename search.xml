@@ -645,7 +645,7 @@
 <li><h4 id="Node-js：提供-npm-來安裝所需的套件。這裡可選擇安裝左側-14-16-0-LTS-版本"><a href="#Node-js：提供-npm-來安裝所需的套件。這裡可選擇安裝左側-14-16-0-LTS-版本" class="headerlink" title="Node.js：提供 npm 來安裝所需的套件。這裡可選擇安裝左側 14.16.0 LTS 版本"></a><a href="https://nodejs.org/en/">Node.js</a>：提供 npm 來安裝所需的套件。這裡可選擇安裝左側 14.16.0 LTS 版本</h4></li>
 </ul>
 <blockquote>
-<p>Hexo 官網建議使用 Node.js 10.0 及以上版本，若不確定下載哪個版本，可在終端機輸入 <code>npm versin</code> 查看版本號。</p>
+<p>Hexo 官網建議使用 Node.js 10.0 及以上版本，若不確定下載哪個版本，可在終端機輸入 <code>npm version</code> 查看版本號。</p>
 </blockquote>
 <p><img src="https://i.loli.net/2021/03/25/VmRfF23iavugDAw.png"></p>
 <ul>
@@ -1454,6 +1454,74 @@
         <tag>經驗分享</tag>
         <tag>桃學聯</tag>
         <tag>桃園市高中職學生聯合會</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>樹莓派安裝教學</title>
+    <url>/raspberrypi-part-1/</url>
+    <content><![CDATA[<p> Need Only ：一張樹莓派、一張SD卡、一條電源線、一台筆電、一個WIFI網路，Just these only ！</p>
+<a id="more"></a>
+
+<h1 id="安裝作業系統-Raspbian-15min"><a href="#安裝作業系統-Raspbian-15min" class="headerlink" title="安裝作業系統 Raspbian (15min)"></a>安裝作業系統 Raspbian (15min)</h1><blockquote>
+<p><a href="https://www.raspberrypi.org/downloads/">官網提供兩種方法</a></p>
+</blockquote>
+<p>方法一：下載Raspbian作業系統安裝程式NOOBS，由NOOBS導引安裝Raspbian，費時費工，不建議此方法。<br>方法二：下載已安裝好Raspbian的SD卡的映像檔，無需解壓縮，用<a href="https://www.balena.io/etcher/">Etcher</a>寫入FAT格式化的SD卡，還原Raspbian。而我也是使用此方法。</p>
+<h1 id="Headless啟動ssh服務及設定WiFi-10min"><a href="#Headless啟動ssh服務及設定WiFi-10min" class="headerlink" title="Headless啟動ssh服務及設定WiFi (10min)"></a>Headless啟動ssh服務及設定WiFi (10min)</h1><blockquote>
+<p><a href="https://www.raspberrypi.org/documentation/configuration/wireless/headless.md">官方文件</a></p>
+</blockquote>
+<blockquote>
+<p>Headless是指樹莓派不接鍵盤、螢幕、滑鼠。</p>
+</blockquote>
+<p>將SD卡重新插入筆電，進入boot硬碟槽，新增一個名為<strong>ssh</strong>的空白檔案，再新增一個名為<strong>wpa_supplicant.conf</strong>的檔案，寫入</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ctrl_interface&#x3D;DIR&#x3D;&#x2F;var&#x2F;run&#x2F;wpa_supplicant GROUP&#x3D;netdev</span><br><span class="line">update_config&#x3D;1</span><br><span class="line">country&#x3D;twnetwork&#x3D;&#123;</span><br><span class="line"> ssid&#x3D;&quot;&lt;Name of your WiFi&gt;&quot;</span><br><span class="line"> psk&#x3D;&quot;&lt;Password for your WiFi&gt;&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>樹莓派就會在開機時，啟動ssh服務，以及設定WiFi，我這邊是使用家裡的路由器wifi。</p>
+<h1 id="ssh連線進入樹莓派-5min"><a href="#ssh連線進入樹莓派-5min" class="headerlink" title="ssh連線進入樹莓派 (5min)"></a>ssh連線進入樹莓派 (5min)</h1><ol>
+<li><p>取出SD卡插入樹莓派</p>
+</li>
+<li><p>樹莓派接上電源線</p>
+</li>
+<li><p>若用手機開WiFi網路，看看有無裝置連上，看看配發之區域網路IP位址。我這邊使用小米wifi查看家裡路由器連接上的裝置ip。</p>
+<p><img src="https://i.loli.net/2021/07/11/W2xrSDUAliHK48I.png"></p>
+</li>
+<li><p>在Mac的Terminal、Windows的PowerShell或「命令提示字元」<br><code>ssh pi@raspberrypi.local</code> 或 <code>ssh pi@樹莓派的IP位址</code>(我這邊自己就輸入顯示的192.168.31.186)</p>
+</li>
+<li><p>預設密碼：raspberry</p>
+</li>
+<li><p>進入樹莓派的Terminal的世界！</p>
+</li>
+</ol>
+<h2 id="If-你的手機基地台只有顯示-MAC位址-你可以這樣做！"><a href="#If-你的手機基地台只有顯示-MAC位址-你可以這樣做！" class="headerlink" title="If 你的手機基地台只有顯示 MAC位址 你可以這樣做！"></a>If 你的手機基地台只有顯示 MAC位址 你可以這樣做！</h2><p>透過**<a href="https://www.advanced-ip-scanner.com/">AdvancedIPScanner</a><strong>知道ip（</strong>確保你的電腦也處在同一個局域網下**）</p>
+<p>執行Advanced IP Scanner，點選掃描，<strong>在「名稱」找到RASPBERRYPI</strong>，其ip就是樹莓派ip。</p>
+<p><img src="https://i.loli.net/2021/07/11/o8zNMfvrJbk9LZ1.png"></p>
+<h1 id="安裝遠端桌面服務xrdp-5min"><a href="#安裝遠端桌面服務xrdp-5min" class="headerlink" title="安裝遠端桌面服務xrdp (5min)"></a>安裝遠端桌面服務xrdp (5min)</h1><blockquote>
+<p>RDP 是 <strong>R</strong>emote <strong>D</strong>esktop <strong>P</strong>rotocol 網路通訊協定的縮寫</p>
+</blockquote>
+<ol>
+<li>在樹莓派的Terminal<br><code>sudo apt update</code> 更新套件管理程式apt<br><code>sudo apt install xrdp</code> 安裝並啟動遠端桌面服務xrdp</li>
+<li>筆電若為Mac，到App Store下載安裝Microsoft Remote Desktop 10<br>筆電若為Windows，內建「遠端桌面連線」</li>
+</ol>
+<p><img src="https://i.loli.net/2021/07/11/laYw5URgyQpbntq.png"></p>
+<ol start="3">
+<li><p>設定連線資訊：伺服器名稱、使用者名稱、預設密碼</p>
+<p><img src="https://i.loli.net/2021/07/11/t2ZpFOfnYgbATvE.png"></p>
+</li>
+<li><p>進入樹莓派的桌面看看，甚至內建Chromium瀏覽器！</p>
+<p><img src="https://i.loli.net/2021/07/11/4b7ZnWgpE9k2BGr.png"></p>
+</li>
+<li><p>桌布設為No image，改善畫面流暢度</p>
+</li>
+</ol>
+<p><img src="https://i.loli.net/2021/07/11/QB1wDjNr4ZIqgtm.png"></p>
+<blockquote>
+<p>最後~~<strong>關機指令是：</strong> <code>sudo halt</code>！</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>樹莓派</category>
+      </categories>
+      <tags>
+        <tag>樹莓派</tag>
       </tags>
   </entry>
 </search>
