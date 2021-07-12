@@ -1467,7 +1467,7 @@
 <h1 id="安裝作業系統-Raspbian-15min"><a href="#安裝作業系統-Raspbian-15min" class="headerlink" title="安裝作業系統 Raspbian (15min)"></a>安裝作業系統 Raspbian (15min)</h1><blockquote>
 <p><a href="https://www.raspberrypi.org/downloads/">官網提供兩種方法</a></p>
 </blockquote>
-<p>方法一：下載Raspbian作業系統安裝程式NOOBS，由NOOBS導引安裝Raspbian，費時費工，不建議此方法。<br>方法二：下載已安裝好Raspbian的SD卡的映像檔，無需解壓縮，用<a href="https://www.balena.io/etcher/">Etcher</a>寫入FAT格式化的SD卡，還原Raspbian。而我也是使用此方法。</p>
+<p>方法一：下載Raspbian作業系統安裝程式NOOBS，由NOOBS導引安裝Raspbian，費時費工，不建議此方法。<br>方法二：下載已安裝好Raspbian的SD卡的映像檔，無需解壓縮，用<a href="https://www.balena.io/etcher/">Etcher</a>寫入FAT格式化的SD卡，還原Raspbian。而我也是使用此方法，我這邊是安裝 Rasbian desktop with recommend softwares，所以會有一些已經安裝好的軟體，如果想要簡潔的朋友可以選 Rasbian desktop就好。</p>
 <h1 id="Headless啟動ssh服務及設定WiFi-10min"><a href="#Headless啟動ssh服務及設定WiFi-10min" class="headerlink" title="Headless啟動ssh服務及設定WiFi (10min)"></a>Headless啟動ssh服務及設定WiFi (10min)</h1><blockquote>
 <p><a href="https://www.raspberrypi.org/documentation/configuration/wireless/headless.md">官方文件</a></p>
 </blockquote>
