@@ -29,30 +29,30 @@
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-  <meta name="description" content="是否總是在外部連結，如：imgur、ppt.cc上傳圖片後，再丟進Typora裡。不用那麼麻煩，今天教你如何在Typora內部設定自動上傳圖片至自己的圖庫！">
+  <meta name="description" content="上一篇提到我們要來說說網路印表機如何設定(包含但不限於本身有網路功能的印表機，無網路功能的也行)。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="教你如何在Typora內部上傳圖片">
-<meta property="og:url" content="https://hhk.one/typora-upload-images/index.html">
+<meta property="og:title" content="樹莓派設定網路印表機">
+<meta property="og:url" content="https://hhk.one/raspberrypi-part-4/index.html">
 <meta property="og:site_name" content="康康的斜槓人生">
-<meta property="og:description" content="是否總是在外部連結，如：imgur、ppt.cc上傳圖片後，再丟進Typora裡。不用那麼麻煩，今天教你如何在Typora內部設定自動上傳圖片至自己的圖庫！">
+<meta property="og:description" content="上一篇提到我們要來說說網路印表機如何設定(包含但不限於本身有網路功能的印表機，無網路功能的也行)。">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://i.loli.net/2021/04/22/bvafR6FHeq4mAod.png">
-<meta property="og:image" content="https://imgur.com/zyp3NdP.gif">
-<meta property="og:image" content="https://i.loli.net/2021/04/22/9scDewFgW1XYTSh.png">
-<meta property="og:image" content="https://i.loli.net/2021/04/22/Wk9hHgpcmNvzQ8S.png">
-<meta property="og:image" content="https://i.loli.net/2021/04/22/4d2C5JhnlFzcafu.png">
-<meta property="og:image" content="https://i.loli.net/2021/04/22/X432iIB7AVuELZQ.png">
-<meta property="og:image" content="https://i.loli.net/2021/04/22/oFYDfza9MuKJpQh.png">
-<meta property="og:image" content="https://i.loli.net/2021/04/22/vM4pIemHLf58RCK.png">
-<meta property="article:published_time" content="2021-04-22T07:51:48.000Z">
-<meta property="article:modified_time" content="2021-04-23T11:54:39.683Z">
+<meta property="og:image" content="https://i.loli.net/2021/07/12/83c6kxLmCdHfzWF.jpg">
+<meta property="og:image" content="https://i.loli.net/2021/07/12/wt5Fkzgerf3GdsU.png">
+<meta property="og:image" content="https://i.loli.net/2021/07/12/Lbt4xXRNamAfWG2.png">
+<meta property="og:image" content="https://i.loli.net/2021/07/12/UXidYAzsJ41cKOb.png">
+<meta property="og:image" content="https://i.loli.net/2021/07/12/fUQunb4ym82PhCq.png">
+<meta property="og:image" content="https://i.loli.net/2021/07/12/axhQbY7lG8SwDMv.png">
+<meta property="og:image" content="https://i.loli.net/2021/07/12/qrt8md2pCzUHwLF.png">
+<meta property="og:image" content="https://i.loli.net/2021/07/12/6a1bsyBfqlLk9EI.png">
+<meta property="og:image" content="https://i.loli.net/2021/07/12/in1w4ZrIgJmFH7z.png">
+<meta property="article:published_time" content="2021-07-12T07:44:32.000Z">
+<meta property="article:modified_time" content="2021-07-12T08:43:08.000Z">
 <meta property="article:author" content="康康 HHK">
-<meta property="article:tag" content="教學">
-<meta property="article:tag" content="Typora">
+<meta property="article:tag" content="樹莓派">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.loli.net/2021/04/22/bvafR6FHeq4mAod.png">
+<meta name="twitter:image" content="https://i.loli.net/2021/07/12/83c6kxLmCdHfzWF.jpg">
 
-<link rel="canonical" href="https://hhk.one/typora-upload-images/">
+<link rel="canonical" href="https://hhk.one/raspberrypi-part-4/">
 
 
 <script id="page-configurations">
@@ -65,7 +65,7 @@
   };
 </script>
 
-  <title>教你如何在Typora內部上傳圖片 | 康康的斜槓人生</title>
+  <title>樹莓派設定網路印表機 | 康康的斜槓人生</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DMF3F131NL"></script>
     <script data-pjax>
@@ -186,7 +186,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://hhk.one/typora-upload-images/">
+    <link itemprop="mainEntityOfPage" href="https://hhk.one/raspberrypi-part-4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -199,7 +199,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          教你如何在Typora內部上傳圖片
+          樹莓派設定網路印表機
         </h1>
 
         <div class="post-meta">
@@ -208,23 +208,17 @@
                 <i class="fa fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">發表於</span>
+              
 
-              <time title="創建時間：2021-04-22 15:51:48" itemprop="dateCreated datePublished" datetime="2021-04-22T15:51:48+08:00">2021-04-22</time>
+              <time title="創建時間：2021-07-12 15:44:32 / 修改時間：16:43:08" itemprop="dateCreated datePublished" datetime="2021-07-12T15:44:32+08:00">2021-07-12</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2021-04-23 19:54:39" itemprop="dateModified" datetime="2021-04-23T19:54:39+08:00">2021-04-23</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分類於</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%95%99%E5%AD%B8/" itemprop="url" rel="index"><span itemprop="name">教學</span></a>
+                  <a href="/categories/%E6%A8%B9%E8%8E%93%E6%B4%BE/" itemprop="url" rel="index"><span itemprop="name">樹莓派</span></a>
                 </span>
             </span>
 
@@ -244,8 +238,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/typora-upload-images/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/typora-upload-images/" itemprop="commentCount"></span>
+    <a title="valine" href="/raspberrypi-part-4/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/raspberrypi-part-4/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -260,32 +254,78 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p> 是否總是在外部連結，如：imgur、ppt.cc上傳圖片後，再丟進Typora裡。不用那麼麻煩，今天教你如何在Typora內部設定自動上傳圖片至自己的圖庫！</p>
+        <p> 上一篇提到我們要來說說網路印表機如何設定(包含但不限於本身有網路功能的印表機，無網路功能的也行)。</p>
 <a id="more"></a>
 
-<p><img src="https://i.loli.net/2021/04/22/bvafR6FHeq4mAod.png"></p>
-<p><strong>Typora</strong> 一直都是我覺得最好用的 Markdown 文字編輯器（目前沒有之一），除了所見即所得的功能之外，也可以在 markdown 原始碼間自由切換，而且因為我平常有自己備份 markdown 文件的習慣，因此也不太習慣使用第三方的軟體（例如：Evernote、Notion 等等）來做編輯，一來想要把所有內容備份到本機時比較麻煩、二來也比較難快速轉移發布到雲端空間的自由度。此外，還可以透過 CSS 直接調整成自己喜歡的樣式。</p>
-<p>大約從 2020 年 2 月開始 Typora 就支援將拉進 Markdown 的圖片自動上傳到雲端空間（imgur, Github, …等）的服務，覺得這功能真的超級方便的：</p>
-<p><img src="https://imgur.com/zyp3NdP.gif" alt="Imgur"></p>
-<h1 id="設定-Typora"><a href="#設定-Typora" class="headerlink" title="設定 Typora"></a>設定 Typora</h1><h2 id="Step-1"><a href="#Step-1" class="headerlink" title="Step 1"></a>Step 1</h2><p>點選Typora上方列表的檔案裡的偏好設定。</p>
-<h2 id="Step-2"><a href="#Step-2" class="headerlink" title="Step 2"></a>Step 2</h2><p>然後選取圖片選項。</p>
-<p>將 When Insert….(當圖片插入時)，選項勾選 「Upload Image」</p>
-<p><img src="https://i.loli.net/2021/04/22/9scDewFgW1XYTSh.png"></p>
-<h2 id="Step-3"><a href="#Step-3" class="headerlink" title="Step 3"></a>Step 3</h2><p>接著圖片上傳者，我們使用內建的PicGo系統，你也可以使用別的系統，但我沒用過，各位可以查查看，或等我哪天發教學再說哈哈XDD</p>
-<p><img src="https://i.loli.net/2021/04/22/Wk9hHgpcmNvzQ8S.png"></p>
-<h2 id="Step-4"><a href="#Step-4" class="headerlink" title="Step 4"></a>Step 4</h2><p> 打開上圖的「Open Config File」，我們這裡使用的是一款中國的免費圖床(有Pro版，但我們需求暫時沒那麼大，免費版有5GB的空間) - <a target="_blank" rel="noopener" href="https://sm.ms/">SM.MS</a> 。</p>
-<p>首先讓我們註冊個帳號。</p>
-<p><img src="https://i.loli.net/2021/04/22/4d2C5JhnlFzcafu.png"></p>
-<p>然後按照指示到個人頁面(Dashboard)。</p>
-<p><img src="https://i.loli.net/2021/04/22/X432iIB7AVuELZQ.png"></p>
-<p>之後產生個人的 API Token並複製下來，之後會用到。</p>
-<p><img src="https://i.loli.net/2021/04/22/oFYDfza9MuKJpQh.png"></p>
-<h2 id="Step-5"><a href="#Step-5" class="headerlink" title="Step 5"></a>Step 5</h2><p>開啟剛剛步驟4所說的「Open Config File」，讓我們貼上剛剛複製的Token就大功告成了！</p>
-<p><img src="https://i.loli.net/2021/04/22/vM4pIemHLf58RCK.png"></p>
-<hr>
-<h3 id="Config-內的程式碼"><a href="#Config-內的程式碼" class="headerlink" title="Config 內的程式碼"></a>Config 內的程式碼</h3><p>Config.json 的程式碼我放在這，以免有人不知道東西怎麼填。</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"><span class="attr">&quot;picBed&quot;</span>: &#123;</span><br><span class="line"><span class="attr">&quot;uploader&quot;</span>: <span class="string">&quot;smms&quot;</span>, </span><br><span class="line"><span class="attr">&quot;smms&quot;</span>: &#123;</span><br><span class="line"><span class="attr">&quot;token&quot;</span>: <span class="string">&quot;XXXXXXXXXXXXXXX&quot;</span><span class="comment">//這裡面的token換成剛剛生成的 sm.ms 的token</span></span><br><span class="line">&#125;</span><br><span class="line">&#125;,</span><br><span class="line"><span class="attr">&quot;picgoPlugins&quot;</span>: &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="安裝CUPS"><a href="#安裝CUPS" class="headerlink" title="安裝CUPS"></a>安裝CUPS</h2><ol>
+<li>安裝cups。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">apt-get install cups</span><br></pre></td></tr></table></figure>
 
+<p><img src="https://i.loli.net/2021/07/12/83c6kxLmCdHfzWF.jpg"></p>
+<ol start="2">
+<li>允許pi使用者設置CUPS。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo usermod -a -G lpadmin pi</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><p>cups設定。</p>
+<ol>
+<li>關閉服務</li>
+</ol>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service cups stop</span><br></pre></td></tr></table></figure>
+
+<pre><code>2. 備份配置檔案</code></pre>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mv &#x2F;etc&#x2F;cups&#x2F;cupsd.conf &#x2F;etc&#x2F;cups&#x2F;cupsd.conf.bak</span><br></pre></td></tr></table></figure>
+
+<pre><code>3. 重啟服務</code></pre>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service cups restart</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>PC端用Brave瀏覽器開啟網站“https://樹莓派ip:631/ ”。</li>
+</ol>
+<p><img src="https://i.loli.net/2021/07/12/wt5Fkzgerf3GdsU.png"></p>
+<ol start="5">
+<li><p>點選“Administration”介面新增對應的印表機，登入帳號和密碼是樹莓派的pi使用者的密碼。</p>
+<p><img src="https://i.loli.net/2021/07/12/Lbt4xXRNamAfWG2.png"></p>
+</li>
+<li><p>然後將你的印表機的USB線插入你的電腦(不是樹莓派xd)。</p>
+</li>
+<li><p>按下「Add Printer」。</p>
+</li>
+<li><p>在Local Printers中找到usb連線的印表機或在同局域網的下找到連線中的印表機，印表機名「EPSON L365 Series」。</p>
+<p><img src="https://i.loli.net/2021/07/12/UXidYAzsJ41cKOb.png"></p>
+</li>
+</ol>
+<p>Name越簡單越好。</p>
+<p><img src="https://i.loli.net/2021/07/12/fUQunb4ym82PhCq.png"></p>
+<ol start="9">
+<li><p>選擇你印表機型號的 PPD 驅動程式檔，如果像我一樣在Model找不到自己的型號，可以 Google 「型號 + PPD」。</p>
+<p><img src="https://i.loli.net/2021/07/12/axhQbY7lG8SwDMv.png"></p>
+</li>
+</ol>
+<p>小Tip： github 檔案不用到最外圈按Download Master zip file，可以直接對你想要的檔案按「另存連結為」，這樣下載下來就會是你想要的格式檔案惹。</p>
+<ol start="10">
+<li><p>按下 Add Printers 即可。到這邊樹沒帶的印表機就設定完成了。接著來設定客戶端的。</p>
+</li>
+<li><p>網路印表機的網址“http://樹莓派ip:631/printers/L365 ”，客戶端按照此網址新增網路印表機和驅動就行了。</p>
+<p><img src="https://i.loli.net/2021/07/12/qrt8md2pCzUHwLF.png"></p>
+</li>
+</ol>
+<p><img src="https://i.loli.net/2021/07/12/6a1bsyBfqlLk9EI.png"></p>
+<p><img src="https://i.loli.net/2021/07/12/in1w4ZrIgJmFH7z.png">接下來的部分我都設定過了，就不重新一一展示了XD</p>
+<ol start="12">
+<li><p>Android 手機，可以在play商店中，搜尋“print”，找到對應牌子的印表機，按照網路印表機的地址「http://樹莓派ip:631/printers/L365」新增印表機，這樣手機也能列印了。</p>
+</li>
+<li><p>利用Samba來新增Windows環境支援</p>
+<p>在CUPS中新增印表機之後即可自動實現AirPrint與IPP廣播，由於CUPS實現廣播利用的是Bonjour協議，而Windows預設不支援Bonjour，所以直接使用Windows新增印表機無法發現印表機的網路位置。為了實現對Windows的支援，需要另外安裝Samba元件，</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install samba</span><br></pre></td></tr></table></figure>
+
+<p>Samba安裝完成後會自動監測CUPS中的印表機，並進行共享操作。此時使用Windows新增印表機功能已可搜尋到印表機的網路位置，按照提示安裝相應驅動即可使用。</p>
+</li>
+</ol>
 
     </div>
 
@@ -326,12 +366,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文標題:</span><a href="/typora-upload-images/">教你如何在Typora內部上傳圖片</a></p>
+  <p><span>本文標題:</span><a href="/raspberrypi-part-4/">樹莓派設定網路印表機</a></p>
   <p><span>文章作者:</span>Hao-Hsiung Kang 康皓雄</a></p>
-  <p><span>發布時間:</span>2021年04月22日 - 15:51</p>
-  <p><span>最後更新:</span>2021年04月23日 - 19:54</p>
-  <p><span>原始連結:</span><a href="/typora-upload-images/" title="教你如何在Typora內部上傳圖片">https://hhk.one/typora-upload-images/</a>
-    <span class="copy-path"  title="點擊複製文章連結"><i class="fa fa-clipboard" data-clipboard-text="https://hhk.one/typora-upload-images/"  aria-label="複製成功！"></i></span>
+  <p><span>發布時間:</span>2021年07月12日 - 15:44</p>
+  <p><span>最後更新:</span>2021年07月12日 - 16:43</p>
+  <p><span>原始連結:</span><a href="/raspberrypi-part-4/" title="樹莓派設定網路印表機">https://hhk.one/raspberrypi-part-4/</a>
+    <span class="copy-path"  title="點擊複製文章連結"><i class="fa fa-clipboard" data-clipboard-text="https://hhk.one/raspberrypi-part-4/"  aria-label="複製成功！"></i></span>
   </p>
   <p><span>許可協議:</span><i class="fa fa-creative-commons" aria-hidden="true"> </i><a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商業性使用-禁止演繹 4.0 國際</a> 轉載請保留連結並註明作者。</p>  
 </div>
@@ -390,8 +430,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E6%95%99%E5%AD%B8/" rel="tag"><i class="fa fa-tag"></i> 教學</a>
-              <a href="/tags/Typora/" rel="tag"><i class="fa fa-tag"></i> Typora</a>
+              <a href="/tags/%E6%A8%B9%E8%8E%93%E6%B4%BE/" rel="tag"><i class="fa fa-tag"></i> 樹莓派</a>
           </div>
 
         
@@ -400,13 +439,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/basic-business/" rel="prev" title="加入巨商企業的心情與感想">
-      <i class="fa fa-chevron-left"></i> 加入巨商企業的心情與感想
+    <a href="/raspberrypi-part-3/" rel="prev" title="樹莓派常用軟體推薦">
+      <i class="fa fa-chevron-left"></i> 樹莓派常用軟體推薦
     </a></div>
-      <div class="post-nav-item">
-    <a href="/life-watch/" rel="next" title="不到千元的智能手錶開箱 - 樂米 Life+">
-      不到千元的智能手錶開箱 - 樂米 Life+ <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -466,7 +502,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A8%AD%E5%AE%9A-Typora"><span class="nav-number">1.</span> <span class="nav-text">設定 Typora</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-1"><span class="nav-number">1.1.</span> <span class="nav-text">Step 1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-2"><span class="nav-number">1.2.</span> <span class="nav-text">Step 2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-3"><span class="nav-number">1.3.</span> <span class="nav-text">Step 3</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-4"><span class="nav-number">1.4.</span> <span class="nav-text">Step 4</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-5"><span class="nav-number">1.5.</span> <span class="nav-text">Step 5</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Config-%E5%85%A7%E7%9A%84%E7%A8%8B%E5%BC%8F%E7%A2%BC"><span class="nav-number">1.5.1.</span> <span class="nav-text">Config 內的程式碼</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%9DCUPS"><span class="nav-number">1.</span> <span class="nav-text">安裝CUPS</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

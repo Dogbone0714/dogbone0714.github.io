@@ -1613,4 +1613,87 @@
         <tag>樹莓派</tag>
       </tags>
   </entry>
+  <entry>
+    <title>樹莓派設定網路印表機</title>
+    <url>/raspberrypi-part-4/</url>
+    <content><![CDATA[<p> 上一篇提到我們要來說說網路印表機如何設定(包含但不限於本身有網路功能的印表機，無網路功能的也行)。</p>
+<a id="more"></a>
+
+<h2 id="安裝CUPS"><a href="#安裝CUPS" class="headerlink" title="安裝CUPS"></a>安裝CUPS</h2><ol>
+<li>安裝cups。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">apt-get install cups</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2021/07/12/83c6kxLmCdHfzWF.jpg"></p>
+<ol start="2">
+<li>允許pi使用者設置CUPS。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo usermod -a -G lpadmin pi</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><p>cups設定。</p>
+<ol>
+<li>關閉服務</li>
+</ol>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo service cups stop</span><br></pre></td></tr></table></figure>
+
+<pre><code>2. 備份配置檔案</code></pre>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo mv &#x2F;etc&#x2F;cups&#x2F;cupsd.conf &#x2F;etc&#x2F;cups&#x2F;cupsd.conf.bak</span><br></pre></td></tr></table></figure>
+
+<pre><code>3. 重啟服務</code></pre>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo service cups restart</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>PC端用Brave瀏覽器開啟網站“https://樹莓派ip:631/ ”。</li>
+</ol>
+<p><img src="https://i.loli.net/2021/07/12/wt5Fkzgerf3GdsU.png"></p>
+<ol start="5">
+<li><p>點選“Administration”介面新增對應的印表機，登入帳號和密碼是樹莓派的pi使用者的密碼。</p>
+<p><img src="https://i.loli.net/2021/07/12/Lbt4xXRNamAfWG2.png"></p>
+</li>
+<li><p>然後將你的印表機的USB線插入你的電腦(不是樹莓派xd)。</p>
+</li>
+<li><p>按下「Add Printer」。</p>
+</li>
+<li><p>在Local Printers中找到usb連線的印表機或在同局域網的下找到連線中的印表機，印表機名「EPSON L365 Series」。</p>
+<p><img src="https://i.loli.net/2021/07/12/UXidYAzsJ41cKOb.png"></p>
+</li>
+</ol>
+<p>Name越簡單越好。</p>
+<p><img src="https://i.loli.net/2021/07/12/fUQunb4ym82PhCq.png"></p>
+<ol start="9">
+<li><p>選擇你印表機型號的 PPD 驅動程式檔，如果像我一樣在Model找不到自己的型號，可以 Google 「型號 + PPD」。</p>
+<p><img src="https://i.loli.net/2021/07/12/axhQbY7lG8SwDMv.png"></p>
+</li>
+</ol>
+<p>小Tip： github 檔案不用到最外圈按Download Master zip file，可以直接對你想要的檔案按「另存連結為」，這樣下載下來就會是你想要的格式檔案惹。</p>
+<ol start="10">
+<li><p>按下 Add Printers 即可。到這邊樹沒帶的印表機就設定完成了。接著來設定客戶端的。</p>
+</li>
+<li><p>網路印表機的網址“http://樹莓派ip:631/printers/L365 ”，客戶端按照此網址新增網路印表機和驅動就行了。</p>
+<p><img src="https://i.loli.net/2021/07/12/qrt8md2pCzUHwLF.png"></p>
+</li>
+</ol>
+<p><img src="https://i.loli.net/2021/07/12/6a1bsyBfqlLk9EI.png"></p>
+<p><img src="https://i.loli.net/2021/07/12/in1w4ZrIgJmFH7z.png">接下來的部分我都設定過了，就不重新一一展示了XD</p>
+<ol start="12">
+<li><p>Android 手機，可以在play商店中，搜尋“print”，找到對應牌子的印表機，按照網路印表機的地址「http://樹莓派ip:631/printers/L365」新增印表機，這樣手機也能列印了。</p>
+</li>
+<li><p>利用Samba來新增Windows環境支援</p>
+<p>在CUPS中新增印表機之後即可自動實現AirPrint與IPP廣播，由於CUPS實現廣播利用的是Bonjour協議，而Windows預設不支援Bonjour，所以直接使用Windows新增印表機無法發現印表機的網路位置。為了實現對Windows的支援，需要另外安裝Samba元件，</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get install samba</span><br></pre></td></tr></table></figure>
+
+<p>Samba安裝完成後會自動監測CUPS中的印表機，並進行共享操作。此時使用Windows新增印表機功能已可搜尋到印表機的網路位置，按照提示安裝相應驅動即可使用。</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>樹莓派</category>
+      </categories>
+      <tags>
+        <tag>樹莓派</tag>
+      </tags>
+  </entry>
 </search>
