@@ -1571,4 +1571,46 @@
         <tag>樹莓派</tag>
       </tags>
   </entry>
+  <entry>
+    <title>樹莓派常用軟體推薦</title>
+    <url>/raspberrypi-part-3/</url>
+    <content><![CDATA[<p> 小弟來推薦一些個人常用的軟體給大家，小弟對樹莓派的用途是拿來當小型桌機+家用伺服器+自架NAS+家用媒體播放器。(浪費XD)</p>
+<a id="more"></a>
+
+<ol>
+<li><p>LibreOffice</p>
+<p>Libreoffice是經典開源系列了，是替代Microsoft office的一個好方法~不僅在Linux上能使用，在Windows上也是很好用的軟體，歡迎沒有買Microsoft Office的人也可以去試用看看~~現在的Libreffice已經在介面上跟以前有很大的差別惹。</p>
+<p><code>sudo apt-get install libreoffice</code></p>
+</li>
+<li><p>VScode</p>
+<p>這款在寫程式的人心中應該跟Sublime Text 3一樣好用8，雖然樹莓派也能安裝Pycharm，但個人覺得雖有4GB但還是偶爾會小卡頓，VScode基本不要像平常一樣裝很多浮誇裝飾用的extension就不會卡。這邊給大家一個小Tip：Vscode有支援個人設定檔雲端同步的功能，可以在windows vscode登入你的github帳號，然後開啟sync功能，接著在rasbian vscode登入，就可以省下設定的時間(灑花)~~</p>
+</li>
+<li><p>VLC播放器</p>
+<p>我覺得這款大家應該會很有印象XD跟Potplayer並列補習班電腦最常出現的播放器沒有之一，畢竟他免費又開源，常常更新，所以難怪是最常看到的。</p>
+<p><code>sudo apt-get install vlc</code></p>
+</li>
+<li><p>XMBC Kodi</p>
+<p>這款是家庭媒體播放器，算是很多雜牌(?)的電視盒子常會內建的軟體，畢竟他免費，功能中，又內建中文，之後找時間開一篇文來介紹他(希望我不會忘記XD)</p>
+<p><code>sudo apt-get install xbmc</code></p>
+</li>
+<li><p>GIMP</p>
+<p>這邊share一張圖給大家</p>
+<p><img src="https://i.loli.net/2021/07/12/DzGkmRQrwcagPFb.jpg"></p>
+</li>
+</ol>
+<p>這是由好心人 XdanielArt大大所整理的，上面有各種Adobe軟體對應開源及不開源的一些軟體可以下載，供大家存參。</p>
+<p>回到正題，GIMP是一款修圖軟體，其功能極像Photoshop，但他免費，且極常更新。</p>
+<p><code>sudo apt-get install gimp</code></p>
+<hr>
+<p>好</p>
+<p>我們先寫到這裡就好，我眼鏡鏡片掉了，要去眼鏡行給師父修XDD</p>
+<p>下一篇來介紹在家用伺服器中，我們要如何把樹莓派連接家中的印表機，實現隨處可印的效果~</p>
+]]></content>
+      <categories>
+        <category>樹莓派</category>
+      </categories>
+      <tags>
+        <tag>樹莓派</tag>
+      </tags>
+  </entry>
 </search>
