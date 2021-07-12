@@ -1696,4 +1696,51 @@
         <tag>樹莓派</tag>
       </tags>
   </entry>
+  <entry>
+    <title>如何使用手機連線控制樹莓派 - RealVNC</title>
+    <url>/raspberrypi-part-5/</url>
+    <content><![CDATA[<p> 今天教大家如何使用手機連線控制樹莓派，這裡會用到一款軟體叫作 RealVNC。來介紹伺服端+客戶端的介紹~</p>
+<a id="more"></a>
+
+<p><img src="https://i.loli.net/2021/07/12/gshvJ6R9yTxQcwN.png"></p>
+<blockquote>
+<p><strong>What is you need：</strong></p>
+<ul>
+<li>燒錄好Raspbian的樹莓派</li>
+<li>連接網路</li>
+<li>VNC Server及VNC Viewer </li>
+</ul>
+</blockquote>
+<h4 id="開啟-VNC"><a href="#開啟-VNC" class="headerlink" title="開啟 VNC"></a><strong>開啟 VNC</strong></h4><ol>
+<li>在Raspbian系統中，點選螢幕左上方的樹莓派圖示，選擇偏好設定&gt;設定樹莓派。VNC Server的按鈕將會出現在螢幕右上方選單列的最後一項，點擊它以啟用VNC Server。</li>
+</ol>
+<p><img src="https://i.loli.net/2021/07/12/tZQJGvfjCWUDcby.png"></p>
+<ol start="2">
+<li>在樹莓派上使用設定工具啟用VNC Server，選擇「介面」標籤，並將VNC設定為啟用。</li>
+</ol>
+<p><img src="https://i.loli.net/2021/07/12/ueIlxR8UgjGHi65.png"></p>
+<h4 id="開啟VNC-Viewer"><a href="#開啟VNC-Viewer" class="headerlink" title="開啟VNC Viewer"></a><strong>開啟VNC Viewer</strong></h4><p>現在你可以從另一台電腦連接到樹莓派上， 我這邊使用手機登入，但你可以從Mac、Linux 電腦，甚至是用同一網絡上的另一台樹莓派連接。</p>
+<p>由於我們在樹莓派上使用VNC Server，因此在Windows 電腦上使用VNC Viewer是合理的。 VNC Viewer可用於macOS、Linux、Android以及iOS平台。</p>
+<p>前往Play商店，搜尋「RealVNC viewer」，看到這個圖示，即可下載下去，安裝並打開它。</p>
+<p><img src="https://i.loli.net/2021/07/12/jIYldobVZBhm7xL.png"></p>
+<h4 id="連接到樹莓派"><a href="#連接到樹莓派" class="headerlink" title="連接到樹莓派"></a><strong>連接到樹莓派</strong></h4><p><img src="https://i.loli.net/2021/07/12/DPGaUnTXHVew2qg.jpg"></p>
+<h4 id="IP位置"><a href="#IP位置" class="headerlink" title="IP位置"></a>IP位置</h4><p>如果你在連線位置直接輸入ip連線，那麼你們會看到這個畫面。</p>
+<p><img src="https://i.loli.net/2021/07/12/x47nWQtfBqmrdkI.jpg"></p>
+<p>正確的IP位置及port的部分可以透過 raspbian terminal 來查詢，輸入</p>
+<p><code>vncserver</code></p>
+<p><img src="https://i.loli.net/2021/07/12/JK4d1vEmhYOGsuQ.png"></p>
+<p>輸入正確的ip+port，即可輕鬆連線，記得輸入你的raspberry密碼。</p>
+<p><img src="https://i.loli.net/2021/07/12/akqlbfLHZAWEKSc.jpg"></p>
+<p>恭喜成功登入!</p>
+<hr>
+<p>參考資料及圖片來源：</p>
+<p><a href="https://www.raspberrypi.org/documentation/remote-access/vnc/">樹莓派官方文件</a></p>
+]]></content>
+      <categories>
+        <category>樹莓派</category>
+      </categories>
+      <tags>
+        <tag>樹莓派</tag>
+      </tags>
+  </entry>
 </search>
