@@ -1462,6 +1462,8 @@
     <content><![CDATA[<p> Need Only ：一張樹莓派、一張SD卡、一條電源線、一台筆電、一個WIFI網路，Just these only ！</p>
 <a id="more"></a>
 
+<p><img src="https://i.loli.net/2021/07/12/GJVnOQDtShyuN79.jpg"></p>
+<p>(我家樹莓派的沙龍照XDD)</p>
 <h1 id="安裝作業系統-Raspbian-15min"><a href="#安裝作業系統-Raspbian-15min" class="headerlink" title="安裝作業系統 Raspbian (15min)"></a>安裝作業系統 Raspbian (15min)</h1><blockquote>
 <p><a href="https://www.raspberrypi.org/downloads/">官網提供兩種方法</a></p>
 </blockquote>
@@ -1491,7 +1493,7 @@
 <li><p>進入樹莓派的Terminal的世界！</p>
 </li>
 </ol>
-<h2 id="If-你的手機基地台只有顯示-MAC位址-你可以這樣做！"><a href="#If-你的手機基地台只有顯示-MAC位址-你可以這樣做！" class="headerlink" title="If 你的手機基地台只有顯示 MAC位址 你可以這樣做！"></a>If 你的手機基地台只有顯示 MAC位址 你可以這樣做！</h2><p>透過**<a href="https://www.advanced-ip-scanner.com/">AdvancedIPScanner</a><strong>知道ip（</strong>確保你的電腦也處在同一個局域網下**）</p>
+<h2 id="If-你的手機基地台只有顯示-MAC位址-你可以這樣做！"><a href="#If-你的手機基地台只有顯示-MAC位址-你可以這樣做！" class="headerlink" title="If 你的手機基地台只有顯示 MAC位址 你可以這樣做！"></a>If 你的手機基地台只有顯示 MAC位址 你可以這樣做！</h2><p>透過<a href="https://www.advanced-ip-scanner.com/">AdvancedIPScanner</a>知道ip（<strong>確保你的電腦也處在同一個局域網下</strong>）</p>
 <p>執行Advanced IP Scanner，點選掃描，<strong>在「名稱」找到RASPBERRYPI</strong>，其ip就是樹莓派ip。</p>
 <p><img src="https://i.loli.net/2021/07/11/o8zNMfvrJbk9LZ1.png"></p>
 <h1 id="安裝遠端桌面服務xrdp-5min"><a href="#安裝遠端桌面服務xrdp-5min" class="headerlink" title="安裝遠端桌面服務xrdp (5min)"></a>安裝遠端桌面服務xrdp (5min)</h1><blockquote>
@@ -1516,6 +1518,51 @@
 <blockquote>
 <p>最後~~<strong>關機指令是：</strong> <code>sudo halt</code>！</p>
 </blockquote>
+]]></content>
+      <categories>
+        <category>樹莓派</category>
+      </categories>
+      <tags>
+        <tag>樹莓派</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>樹莓派如何輸入中文字？</title>
+    <url>/raspberrypi-part-2/</url>
+    <content><![CDATA[<p> 拿到樹莓派的你是否發現，設定中預設的中文，並不能打中文？？沒關係，這篇文教你如何安裝中文輸入法及設定中文！</p>
+<a id="more"></a>
+
+<ol>
+<li><p>打開 Terminal</p>
+</li>
+<li><p>安裝SCIM輸入法</p>
+<p><code>sudo apt-get install scim scim-tables-zh</code></p>
+</li>
+<li><p>查看SCIM輸入法的切換查看及設定<br>(樹莓派LOGO→偏好設定→SCIM輸入法框架)</p>
+<p><img src="https://i.loli.net/2021/07/12/6M1tiYe9jxIsWNw.png"></p>
+</li>
+</ol>
+<p>(功能切換的快速鍵)</p>
+<h2 id="開啟鍵盤功能：Control-Space"><a href="#開啟鍵盤功能：Control-Space" class="headerlink" title="開啟鍵盤功能：Control + Space"></a>開啟鍵盤功能：Control + Space</h2><p><img src="https://i.loli.net/2021/07/12/y9KYQvCfI62UHdX.png"></p>
+<h2 id="設定輸入法切換："><a href="#設定輸入法切換：" class="headerlink" title="設定輸入法切換："></a>設定輸入法切換：</h2><ol>
+<li><p>點下一種輸入法旁的三個點點</p>
+</li>
+<li><p>點選畫面中的三個點點</p>
+<p><img src="https://i.loli.net/2021/07/12/ASz79DFrg6W8GKm.png"></p>
+</li>
+<li><p>再按下你想要設定切換的按鍵，我這邊是設定 左邊的shift。</p>
+</li>
+<li><p>最後按下「+」鍵以及確認即可。</p>
+<p><img src="https://i.loli.net/2021/07/12/MrUOCnhN1p4gSo8.png"></p>
+</li>
+<li><p>之後按下畫面中的勾勾即可作用。</p>
+</li>
+</ol>
+<p>我們來測試看看是否真的能打字~~</p>
+<p>打開Libreoffice Writer (下一篇文會做介紹)</p>
+<p>按下Control+space，再按下Shift。</p>
+<p><img src="https://i.loli.net/2021/07/12/SZGAgj9Qa1D6ke2.png"></p>
+<p>好啦 可以 今天收工惹。</p>
 ]]></content>
       <categories>
         <category>樹莓派</category>
