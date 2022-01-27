@@ -29,25 +29,42 @@
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-  <meta name="description" content="本教程針對的是Windows環境下，Next主題的文章分類和標籤設置，其他主題也應該是類似的。添加成功後會在側邊欄或導航欄生成“分類”和“標籤”這兩個選項，看下圖：">
+  <meta name="description" content="好久不見了(汗顏)，距離部落格因為筆電 SSD 過世，而跟著部落格的 Hexo 檔遺失因此沒有在寫文章已經過了半年了。 這一次直接跳到考完試出去玩，而那些 CSEPT 阿，轉學考阿，我們先跳過吧，之後再說(汗顏)   這次的出遊者是由我、小孩(我老婆)以及大份(小孩的同班同學 aka 她室友)，以後的文章都會以小孩跟大份代為稱呼，保護本名，請多見諒。這次是說好的考完試，寒假前要出去玩，急急忙忙決">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo 全攻略 - 如何新增多個標籤及分類">
-<meta property="og:url" content="https://blog.hhk.one/add-tags/index.html">
+<meta property="og:title" content="2022 台中三日遊 - 跟著小孩及大份一同出去玩">
+<meta property="og:url" content="https://blog.hhk.one/Taichung-2022/index.html">
 <meta property="og:site_name" content="康康的斜槓人生">
-<meta property="og:description" content="本教程針對的是Windows環境下，Next主題的文章分類和標籤設置，其他主題也應該是類似的。添加成功後會在側邊欄或導航欄生成“分類”和“標籤”這兩個選項，看下圖：">
+<meta property="og:description" content="好久不見了(汗顏)，距離部落格因為筆電 SSD 過世，而跟著部落格的 Hexo 檔遺失因此沒有在寫文章已經過了半年了。 這一次直接跳到考完試出去玩，而那些 CSEPT 阿，轉學考阿，我們先跳過吧，之後再說(汗顏)   這次的出遊者是由我、小孩(我老婆)以及大份(小孩的同班同學 aka 她室友)，以後的文章都會以小孩跟大份代為稱呼，保護本名，請多見諒。這次是說好的考完試，寒假前要出去玩，急急忙忙決">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://i.loli.net/2021/03/25/T9p28IBmJQCyPrj.png">
-<meta property="og:image" content="https://i.loli.net/2021/03/25/7DUFadJQO3Z5Tks.png">
-<meta property="og:image" content="https://i.loli.net/2021/03/25/HdhS2Dj6aBvbGE5.png">
-<meta property="article:published_time" content="2021-03-25T07:50:37.000Z">
-<meta property="article:modified_time" content="2021-03-27T13:25:02.213Z">
+<meta property="og:image" content="https://s2.loli.net/2022/01/26/atqk2vDU5mpdeAl.png">
+<meta property="og:image" content="https://s2.loli.net/2022/01/27/Kvab8mxZerny1Gh.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/01/27/qUVSC5slL4WtTFK.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/01/27/VAkx3XzOyjms7Fg.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/01/27/i6SkYaBstmJ8GxR.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/01/27/rjBPTwILkZ9X7Vg.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/01/27/nzrS31Ecu5UDbxK.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/01/27/WyiQdvjBA5RTVM1.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/01/27/XawBugzTvMqJNxO.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/01/27/WCgeRsV5wNrnGL6.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/01/27/AzZsSHEuc9yVLUn.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/01/27/MZkghnXj4bNx8Kt.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/01/27/WY5BlXjvUoE14LV.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/01/27/zK5u7PJ4E3feYyF.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/01/27/6lna4XJBzUfMEop.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/01/27/Pa54EYdcbWG7kMO.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/01/27/amJXtCAYjg6QDxI.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/01/27/eb9gSkY8tinCMNm.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/01/28/bJiRSw7cta21Vqx.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/01/28/LI3bz95xEKWMQkn.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/01/28/f53Q1s6GBjViuAU.jpg">
+<meta property="og:image" content="https://s2.loli.net/2022/01/28/flhnYPicmjrKMXI.jpg">
+<meta property="article:published_time" content="2022-01-26T13:23:34.000Z">
+<meta property="article:modified_time" content="2022-01-27T20:12:24.932Z">
 <meta property="article:author" content="康康 HHK">
-<meta property="article:tag" content="教學">
-<meta property="article:tag" content="Hexo 部落格">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.loli.net/2021/03/25/T9p28IBmJQCyPrj.png">
+<meta name="twitter:image" content="https://s2.loli.net/2022/01/26/atqk2vDU5mpdeAl.png">
 
-<link rel="canonical" href="https://blog.hhk.one/add-tags/">
+<link rel="canonical" href="https://blog.hhk.one/Taichung-2022/">
 
 
 <script id="page-configurations">
@@ -60,7 +77,7 @@
   };
 </script>
 
-  <title>Hexo 全攻略 - 如何新增多個標籤及分類 | 康康的斜槓人生</title>
+  <title>2022 台中三日遊 - 跟著小孩及大份一同出去玩 | 康康的斜槓人生</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DMF3F131NL"></script>
     <script data-pjax>
@@ -181,7 +198,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://blog.hhk.one/add-tags/">
+    <link itemprop="mainEntityOfPage" href="https://blog.hhk.one/Taichung-2022/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -194,7 +211,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hexo 全攻略 - 如何新增多個標籤及分類
+          2022 台中三日遊 - 跟著小孩及大份一同出去玩
         </h1>
 
         <div class="post-meta">
@@ -204,14 +221,14 @@
               </span>
               <span class="post-meta-item-text">發表於</span>
 
-              <time title="創建時間：2021-03-25 15:50:37" itemprop="dateCreated datePublished" datetime="2021-03-25T15:50:37+08:00">2021-03-25</time>
+              <time title="創建時間：2022-01-26 21:23:34" itemprop="dateCreated datePublished" datetime="2022-01-26T21:23:34+08:00">2022-01-26</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2021-03-27 21:25:02" itemprop="dateModified" datetime="2021-03-27T21:25:02+08:00">2021-03-27</time>
+                <time title="修改時間：2022-01-28 04:12:24" itemprop="dateModified" datetime="2022-01-28T04:12:24+08:00">2022-01-28</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -219,12 +236,12 @@
               </span>
               <span class="post-meta-item-text">分類於</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo-%E9%83%A8%E8%90%BD%E6%A0%BC/" itemprop="url" rel="index"><span itemprop="name">Hexo 部落格</span></a>
+                  <a href="/categories/%E5%87%BA%E5%8E%BB%E7%8E%A9/" itemprop="url" rel="index"><span itemprop="name">出去玩</span></a>
                 </span>
             </span>
 
           
-            <span id="/add-tags/" class="post-meta-item leancloud_visitors" data-flag-title="Hexo 全攻略 - 如何新增多個標籤及分類" title="閱讀次數">
+            <span id="/Taichung-2022/" class="post-meta-item leancloud_visitors" data-flag-title="2022 台中三日遊 - 跟著小孩及大份一同出去玩" title="閱讀次數">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -246,8 +263,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/add-tags/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/add-tags/" itemprop="commentCount"></span>
+    <a title="valine" href="/Taichung-2022/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Taichung-2022/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -262,51 +279,73 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>本教程針對的是Windows環境下，Next主題的文章分類和標籤設置，其他主題也應該是類似的。添加成功後會在側邊欄或導航欄生成“分類”和“標籤”這兩個選項，看下圖：</p>
-<a id="more"></a>
+        <p> 好久不見了(汗顏)，距離部落格因為筆電 SSD 過世，而跟著部落格的 Hexo 檔遺失因此沒有在寫文章已經過了半年了。</p>
+<p>這一次直接跳到考完試出去玩，而那些 CSEPT 阿，轉學考阿，我們先跳過吧，之後再說(汗顏)</p>
+<!--more--->
 
-<p><img src="https://i.loli.net/2021/03/25/T9p28IBmJQCyPrj.png"></p>
-<p>點擊「分類」後的頁面：</p>
-<p><img src="https://i.loli.net/2021/03/25/7DUFadJQO3Z5Tks.png"></p>
-<p>點擊「標籤」後的頁面：</p>
-<p><img src="https://i.loli.net/2021/03/25/HdhS2Dj6aBvbGE5.png"></p>
-<h3 id="創建「分類」選項"><a href="#創建「分類」選項" class="headerlink" title="創建「分類」選項"></a>創建「分類」選項</h3><h4 id="生成「分類」頁並添加type屬性"><a href="#生成「分類」頁並添加type屬性" class="headerlink" title="生成「分類」頁並添加type屬性"></a>生成「分類」頁並添加type屬性</h4><p>打開命令行，進入博客所在文件夾。執行命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
-
-<p>成功後會提示：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INFO Created: ~&#x2F;Documents&#x2F;blog&#x2F;source&#x2F;categories&#x2F;index.md</span><br></pre></td></tr></table></figure>
-
-<p>根據上面的路徑，找到<code>index.md</code>這個文件，打開後默認內容是這樣的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分類</span><br><span class="line">date: 2017-05-27 13:47:40</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>添加<code>type: &quot;categories&quot;</code>到內容中，添加後是這樣的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分類</span><br><span class="line">date: 2017-05-27 13:47:40</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>保存並關閉文件。</p>
-<h4 id="給文章添加“categories”屬性"><a href="#給文章添加“categories”屬性" class="headerlink" title="給文章添加“categories”屬性"></a>給文章添加“categories”屬性</h4><p>打開需要添加分類的文章，為其添加categories屬性。下方的<code>categories: Hexo 部落格</code>表示添加這篇文章到「Hexo 部落格」這個分類。注意：hexo一篇文章只能屬於一個分類，也就是說如果在「- Hexo 部落格」下方添加「-xxx」，hexo不會產生兩個分類，而是把分類嵌套（即該文章屬於「- Hexo 部落格」下的「-xxx」分類）。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 從文組生到闖進資服競賽全國前三名 - 24屆 Innoserve競賽全紀錄</span><br><span class="line">copyright: true</span><br><span class="line">date: 2021-03-24 22:03:18</span><br><span class="line">tags: </span><br><span class="line">- 經驗分享</span><br><span class="line">- 資訊競賽</span><br><span class="line">categories: 資訊競賽</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>至此，成功給文章添加分類，點擊首頁的“分類”可以看到該分類下的所有文章。當然，只有添加了<code>categories: xxx</code>的文章才會被收錄到首頁的“分類”中。</p>
-<h3 id="創建「標籤」選項"><a href="#創建「標籤」選項" class="headerlink" title="創建「標籤」選項"></a>創建「標籤」選項</h3><h4 id="生成「標籤」頁並添加type屬性"><a href="#生成「標籤」頁並添加type屬性" class="headerlink" title="生成「標籤」頁並添加type屬性"></a>生成「標籤」頁並添加type屬性</h4><p>打開命令行，進入博客所在文件夾。執行命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
-
-<p>成功後會提示：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INFO Created: ~&#x2F;Documents&#x2F;blog&#x2F;source&#x2F;tags&#x2F;index.md</span><br></pre></td></tr></table></figure>
-
-<p>根據上面的路徑，找到<code>index.md</code>這個文件，打開後默認內容是這樣的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 標籤</span><br><span class="line">date: 2017-05-27 14:22:08</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>添加<code>type: &quot;tags&quot;</code>到內容中，添加後是這樣的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分類</span><br><span class="line">date: 2017-05-27 13:47:40</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>保存並關閉文件。</p>
-<h4 id="給文章添加「tags」屬性"><a href="#給文章添加「tags」屬性" class="headerlink" title="給文章添加「tags」屬性"></a>給文章添加「tags」屬性</h4><p>打開需要添加標籤的文章，為其添加tags屬性。下方的<code>tags:</code>下方的<code>- 經驗分享</code> <code>- 資訊競賽</code>就是這篇文章的標籤了</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 從文組生到闖進資服競賽全國前三名 - 24屆 Innoserve競賽全紀錄</span><br><span class="line">copyright: true</span><br><span class="line">date: 2021-03-24 22:03:18</span><br><span class="line">tags: </span><br><span class="line">- 經驗分享</span><br><span class="line">- 資訊競賽</span><br><span class="line">categories: 資訊競賽</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>至此，成功給文章添加分類，點擊首頁的「標籤」可以看到該標籤下的所有文章。當然，只有添加了<code>tags: xxx</code>的文章才會被收錄到首頁的「標籤」中。</p>
-<p>細心的朋友可能已經發現，這兩個的設置幾乎一模一樣！是的，沒錯，思路都是一樣的。所以我們可以打開scaffolds/post.md文件，在tages:上面加入categories:,保存後，之後執行<code>hexo new 文章名</code>命令生成的文件，頁面裡就有<code>categories:</code>項了。</p>
-<p>scaffolds目錄下，是新建頁面的模板，執行新建命令時，是根據這裡的模板頁來完成的，所以可以在這裡根據你自己的需求添加一些默認值。</p>
-<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><p><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues/351">Issue：如何設置多標籤??</a></p>
+<p>這次的出遊者是由我、小孩(我老婆)以及大份(小孩的同班同學 aka 她室友)，以後的文章都會以小孩跟大份代為稱呼，保護本名，請多見諒。這次是說好的考完試，寒假前要出去玩，急急忙忙決定了高雄跟桃園的中繼站 - 台中，也是為了跑去找傳說中的 phin 玩，於是在他們的全權信任下，交由我負責這次的行程規劃。</p>
+<p>先來看這次的<a target="_blank" rel="noopener" href="https://www.google.com/maps/d/edit?mid=1-UkCSs1J34cRwjDTHd8QnobBTU64adV4&usp=sharing">行程</a>。</p>
+<p><img src="https://s2.loli.net/2022/01/26/atqk2vDU5mpdeAl.png"></p>
+<p>由於沒有汽車，於是我都規劃在可以透過公車抵達或者少部份等車必須15分鐘以上的距離才會透過LINE Taxi前往，不然其他都是透過我們的雙腳來當最好的代步工具。</p>
+<blockquote>
+<p>——- 工商時間 ——-<br>使用我的LINE Taxi推薦序號：BXTVUI，尼可以獲得50元乘車券*3張。<br>——- 工商結束 ——-</p>
+</blockquote>
+<h1 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h1><h3 id="寄放行李"><a href="#寄放行李" class="headerlink" title="寄放行李"></a>寄放行李</h3><p>到了車站跟小孩和大份集合後，立馬跑去車站寄放行李跟付款，不然實在是太重了(汗顏)，拖了兩個行李箱到處跑。還好這次的旅館選擇的是車站後方、大魯閣新時代廣場旁的 <a target="_blank" rel="noopener" href="https://www.booking.com/hotel/tw/mini-hotels-tai-zhong-huo-che-zhan-guan.zh-tw.html">Mini Hotels</a> 。</p>
+<p><img src="https://s2.loli.net/2022/01/27/Kvab8mxZerny1Gh.jpg"></p>
+<p>大門口有兩隻胡桃鉗超可愛的，晚上直接跑去跟他合照。</p>
+<p>這次我們是在Booking上訂房的，以3人房2晚的形式租到了3724元的價格，超便宜的，等於一個人每晚不用600元，就獲得了含早餐的舒適旅程，大家未來來台中時不妨試試看。</p>
+<p>在寄放行李後跑去吃了隔壁轉角的湯包，真的是「湯包」，湯有夠多的，人也是跟湯一樣多，不過很快就輪到我們了，非常適合當作去台中的第一餐。</p>
+<h3 id="台中文化產業園區"><a href="#台中文化產業園區" class="headerlink" title="台中文化產業園區"></a>台中文化產業園區</h3><p>老實說有點小失望，原本以為舊酒廠過去是能品酒的，但全部都是要花錢!花錢!花錢!而且很多廠區都沒開，不確定是不是因為疫情的關係，但目前只要去打卡就送木頭筆，我是木頭控，我被收買惹。</p>
+<p><img src="https://s2.loli.net/2022/01/27/qUVSC5slL4WtTFK.jpg"></p>
+<h3 id="審計新村-amp-草悟道"><a href="#審計新村-amp-草悟道" class="headerlink" title="審計新村&amp;草悟道"></a>審計新村&amp;草悟道</h3><p>真的很好拍照！</p>
+<p><img src="https://s2.loli.net/2022/01/27/VAkx3XzOyjms7Fg.jpg"></p>
+<p>喜歡拍照的人，拿起你的相機，隨便拍拍都很美！</p>
+<p>而且我還在那買到我最愛的花果茶(讚讚)刺蝟果然都是好東東</p>
+<p><img src="https://s2.loli.net/2022/01/27/i6SkYaBstmJ8GxR.jpg"></p>
+<h3 id="喬e歐爸爸吃到飽"><a href="#喬e歐爸爸吃到飽" class="headerlink" title="喬e歐爸爸吃到飽"></a>喬e歐爸爸吃到飽</h3><p>其實這家當午餐還不錯，披薩吃到飽，還有烤炸類，撇除掉一些很詭異的口味，其實在價格上還算能接受，只不過還是有點偏膩，要吃到真的飽，可能有點困難。</p>
+<h3 id="誠品生活園道店"><a href="#誠品生活園道店" class="headerlink" title="誠品生活園道店"></a>誠品生活園道店</h3><p>其實很難說值不值得去，她是一個大range的地方，但不能不說，附近有一家二手書店(茉莉二手書店台中店 他是在一個樓梯往下的空間，不太容易發現)，是在無意中發現的，滿值得各位文青們前去一探究竟。</p>
+<p><img src="https://s2.loli.net/2022/01/27/rjBPTwILkZ9X7Vg.jpg"></p>
+<p>這可能跟我不是所謂的網美網帥一樣有關，我不太喜歡太多人潮聚集的地方，喜歡那種獨自生活的小秘境。這張也是在誠品生活附近拍的，但就見仁見智吧，不過附近的咖啡廳的價格也就跟網美店一樣了，請注意。</p>
+<h3 id="宮原眼科"><a href="#宮原眼科" class="headerlink" title="宮原眼科"></a>宮原眼科</h3><p>很值得去拍照</p>
+<p><img src="https://s2.loli.net/2022/01/27/nzrS31Ecu5UDbxK.jpg"></p>
+<p>為了保護小孩跟大份，請容許我打個馬賽克哈。</p>
+<p>如題，值得去拍照，我認為宮原的物價越來越貴了，沒有想當初的那麼美好，於是就讓那個味道停留在記憶裡就好(其實只是沒錢(冏</p>
+<p>但還是很值得去window-shopping一下。</p>
+<p><img src="https://s2.loli.net/2022/01/27/WyiQdvjBA5RTVM1.jpg"></p>
+<h3 id="綠川水岸"><a href="#綠川水岸" class="headerlink" title="綠川水岸"></a>綠川水岸</h3><p>我覺得跟記憶中差很多，可能因為小時候的我小小隻的，總覺得走起來很大，但現在去的我，沒多久就走完了，而且也不覺得特別到值得特別一去，頂多算是社區造景罷了。</p>
+<h3 id="久流麵攤"><a href="#久流麵攤" class="headerlink" title="久流麵攤"></a>久流麵攤</h3><p>第一天最值得介紹的一餐，久流麵攤，這一碗可是什錦麵，而不是海鮮麵。桃園多處的什錦麵都會用花枝潦草帶過，但他們的蝦子、肉片真的多，份量也真的多，而且只要$60而已！值得一去，但要注意營業時間，最好18點多就要去，老闆的料很有可能賣完，不然你很可能獲得一碗沒有什錦的什錦麵。</p>
+<p><img src="https://s2.loli.net/2022/01/27/XawBugzTvMqJNxO.jpg"></p>
+<h1 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h1><h3 id="國立自然科學博物館"><a href="#國立自然科學博物館" class="headerlink" title="國立自然科學博物館"></a>國立自然科學博物館</h3><p>超！超！超！值得去旁邊的植物園，非常漂亮，帶學生證還只要20元就好。</p>
+<p><img src="https://s2.loli.net/2022/01/27/WCgeRsV5wNrnGL6.jpg"></p>
+<p>認真走的話，可以走個1~2小時都還可能會超過時間，有地下室，可以看食人魚還有笨笨魟魚。跟青蛙合照(雖然有夠醜)</p>
+<p><img src="https://s2.loli.net/2022/01/27/AzZsSHEuc9yVLUn.jpg"></p>
+<p>笨笨魚。</p>
+<p><img src="https://s2.loli.net/2022/01/27/MZkghnXj4bNx8Kt.jpg"></p>
+<p>跟北車鳥人有得比，有夠奇怪，直接讓我跑過去跟她合照(?????</p>
+<p><img src="https://s2.loli.net/2022/01/27/WY5BlXjvUoE14LV.jpg"></p>
+<p>這個的涓涓細水，真的是超漂亮的啦，請各位SD卡帶個256GB的再來，拍照拍到瘋。</p>
+<p>其實博物館也不是懶的解釋。而是當天太多小朋友校外教學，很難專心看展覽。不過有滿多探查人體變化的，可以去玩看看。</p>
+<p><img src="https://s2.loli.net/2022/01/27/zK5u7PJ4E3feYyF.jpg"></p>
+<h3 id="香港金寶茶餐廳"><a href="#香港金寶茶餐廳" class="headerlink" title="香港金寶茶餐廳"></a>香港金寶茶餐廳</h3><p>這不得不說，滿好吃的，而且因為她是港點，所以本來預估要吃個1500元up(三人份)，結果才820，點了廣東炒麵、流沙包、蝦餃以及西米露。但來不及拍照就被吃光了，只剩這些XD</p>
+<p><img src="https://s2.loli.net/2022/01/27/6lna4XJBzUfMEop.jpg"></p>
+<h3 id="燒肉吃到飽"><a href="#燒肉吃到飽" class="headerlink" title="燒肉吃到飽"></a>燒肉吃到飽</h3><p>這次晚上訂的是<strong>愛烤愛對囉 - 台中店</strong>，價格不算太貴，從頭到尾都在吃牛肉真的好幸福，感謝大份幫烤，感謝大家都塞肉片給我(等等 我有幫忙剝蝦子)。</p>
+<p><img src="https://s2.loli.net/2022/01/27/Pa54EYdcbWG7kMO.jpg"></p>
+<h3 id="Mini-Hotels"><a href="#Mini-Hotels" class="headerlink" title="Mini Hotels"></a>Mini Hotels</h3><p>說要去合照，是真的跑去合照的啦！</p>
+<p><img src="https://s2.loli.net/2022/01/27/amJXtCAYjg6QDxI.jpg"></p>
+<p>我們住的樓層是北極熊，其他樓層，我家小孩瘋狂說透視錯了。看來他們沒有請工設系的去裝潢。</p>
+<p><img src="https://s2.loli.net/2022/01/27/eb9gSkY8tinCMNm.jpg"></p>
+<h1 id="Day-3"><a href="#Day-3" class="headerlink" title="Day 3"></a>Day 3</h1><p>一早吃完飯店的早餐(也許是今天住房率較高，還有義大利麵跟水果可以吃)，馬上就準備退房了，走了之前還當了一波客家人。</p>
+<p>Day 3 的行程比較無所事事點。沒有特別規劃，只有預估15:50要玩密室逃脫而已。地圖看到哪就跑去哪了(就不多說我們還跑去IKEA的故事了)</p>
+<p>首先先行的點是台中放送局，現場的歷史建築保持良好，不過也許因為當地的身障學校要辦展覽的關係，很多地方不能參觀，稍顯可惜。</p>
+<p><img src="https://s2.loli.net/2022/01/28/bJiRSw7cta21Vqx.jpg"></p>
+<p><img src="https://s2.loli.net/2022/01/28/LI3bz95xEKWMQkn.jpg"></p>
+<h3 id="台中孔廟"><a href="#台中孔廟" class="headerlink" title="台中孔廟"></a>台中孔廟</h3><p>它的是真 * 孔廟，比較桃園小小的虎頭山旁的孔廟，這間顯得十分巨大。</p>
+<p><img src="https://s2.loli.net/2022/01/28/f53Q1s6GBjViuAU.jpg"></p>
+<p>也許是因為當天是學測日的關係，映入眼簾的便是一堆考生祈求自己考上心目中的第一志願的祈福卡。但因為COVID-19的關係，所以也被借來當疫苗接種所，有點煞風景。</p>
+<h3 id="密室逃脫"><a href="#密室逃脫" class="headerlink" title="密室逃脫"></a>密室逃脫</h3><p><img src="https://s2.loli.net/2022/01/28/flhnYPicmjrKMXI.jpg"></p>
+<p>原本以為是很恐怖的那種。沒想到只是瘋狂解謎，還壓線通關，差點超過一小時(嚇爛)。</p>
+<p>很高興工作室的大家都能陪我出來玩，phin表示：「這算是工作室春遊嗎？」，答「算，但是大家都是股東，所以自己出自己的錢，合理」。</p>
+<h1 id="總結"><a href="#總結" class="headerlink" title="總結"></a>總結</h1><p>好感謝小孩跟大份可以讓我這樣隨心所欲出去玩，有機會還是要一起出去玩的！！謝謝小孩、大份還有Phin，康康在此跟各位道謝，2022年第一次出去玩就獻給你們了！</p>
 
     </div>
 
@@ -347,12 +386,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文標題:</span><a href="/add-tags/">Hexo 全攻略 - 如何新增多個標籤及分類</a></p>
+  <p><span>本文標題:</span><a href="/Taichung-2022/">2022 台中三日遊 - 跟著小孩及大份一同出去玩</a></p>
   <p><span>文章作者:</span>Hao-Hsiung Kang 康皓雄</a></p>
-  <p><span>發布時間:</span>2021年03月25日 - 15:50</p>
-  <p><span>最後更新:</span>2021年03月27日 - 21:25</p>
-  <p><span>原始連結:</span><a href="/add-tags/" title="Hexo 全攻略 - 如何新增多個標籤及分類">https://blog.hhk.one/add-tags/</a>
-    <span class="copy-path"  title="點擊複製文章連結"><i class="fa fa-clipboard" data-clipboard-text="https://blog.hhk.one/add-tags/"  aria-label="複製成功！"></i></span>
+  <p><span>發布時間:</span>2022年01月26日 - 21:23</p>
+  <p><span>最後更新:</span>2022年01月28日 - 04:12</p>
+  <p><span>原始連結:</span><a href="/Taichung-2022/" title="2022 台中三日遊 - 跟著小孩及大份一同出去玩">https://blog.hhk.one/Taichung-2022/</a>
+    <span class="copy-path"  title="點擊複製文章連結"><i class="fa fa-clipboard" data-clipboard-text="https://blog.hhk.one/Taichung-2022/"  aria-label="複製成功！"></i></span>
   </p>
   <p><span>許可協議:</span><i class="fa fa-creative-commons" aria-hidden="true"> </i><a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商業性使用-禁止演繹 4.0 國際</a> 轉載請保留連結並註明作者。</p>  
 </div>
@@ -410,10 +449,6 @@
 	
 
       <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/%E6%95%99%E5%AD%B8/" rel="tag"><i class="fa fa-tag"></i> 教學</a>
-              <a href="/tags/Hexo-%E9%83%A8%E8%90%BD%E6%A0%BC/" rel="tag"><i class="fa fa-tag"></i> Hexo 部落格</a>
-          </div>
 
         
 
@@ -421,13 +456,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/crawler-ptt-codejob/" rel="prev" title="PTT Code_job 文章訂閱通知">
-      <i class="fa fa-chevron-left"></i> PTT Code_job 文章訂閱通知
+    <a href="/github-token/" rel="prev" title="改變 Github Access Token 認證方式">
+      <i class="fa fa-chevron-left"></i> 改變 Github Access Token 認證方式
     </a></div>
-      <div class="post-nav-item">
-    <a href="/md-add-youtube/" rel="next" title="如何在 Hexo 裡面插入 YouTube 連結">
-      如何在 Hexo 裡面插入 YouTube 連結 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -487,7 +519,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%B5%E5%BB%BA%E3%80%8C%E5%88%86%E9%A1%9E%E3%80%8D%E9%81%B8%E9%A0%85"><span class="nav-number">1.</span> <span class="nav-text">創建「分類」選項</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E3%80%8C%E5%88%86%E9%A1%9E%E3%80%8D%E9%A0%81%E4%B8%A6%E6%B7%BB%E5%8A%A0type%E5%B1%AC%E6%80%A7"><span class="nav-number">1.1.</span> <span class="nav-text">生成「分類」頁並添加type屬性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%B5%A6%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E2%80%9Ccategories%E2%80%9D%E5%B1%AC%E6%80%A7"><span class="nav-number">1.2.</span> <span class="nav-text">給文章添加“categories”屬性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%B5%E5%BB%BA%E3%80%8C%E6%A8%99%E7%B1%A4%E3%80%8D%E9%81%B8%E9%A0%85"><span class="nav-number">2.</span> <span class="nav-text">創建「標籤」選項</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E3%80%8C%E6%A8%99%E7%B1%A4%E3%80%8D%E9%A0%81%E4%B8%A6%E6%B7%BB%E5%8A%A0type%E5%B1%AC%E6%80%A7"><span class="nav-number">2.1.</span> <span class="nav-text">生成「標籤」頁並添加type屬性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%B5%A6%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E3%80%8Ctags%E3%80%8D%E5%B1%AC%E6%80%A7"><span class="nav-number">2.2.</span> <span class="nav-text">給文章添加「tags」屬性</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99"><span class="nav-number"></span> <span class="nav-text">參考資料</span></a></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Day-1"><span class="nav-number">1.</span> <span class="nav-text">Day 1</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%84%E6%94%BE%E8%A1%8C%E6%9D%8E"><span class="nav-number">1.0.1.</span> <span class="nav-text">寄放行李</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%B0%E4%B8%AD%E6%96%87%E5%8C%96%E7%94%A2%E6%A5%AD%E5%9C%92%E5%8D%80"><span class="nav-number">1.0.2.</span> <span class="nav-text">台中文化產業園區</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%A9%E8%A8%88%E6%96%B0%E6%9D%91-amp-%E8%8D%89%E6%82%9F%E9%81%93"><span class="nav-number">1.0.3.</span> <span class="nav-text">審計新村&amp;草悟道</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%96%ACe%E6%AD%90%E7%88%B8%E7%88%B8%E5%90%83%E5%88%B0%E9%A3%BD"><span class="nav-number">1.0.4.</span> <span class="nav-text">喬e歐爸爸吃到飽</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AA%A0%E5%93%81%E7%94%9F%E6%B4%BB%E5%9C%92%E9%81%93%E5%BA%97"><span class="nav-number">1.0.5.</span> <span class="nav-text">誠品生活園道店</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%AE%E5%8E%9F%E7%9C%BC%E7%A7%91"><span class="nav-number">1.0.6.</span> <span class="nav-text">宮原眼科</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B6%A0%E5%B7%9D%E6%B0%B4%E5%B2%B8"><span class="nav-number">1.0.7.</span> <span class="nav-text">綠川水岸</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B9%85%E6%B5%81%E9%BA%B5%E6%94%A4"><span class="nav-number">1.0.8.</span> <span class="nav-text">久流麵攤</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Day-2"><span class="nav-number">2.</span> <span class="nav-text">Day 2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%8B%E7%AB%8B%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E5%8D%9A%E7%89%A9%E9%A4%A8"><span class="nav-number">2.0.1.</span> <span class="nav-text">國立自然科學博物館</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A6%99%E6%B8%AF%E9%87%91%E5%AF%B6%E8%8C%B6%E9%A4%90%E5%BB%B3"><span class="nav-number">2.0.2.</span> <span class="nav-text">香港金寶茶餐廳</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%87%92%E8%82%89%E5%90%83%E5%88%B0%E9%A3%BD"><span class="nav-number">2.0.3.</span> <span class="nav-text">燒肉吃到飽</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mini-Hotels"><span class="nav-number">2.0.4.</span> <span class="nav-text">Mini Hotels</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Day-3"><span class="nav-number">3.</span> <span class="nav-text">Day 3</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%B0%E4%B8%AD%E5%AD%94%E5%BB%9F"><span class="nav-number">3.0.1.</span> <span class="nav-text">台中孔廟</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%86%E5%AE%A4%E9%80%83%E8%84%AB"><span class="nav-number">3.0.2.</span> <span class="nav-text">密室逃脫</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%B8%BD%E7%B5%90"><span class="nav-number">4.</span> <span class="nav-text">總結</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
