@@ -2127,7 +2127,7 @@
 <h1 id="總結"><a href="#總結" class="headerlink" title="總結"></a>總結</h1><p>好感謝小孩跟大份可以讓我這樣隨心所欲出去玩，有機會還是要一起出去玩的！！謝謝小孩、大份還有Phin，康康在此跟各位道謝，2022年第一次出去玩就獻給你們了！</p>
 ]]></content>
       <categories>
-        <category>出去玩</category>
+        <category>旅遊</category>
       </categories>
   </entry>
   <entry>
@@ -2142,6 +2142,20 @@
 ]]></content>
       <categories>
         <category>經驗分享</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>windows 11 更新卡 VirtualBox 無法解決</title>
+    <url>/windows11/</url>
+    <content><![CDATA[<p>如標題，如果你從windows 10 更新到 windows 11時，你遇到了這個問題</p>
+<!-- -->
+
+<p><img src="https://s2.loli.net/2022/07/27/ob1umaTtGFxXOyj.png"></p>
+<p>那麼此時的你，只需要去</p>
+<p>(://Program files/ldplayer box)裡面移除 virtualbox就可以了。</p>
+]]></content>
+      <categories>
+        <category>教學</category>
       </categories>
   </entry>
 </search>
