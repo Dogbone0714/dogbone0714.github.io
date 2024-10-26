@@ -29,30 +29,25 @@
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-  <meta name="description" content="上一篇提到我們要來說說網路印表機如何設定(包含但不限於本身有網路功能的印表機，無網路功能的也行)。">
+  <meta name="description" content="想要打造專屬的縮網址系統，不再依賴第三方服務？YOURLS (Your Own URL Shortener) 是一款免費開源的縮網址解決方案，讓你能輕鬆在自己的主機上架設獨立的縮網址服務，不僅支持自訂短網址、還提供詳細的點擊分析，方便追蹤流量來源。本篇文章將帶你了解 YOURLS 的特色、安裝方法及使用技巧，讓你能充分掌控自己的縮網址系統，提升分享效果和網站管理效率。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="樹莓派設定網路印表機">
-<meta property="og:url" content="https://blog.hhk.one/raspberrypi-part-4/index.html">
+<meta property="og:title" content="打造屬於自己的縮網址服務！">
+<meta property="og:url" content="https://blog.hhk.one/shorts-url/index.html">
 <meta property="og:site_name" content="康康的斜槓人生">
-<meta property="og:description" content="上一篇提到我們要來說說網路印表機如何設定(包含但不限於本身有網路功能的印表機，無網路功能的也行)。">
+<meta property="og:description" content="想要打造專屬的縮網址系統，不再依賴第三方服務？YOURLS (Your Own URL Shortener) 是一款免費開源的縮網址解決方案，讓你能輕鬆在自己的主機上架設獨立的縮網址服務，不僅支持自訂短網址、還提供詳細的點擊分析，方便追蹤流量來源。本篇文章將帶你了解 YOURLS 的特色、安裝方法及使用技巧，讓你能充分掌控自己的縮網址系統，提升分享效果和網站管理效率。">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://i.loli.net/2021/07/12/83c6kxLmCdHfzWF.jpg">
-<meta property="og:image" content="https://i.loli.net/2021/07/12/wt5Fkzgerf3GdsU.png">
-<meta property="og:image" content="https://i.loli.net/2021/07/12/Lbt4xXRNamAfWG2.png">
-<meta property="og:image" content="https://i.loli.net/2021/07/12/UXidYAzsJ41cKOb.png">
-<meta property="og:image" content="https://i.loli.net/2021/07/12/fUQunb4ym82PhCq.png">
-<meta property="og:image" content="https://i.loli.net/2021/07/12/axhQbY7lG8SwDMv.png">
-<meta property="og:image" content="https://i.loli.net/2021/07/12/qrt8md2pCzUHwLF.png">
-<meta property="og:image" content="https://i.loli.net/2021/07/12/6a1bsyBfqlLk9EI.png">
-<meta property="og:image" content="https://i.loli.net/2021/07/12/in1w4ZrIgJmFH7z.png">
-<meta property="article:published_time" content="2021-07-12T07:44:32.000Z">
-<meta property="article:modified_time" content="2021-07-12T08:43:08.000Z">
+<meta property="og:image" content="https://s2.loli.net/2024/10/26/yYwtM1hPav3cb2f.png">
+<meta property="og:image" content="https://s2.loli.net/2024/10/26/6ljDi7BZrGvSMf1.png">
+<meta property="og:image" content="https://s2.loli.net/2024/10/27/kxIzjMPascw9SKd.png">
+<meta property="article:published_time" content="2024-10-26T15:43:20.000Z">
+<meta property="article:modified_time" content="2024-10-26T16:16:19.373Z">
 <meta property="article:author" content="康康 HHK">
-<meta property="article:tag" content="樹莓派">
+<meta property="article:tag" content="軟體介紹">
+<meta property="article:tag" content="縮網址">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.loli.net/2021/07/12/83c6kxLmCdHfzWF.jpg">
+<meta name="twitter:image" content="https://s2.loli.net/2024/10/26/yYwtM1hPav3cb2f.png">
 
-<link rel="canonical" href="https://blog.hhk.one/raspberrypi-part-4/">
+<link rel="canonical" href="https://blog.hhk.one/shorts-url/">
 
 
 <script id="page-configurations">
@@ -65,7 +60,7 @@
   };
 </script>
 
-  <title>樹莓派設定網路印表機 | 康康的斜槓人生</title>
+  <title>打造屬於自己的縮網址服務！ | 康康的斜槓人生</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DMF3F131NL"></script>
     <script data-pjax>
@@ -186,7 +181,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://blog.hhk.one/raspberrypi-part-4/">
+    <link itemprop="mainEntityOfPage" href="https://blog.hhk.one/shorts-url/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -199,7 +194,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          樹莓派設定網路印表機
+          打造屬於自己的縮網址服務！
         </h1>
 
         <div class="post-meta">
@@ -208,22 +203,28 @@
                 <i class="fa fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">發表於</span>
-              
 
-              <time title="創建時間：2021-07-12 15:44:32 / 修改時間：16:43:08" itemprop="dateCreated datePublished" datetime="2021-07-12T15:44:32+08:00">2021-07-12</time>
+              <time title="創建時間：2024-10-26 23:43:20" itemprop="dateCreated datePublished" datetime="2024-10-26T23:43:20+08:00">2024-10-26</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2024-10-27 00:16:19" itemprop="dateModified" datetime="2024-10-27T00:16:19+08:00">2024-10-27</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分類於</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%A8%B9%E8%8E%93%E6%B4%BE/" itemprop="url" rel="index"><span itemprop="name">樹莓派</span></a>
+                  <a href="/categories/%E8%BB%9F%E9%AB%94%E4%BB%8B%E7%B4%B9/" itemprop="url" rel="index"><span itemprop="name">軟體介紹</span></a>
                 </span>
             </span>
 
           
-            <span id="/raspberrypi-part-4/" class="post-meta-item leancloud_visitors" data-flag-title="樹莓派設定網路印表機" title="閱讀次數">
+            <span id="/shorts-url/" class="post-meta-item leancloud_visitors" data-flag-title="打造屬於自己的縮網址服務！" title="閱讀次數">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -245,8 +246,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/raspberrypi-part-4/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/raspberrypi-part-4/" itemprop="commentCount"></span>
+    <a title="valine" href="/shorts-url/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/shorts-url/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -255,7 +256,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word"></i>
               </span>
-              <span></span>
+              <span>1.6k</span>
             </span>
 
         </div>
@@ -267,78 +268,74 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p> 上一篇提到我們要來說說網路印表機如何設定(包含但不限於本身有網路功能的印表機，無網路功能的也行)。</p>
+        <p>想要打造專屬的縮網址系統，不再依賴第三方服務？YOURLS (Your Own URL Shortener) 是一款免費開源的縮網址解決方案，讓你能輕鬆在自己的主機上架設獨立的縮網址服務，不僅支持自訂短網址、還提供詳細的點擊分析，方便追蹤流量來源。本篇文章將帶你了解 YOURLS 的特色、安裝方法及使用技巧，讓你能充分掌控自己的縮網址系統，提升分享效果和網站管理效率。</p>
 <a id="more"></a>
 
-<h2 id="安裝CUPS"><a href="#安裝CUPS" class="headerlink" title="安裝CUPS"></a>安裝CUPS</h2><ol>
-<li>安裝cups。</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">apt-get install cups</span><br></pre></td></tr></table></figure>
+<h2 id="YOURLS"><a href="#YOURLS" class="headerlink" title="YOURLS"></a>YOURLS</h2><p><img src="https://s2.loli.net/2024/10/26/yYwtM1hPav3cb2f.png"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">軟體名稱：YOURLS</span><br><span class="line">適用平台：支援 PHP 程式語言的網站即可 </span><br><span class="line">軟體下載：https:&#x2F;&#x2F;github.com&#x2F;YOURLS&#x2F;YOURLS</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://i.loli.net/2021/07/12/83c6kxLmCdHfzWF.jpg"></p>
-<ol start="2">
-<li>允許pi使用者設置CUPS。</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo usermod -a -G lpadmin pi</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li><p>cups設定。</p>
-<ol>
-<li>關閉服務</li>
-</ol>
+<h3 id="YOURLS-是什麼？"><a href="#YOURLS-是什麼？" class="headerlink" title="YOURLS 是什麼？"></a>YOURLS 是什麼？</h3><p>YOURLS，全名為 <strong>Your Own URL Shortener</strong>，是一款免費開源的縮網址工具。與其他公共縮網址平台（如 bit.ly 或 tinyurl）不同，YOURLS 允許使用者將縮網址服務安裝在自己的伺服器上，提供了完全的掌控權和更高的隱私性。</p>
+<h3 id="YOURLS-的主要特色"><a href="#YOURLS-的主要特色" class="headerlink" title="YOURLS 的主要特色"></a>YOURLS 的主要特色</h3><ol>
+<li><p><strong>完全掌控</strong>： YOURLS 讓你可以自定義短網址的結構和格式，例如根據品牌或個人需求來選擇字串。這對企業和網站經營者特別有吸引力，因為它不僅增強了品牌識別度，也保障了短網址的長期有效性。</p>
+</li>
+<li><p><strong>詳細的流量分析</strong>： YOURLS 內建了點擊統計功能，可追蹤短網址的訪問次數、來源、使用的裝置等詳細資訊，便於流量分析和行銷決策。</p>
+</li>
+<li><p><strong>豐富的插件支持</strong>： YOURLS 支援各種插件，可以加入如密碼保護、過濾訪問 IP、設置短網址到期時間等功能，使其更加靈活且適應各種需求。</p>
+</li>
+<li><p><strong>開源、免費、社群支持</strong>： YOURLS 是開源軟體，因此完全免費，且具備社群支持。這意味著使用者可以享有穩定的版本更新，也能與開發者一起討論需求和改進。</p>
 </li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service cups stop</span><br></pre></td></tr></table></figure>
-
-<pre><code>2. 備份配置檔案</code></pre>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mv &#x2F;etc&#x2F;cups&#x2F;cupsd.conf &#x2F;etc&#x2F;cups&#x2F;cupsd.conf.bak</span><br></pre></td></tr></table></figure>
-
-<pre><code>3. 重啟服務</code></pre>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service cups restart</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li>PC端用Brave瀏覽器開啟網站“https://樹莓派ip:631/ ”。</li>
-</ol>
-<p><img src="https://i.loli.net/2021/07/12/wt5Fkzgerf3GdsU.png"></p>
-<ol start="5">
-<li><p>點選“Administration”介面新增對應的印表機，登入帳號和密碼是樹莓派的pi使用者的密碼。</p>
-<p><img src="https://i.loli.net/2021/07/12/Lbt4xXRNamAfWG2.png"></p>
+<h2 id="安裝步驟"><a href="#安裝步驟" class="headerlink" title="安裝步驟"></a>安裝步驟</h2><h3 id="Step-1-需求準備"><a href="#Step-1-需求準備" class="headerlink" title="Step 1 需求準備"></a>Step 1 需求準備</h3><p>在開始之前，確保你的伺服器具備以下條件：</p>
+<ul>
+<li><p>支援 PHP 版本 7.4 或更高。</p>
 </li>
-<li><p>然後將你的印表機的USB線插入你的電腦(不是樹莓派xd)。</p>
+<li><p>支援 MySQL 或 MariaDB 資料庫。</p>
 </li>
-<li><p>按下「Add Printer」。</p>
+<li><p>自行註冊並擁有一個網域（如 myshort.link）。</p>
 </li>
-<li><p>在Local Printers中找到usb連線的印表機或在同局域網的下找到連線中的印表機，印表機名「EPSON L365 Series」。</p>
-<p><img src="https://i.loli.net/2021/07/12/UXidYAzsJ41cKOb.png"></p>
+</ul>
+<h3 id="Step-2-下載-YOURLS"><a href="#Step-2-下載-YOURLS" class="headerlink" title="Step 2 下載 YOURLS"></a>Step 2 下載 YOURLS</h3><ol>
+<li><p>進入 <a target="_blank" rel="noopener" href="https://yourls.org/">YOURLS 官方網站</a> 或 YOURLS 的 <a target="_blank" rel="noopener" href="https://github.com/YOURLS/YOURLS">GitHub 頁面</a> 下載最新版本的 YOURLS 壓縮檔案。</p>
+</li>
+<li><p>將壓縮檔案解壓縮，並上傳至伺服器上的目標資料夾。</p>
 </li>
 </ol>
-<p>Name越簡單越好。</p>
-<p><img src="https://i.loli.net/2021/07/12/fUQunb4ym82PhCq.png"></p>
-<ol start="9">
-<li><p>選擇你印表機型號的 PPD 驅動程式檔，如果像我一樣在Model找不到自己的型號，可以 Google 「型號 + PPD」。</p>
-<p><img src="https://i.loli.net/2021/07/12/axhQbY7lG8SwDMv.png"></p>
+<p><img src="https://s2.loli.net/2024/10/26/6ljDi7BZrGvSMf1.png"></p>
+<h3 id="Step-3-建立資料庫"><a href="#Step-3-建立資料庫" class="headerlink" title="Step 3 建立資料庫"></a>Step 3 建立資料庫</h3><ol>
+<li><p>進入你的網站主機控制面板（如 cPanel）。</p>
+</li>
+<li><p>建立一個新的 MySQL 資料庫，並記下資料庫名稱、使用者名稱和密碼，之後會在 YOURLS 設定中使用到。</p>
 </li>
 </ol>
-<p>小Tip： github 檔案不用到最外圈按Download Master zip file，可以直接對你想要的檔案按「另存連結為」，這樣下載下來就會是你想要的格式檔案惹。</p>
-<ol start="10">
-<li><p>按下 Add Printers 即可。到這邊樹沒帶的印表機就設定完成了。接著來設定客戶端的。</p>
+<p><img src="https://s2.loli.net/2024/10/27/kxIzjMPascw9SKd.png"></p>
+<h3 id="Step-4-配置-YOURLS-設定檔案"><a href="#Step-4-配置-YOURLS-設定檔案" class="headerlink" title="Step 4 配置 YOURLS 設定檔案"></a>Step 4 配置 YOURLS 設定檔案</h3><ol>
+<li><p>在 YOURLS 的根目錄中找到 <code>user/config-sample.php</code>，將其重新命名為 <code>config.php</code>。</p>
 </li>
-<li><p>網路印表機的網址“http://樹莓派ip:631/printers/L365 ”，客戶端按照此網址新增網路印表機和驅動就行了。</p>
-<p><img src="https://i.loli.net/2021/07/12/qrt8md2pCzUHwLF.png"></p>
+<li><p>開啟 <code>config.php</code>，修改以下主要參數：</p>
+<ul>
+<li><code>YOURLS_DB_USER</code>：填入資料庫的使用者名稱。</li>
+<li><code>YOURLS_DB_PASS</code>：填入資料庫的密碼。</li>
+<li><code>YOURLS_DB_NAME</code>：填入資料庫名稱。</li>
+<li><code>YOURLS_SITE</code>：填入你的 YOURLS 網站 URL（如 <code>https://myshort.link</code>）。</li>
+<li><code>YOURLS_HOURS_OFFSET</code>：設定伺服器時區。</li>
+<li><code>YOURLS_LANG</code>：設定 YOURLS 的語言（預設為英文，可設定為中文等其他語言）。</li>
+<li><code>YOURLS_UNIQUE_URLS</code>：設為 <code>true</code> 時可避免重複短網址生成。</li>
+<li><code>YOURLS_PRIVATE</code>：設為 <code>true</code> 可使 YOURLS 成為私人縮網址服務，僅允許認證用戶使用。</li>
+</ul>
+</li>
+<li><p>設定管理員帳戶：</p>
+<ul>
+<li>在 <code>YOURLS</code> 內 <code>YOURLS_USER</code> 中設定管理員帳號和密碼，確保你的帳戶安全。</li>
+</ul>
 </li>
 </ol>
-<p><img src="https://i.loli.net/2021/07/12/6a1bsyBfqlLk9EI.png"></p>
-<p><img src="https://i.loli.net/2021/07/12/in1w4ZrIgJmFH7z.png">接下來的部分我都設定過了，就不重新一一展示了XD</p>
-<ol start="12">
-<li><p>Android 手機，可以在play商店中，搜尋“print”，找到對應牌子的印表機，按照網路印表機的地址「http://樹莓派ip:631/printers/L365」新增印表機，這樣手機也能列印了。</p>
-</li>
-<li><p>利用Samba來新增Windows環境支援</p>
-<p>在CUPS中新增印表機之後即可自動實現AirPrint與IPP廣播，由於CUPS實現廣播利用的是Bonjour協議，而Windows預設不支援Bonjour，所以直接使用Windows新增印表機無法發現印表機的網路位置。為了實現對Windows的支援，需要另外安裝Samba元件，</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install samba</span><br></pre></td></tr></table></figure>
-
-<p>Samba安裝完成後會自動監測CUPS中的印表機，並進行共享操作。此時使用Windows新增印表機功能已可搜尋到印表機的網路位置，按照提示安裝相應驅動即可使用。</p>
-</li>
+<h3 id="Step-5-開始安裝"><a href="#Step-5-開始安裝" class="headerlink" title="Step 5 開始安裝"></a>Step 5 開始安裝</h3><ol>
+<li>確認所有設定都正確後，打開瀏覽器並前往 <code>https://你的網域/admin</code>（如 <code>https://myshort.link/admin</code>）。</li>
+<li>依照提示完成安裝流程，YOURLS 會自動創建需要的資料表。</li>
+<li>完成後，你可以登入 YOURLS 管理介面，開始建立縮網址！</li>
 </ol>
+<h3 id="Step-6-測試-YOURLS-是否正常運行"><a href="#Step-6-測試-YOURLS-是否正常運行" class="headerlink" title="Step 6 測試 YOURLS 是否正常運行"></a>Step 6 測試 YOURLS 是否正常運行</h3><p>進入 YOURLS 管理介面，嘗試建立一個縮網址，並確認是否能成功轉向到目標網址。</p>
+<p>恭喜完成！這樣你就擁有屬於自己的縮網址服務，不用擔心安全性的問題~~</p>
 
     </div>
 
@@ -379,12 +376,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文標題:</span><a href="/raspberrypi-part-4/">樹莓派設定網路印表機</a></p>
+  <p><span>本文標題:</span><a href="/shorts-url/">打造屬於自己的縮網址服務！</a></p>
   <p><span>文章作者:</span>Hao-Hsiung Kang 康皓雄</a></p>
-  <p><span>發布時間:</span>2021年07月12日 - 15:44</p>
-  <p><span>最後更新:</span>2021年07月12日 - 16:43</p>
-  <p><span>原始連結:</span><a href="/raspberrypi-part-4/" title="樹莓派設定網路印表機">https://blog.hhk.one/raspberrypi-part-4/</a>
-    <span class="copy-path"  title="點擊複製文章連結"><i class="fa fa-clipboard" data-clipboard-text="https://blog.hhk.one/raspberrypi-part-4/"  aria-label="複製成功！"></i></span>
+  <p><span>發布時間:</span>2024年10月26日 - 23:43</p>
+  <p><span>最後更新:</span>2024年10月27日 - 00:16</p>
+  <p><span>原始連結:</span><a href="/shorts-url/" title="打造屬於自己的縮網址服務！">https://blog.hhk.one/shorts-url/</a>
+    <span class="copy-path"  title="點擊複製文章連結"><i class="fa fa-clipboard" data-clipboard-text="https://blog.hhk.one/shorts-url/"  aria-label="複製成功！"></i></span>
   </p>
   <p><span>許可協議:</span><i class="fa fa-creative-commons" aria-hidden="true"> </i><a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商業性使用-禁止演繹 4.0 國際</a> 轉載請保留連結並註明作者。</p>  
 </div>
@@ -443,7 +440,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E6%A8%B9%E8%8E%93%E6%B4%BE/" rel="tag"><i class="fa fa-tag"></i> 樹莓派</a>
+              <a href="/tags/%E8%BB%9F%E9%AB%94%E4%BB%8B%E7%B4%B9/" rel="tag"><i class="fa fa-tag"></i> 軟體介紹</a>
+              <a href="/tags/%E7%B8%AE%E7%B6%B2%E5%9D%80/" rel="tag"><i class="fa fa-tag"></i> 縮網址</a>
           </div>
 
         
@@ -452,13 +450,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/raspberrypi-part-3/" rel="prev" title="樹莓派常用軟體推薦">
-      <i class="fa fa-chevron-left"></i> 樹莓派常用軟體推薦
+    <a href="/windows11/" rel="prev" title="windows 11 更新卡 VirtualBox 無法解決">
+      <i class="fa fa-chevron-left"></i> windows 11 更新卡 VirtualBox 無法解決
     </a></div>
-      <div class="post-nav-item">
-    <a href="/raspberrypi-part-5/" rel="next" title="如何使用手機連線控制樹莓派 - RealVNC">
-      如何使用手機連線控制樹莓派 - RealVNC <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -528,7 +523,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%9DCUPS"><span class="nav-number">1.</span> <span class="nav-text">安裝CUPS</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#YOURLS"><span class="nav-number">1.</span> <span class="nav-text">YOURLS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#YOURLS-%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F"><span class="nav-number">1.1.</span> <span class="nav-text">YOURLS 是什麼？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#YOURLS-%E7%9A%84%E4%B8%BB%E8%A6%81%E7%89%B9%E8%89%B2"><span class="nav-number">1.2.</span> <span class="nav-text">YOURLS 的主要特色</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%9D%E6%AD%A5%E9%A9%9F"><span class="nav-number">2.</span> <span class="nav-text">安裝步驟</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-1-%E9%9C%80%E6%B1%82%E6%BA%96%E5%82%99"><span class="nav-number">2.1.</span> <span class="nav-text">Step 1 需求準備</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-2-%E4%B8%8B%E8%BC%89-YOURLS"><span class="nav-number">2.2.</span> <span class="nav-text">Step 2 下載 YOURLS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-3-%E5%BB%BA%E7%AB%8B%E8%B3%87%E6%96%99%E5%BA%AB"><span class="nav-number">2.3.</span> <span class="nav-text">Step 3 建立資料庫</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-4-%E9%85%8D%E7%BD%AE-YOURLS-%E8%A8%AD%E5%AE%9A%E6%AA%94%E6%A1%88"><span class="nav-number">2.4.</span> <span class="nav-text">Step 4 配置 YOURLS 設定檔案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-5-%E9%96%8B%E5%A7%8B%E5%AE%89%E8%A3%9D"><span class="nav-number">2.5.</span> <span class="nav-text">Step 5 開始安裝</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-6-%E6%B8%AC%E8%A9%A6-YOURLS-%E6%98%AF%E5%90%A6%E6%AD%A3%E5%B8%B8%E9%81%8B%E8%A1%8C"><span class="nav-number">2.6.</span> <span class="nav-text">Step 6 測試 YOURLS 是否正常運行</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
