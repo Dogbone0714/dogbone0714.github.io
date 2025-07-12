@@ -2380,4 +2380,75 @@
         <tag>工商登記</tag>
       </tags>
   </entry>
+  <entry>
+    <title>年輕人也能做長照？我在長照機構的數位轉型實驗</title>
+    <url>/younger-long-term-care/</url>
+    <content><![CDATA[<h3 id="年輕人與長照，距離遠嗎？"><a href="#年輕人與長照，距離遠嗎？" class="headerlink" title="年輕人與長照，距離遠嗎？"></a>年輕人與長照，距離遠嗎？</h3><blockquote>
+<p>很多人一聽到「長照」，腦中浮現的是護理、照顧、銀髮、老化——而不是一個大學生、寫程式、做數位行銷的年輕人。<br> 但我就是那個例外。<br> 我在大學剛畢業時，加入了一家居家長照機構，原本只是想協助文案與社群經營，但慢慢地我發現：<br> <strong>長照產業其實比我們想像的更需要「數位轉型」，而這剛好是我們年輕世代的強項。</strong></p>
+</blockquote>
+<span id="more"></span>
+
+<p>首先先介紹現在的我在做甚麼職業</p>
+<ol>
+<li><p>我任職於桃園一家於2024年11月開始營運的居家長照機構。</p>
+</li>
+<li><p>同時我的 Boss 手上也持有一家居家護理所。</p>
+</li>
+<li><p>目前我正在協助 Boss 成立一家長照顧問公司及一家長照健康協會。</p>
+</li>
+<li><p>我負責社群維護、文案撰寫、網站設計、平面設計 ( like 三折頁設計及名片設計 )、協會代辦、工商登記代辦。 </p>
+</li>
+</ol>
+<h3 id="二、我所看見的長照痛點：人多、紙多、時間少"><a href="#二、我所看見的長照痛點：人多、紙多、時間少" class="headerlink" title="二、我所看見的長照痛點：人多、紙多、時間少"></a>二、我所看見的長照痛點：人多、紙多、時間少</h3><blockquote>
+<p>在加入機構後，我觀察到三個最明顯的問題：</p>
+<ul>
+<li>資料記錄還停留在紙本（居服員手寫、主任手工彙整 雖有仁寶 i 照護 但 隨你的申請方案不同，開發模組有限，無法自由編輯自己想要的模組區塊）</li>
+<li>居服員之間溝通仰賴 LINE 群組，資訊不集中</li>
+<li>主任一天有一半時間都在「找資料」或「對帳」</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>而這些問題背後，其實都可以透過「資訊系統」與「流程最佳化」來改善。我心裡產生一個想法：<strong>如果我能用現成工具或程式，幫這群辛苦的工作者節省時間呢？</strong></p>
+</blockquote>
+<h3 id="三、我做了什麼：從-Notion-到-Lark-的實驗過程"><a href="#三、我做了什麼：從-Notion-到-Lark-的實驗過程" class="headerlink" title="三、我做了什麼：從 Notion 到 Lark 的實驗過程"></a>三、我做了什麼：從 Notion 到 Lark 的實驗過程</h3><blockquote>
+<p>我的第一步，是嘗試把服務記錄和行政表單搬上 Notion，但很快我就遇到一個現實問題：<br> Notion 對於「多層級權限控管」與「行動裝置使用者體驗」的支援還是有限，尤其當機構人員中有人使用 Android 有人用 iPhone、有人熟悉科技有人完全不懂的情況下，反而會造成新的操作負擔。</p>
+</blockquote>
+<blockquote>
+<p>所以後來我轉向使用 <strong><span class="exturl" data-url="aHR0cHM6Ly93d3cubGFya3N1aXRlLmNvbS96aF9jbi8=">Lark（飛書）<i class="fa fa-external-link-alt"></i></span>**。<br> Lark 不僅支援中文介面，還能整合表單、簽到、文件、行事曆與即時通訊於同一個平台，<br> 最重要的是——</strong>它夠穩定**。真的沒什麼 bug（我真的不敢冒機構在社會局或勞工局稽查時出包的風險，我就爛 &lt;3）。</p>
+</blockquote>
+<blockquote>
+<p>除了表單與排班，我也協助機構把：</p>
+<ul>
+<li>居服員交班記錄表雲端化</li>
+<li>會議記錄、內部 SOP 文件整合到 Lark Docs</li>
+<li>簽到簽退整合在群組內一鍵完成</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>雖然不是什麼高端的 AI 系統，但這樣的整理與優化，<strong>已經讓主任跟督導願意主動打開系統用它工作</strong>，這對數位轉型來說，是最重要的一步。</p>
+</blockquote>
+<p>但其實我個人覺得 Lark 還是目前最佳解，因為沒有 bug 的產生，可以避免在社會局或勞工局前來稽查時出包的機率(我就爛 &lt;3</p>
+<h3 id="四、我學到的三件事"><a href="#四、我學到的三件事" class="headerlink" title="四、我學到的三件事"></a>四、我學到的三件事</h3><blockquote>
+<p>這段經驗，讓我重新思考「年輕人參與社會」的方式：</p>
+<ol>
+<li><strong>跨領域合作才是真正的創新</strong>：數位人懂技術，長照人懂場域，合作才有可能解決問題。</li>
+<li><strong>用現成工具就能創造價值</strong>：不需要自己從零寫系統，善用 Lark 、Google 表單或免費 ERP 就能大幅提升效率。</li>
+<li><strong>願意改變比什麼都重要</strong>：我遇過的居督主任，不懂技術沒關係，最重要是他們願意嘗試、願意調整流程。</li>
+</ol>
+</blockquote>
+<hr>
+<h3 id="五、結語：年輕人，別再小看你自己"><a href="#五、結語：年輕人，別再小看你自己" class="headerlink" title="五、結語：年輕人，別再小看你自己"></a>五、結語：年輕人，別再小看你自己</h3><blockquote>
+<p>如果你是個會寫網頁、搞懂表單、熟悉 Excel 的學生或年輕人，不要以為自己幫不上忙。<br> 在看似「老派」的產業裡，你反而可能是最有改變力的那一位。</p>
+</blockquote>
+<p>最後 康康想在這邊問大家</p>
+<p>你有接觸過長照相關場域嗎？你覺得數位工具能幫上哪些忙？</p>
+<p>歡迎留言給我</p>
+]]></content>
+      <categories>
+        <category>經驗分享</category>
+      </categories>
+      <tags>
+        <tag>長照</tag>
+      </tags>
+  </entry>
 </search>
