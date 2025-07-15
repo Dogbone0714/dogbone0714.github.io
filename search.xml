@@ -2451,4 +2451,75 @@
         <tag>長照</tag>
       </tags>
   </entry>
+  <entry>
+    <title>文創系其實不文？4年我如何跨足數位與產品開發</title>
+    <url>/nuu-ccdm/</url>
+    <content><![CDATA[<blockquote>
+<p>「你是文創系的喔？那你會畫畫設計嗎？」<br> 「文創系是不是每天都在剪紙寫詩做陶土？」<br> 「欸所以你們畢業以後是要去文創園區擺攤嗎？」</p>
+</blockquote>
+<p>身為文創系學生，我早就習慣這些問句。<br> 但其實，這四年我做的事，比很多人想像的「文創」還要技術、還要複雜。</p>
+<span id="more"></span>
+
+<p>先來介紹我的背景：</p>
+<blockquote>
+<p>高中三年的文組生，卻特殊選才至理工大學 而且還是資工系</p>
+<p>資訊工程學系一年半的讀書經驗</p>
+<p>跨轉三年半的文化創意與數位行銷學系</p>
+<p>順利畢業 ( 現在在這</p>
+</blockquote>
+<h2 id="🎓-文創系的底子：我們學的是「整合與轉換」"><a href="#🎓-文創系的底子：我們學的是「整合與轉換」" class="headerlink" title="🎓 文創系的底子：我們學的是「整合與轉換」"></a>🎓 文創系的底子：我們學的是「整合與轉換」</h2><p>在國立聯合大學(石虎大學)文化創意與數位行銷學系，我們的課程不只有美學和設計，也包含：</p>
+<ul>
+<li>敘事策略與內容企劃 (可以選修企畫書撰寫)</li>
+<li>社會學與文化研究(還有社會心理學也是必修zzZ)</li>
+<li>數位行銷與媒體操作</li>
+<li>UIUX與創意簡報</li>
+<li>Python 程式設計、網站前端(HTML &amp; CSS 但我個人愛好WordPress)、互動遊戲程式應用</li>
+</ul>
+<p>學的是什麼？<strong>學的是如何理解人、轉換需求，並把想法變成內容或產品。</strong></p>
+<h2 id="🚀-我怎麼從「文創系學生」走向「產品實作」"><a href="#🚀-我怎麼從「文創系學生」走向「產品實作」" class="headerlink" title="🚀 我怎麼從「文創系學生」走向「產品實作」"></a>🚀 我怎麼從「文創系學生」走向「產品實作」</h2><p>我用 4 年時間，讓自己成為一個跨界使用者與設計者，也真的做出了不少東西(雖然很微小)。</p>
+<h3 id="1️⃣-開始於學生自治：從紙本到數位協作"><a href="#1️⃣-開始於學生自治：從紙本到數位協作" class="headerlink" title="1️⃣ 開始於學生自治：從紙本到數位協作"></a>1️⃣ 開始於學生自治：從紙本到數位協作</h3><p>在學生議會與學生會任職期間，我們過去的會議記錄、資料傳遞都靠紙本和口頭。<br> 我開始導入 Google Workspace、Notion、Lark，整合內部行政與傳承系統，也寫了<strong>第一份會議資料自動整理腳本</strong>。</p>
+<p>👉 <strong>從溝通問題 → 設計流程 → 導入工具 → 讓資訊流動起來</strong><br> 這就是我學到的「數位轉型的原點」。</p>
+<h3 id="2️⃣-創業實驗：《繁花之聲》手遊企劃與開發"><a href="#2️⃣-創業實驗：《繁花之聲》手遊企劃與開發" class="headerlink" title="2️⃣ 創業實驗：《繁花之聲》手遊企劃與開發"></a>2️⃣ 創業實驗：《繁花之聲》手遊企劃與開發</h3><p>我的畢業專題即是設計一款以<strong>客家文化為背景</strong>的問答策略遊戲《繁花之聲》，針對 10～29 歲年輕族群推廣文化知識。</p>
+<ul>
+<li>從世界觀、關卡設計到知識題庫資料整理</li>
+<li>用 GameSalad 開發 MVP</li>
+<li>投入市場分析與使用者測試</li>
+</ul>
+<p>👉 這個專案讓我學會：<strong>文化不只是創意，也可以成為有邏輯、有產品化潛力的素材。</strong></p>
+<h3 id="3️⃣-Side-Project：《聯大助手-Open-NUU》"><a href="#3️⃣-Side-Project：《聯大助手-Open-NUU》" class="headerlink" title="3️⃣ Side Project：《聯大助手 Open NUU》"></a>3️⃣ Side Project：《聯大助手 Open NUU》</h3><p>並且我還主導了非官方校園數位平台《聯大助手 OPEN NUU》的設計與構建：</p>
+<ul>
+<li>整合選課資訊、即時公告、教室位置指引</li>
+<li>架設網站、部署伺服器</li>
+<li>設計操作介面、撰寫使用說明</li>
+</ul>
+<p>後來也近一步推動開源協作的《Open NUU》計畫，嘗試讓<strong>學生用開源文化來改善校園服務體驗</strong>。</p>
+<p>👉 <strong>文創系也可以開發服務、維運工具、帶團隊設計產品。</strong></p>
+<p>![](<span class="exturl" data-url="aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0RvZ2JvbmUwNzE0L2ltZ3VyL21haW4vZGF0YS8lRTQlQkMlQUYlRTYlOUMlOTclRTglOEYlODElRTQlQkIlOTQlRTglQTElOEM=">https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/伯朗菁仔行<i class="fa fa-external-link-alt"></i></span>  全國最大檳榔批發商.png)</p>
+<p>( 圖一 - 聯大助手 OPEN NUU Banner 圖片來源：作者繪製 ) </p>
+<p><img src="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/Screenshot_2025-06-02-00-47-43-467_com.example.open_nuu.jpg"></p>
+<p>( 圖二 - 校園餐廳資訊 含菜單介紹 - 圖片來源：作者繪製 )</p>
+<h3 id="4️⃣-幫長照機構數位轉型"><a href="#4️⃣-幫長照機構數位轉型" class="headerlink" title="4️⃣ 幫長照機構數位轉型"></a>4️⃣ 幫長照機構數位轉型</h3><p>我最近協助「大 O 居家長照機構」設計<strong>居服員用的資訊整合工具</strong>，從 LINE 使用習慣出發，設計一套無痛導入的資訊平台，改善紙本記錄與混亂通訊問題。</p>
+<p>👉 設計的核心從不是工具，而是「照顧人怎麼用、會不會用、用了之後會不會更輕鬆」。</p>
+<h2 id="📣-我想說的是：文創系不是你以為的那樣"><a href="#📣-我想說的是：文創系不是你以為的那樣" class="headerlink" title="📣 我想說的是：文創系不是你以為的那樣"></a>📣 我想說的是：文創系不是你以為的那樣</h2><p>我們不是只是設計漂亮的東西、辦展覽、做創意小物。<br> 我們其實是——</p>
+<blockquote>
+<p>🎯 看懂文化底層需求的人<br> 🧠 懂得轉化為故事、產品、服務的人<br> 🛠 願意實作、用工具解決問題的人</p>
+</blockquote>
+<p>而這些能力，是所有領域最需要的跨域力。</p>
+<h2 id="📬-想給學弟妹與未來的自己一句話"><a href="#📬-想給學弟妹與未來的自己一句話" class="headerlink" title="📬 想給學弟妹與未來的自己一句話"></a>📬 想給學弟妹與未來的自己一句話</h2><p>如果你是文創系學生，不用怕別人說你不夠專業。<br> 專業是靠實作出來的，<strong>你可以成為設計師、開發者、產品人、PM、創業者——只要你願意打破框架。</strong></p>
+<p>而我，會持續在這條路上前進，讓更多人知道：</p>
+<blockquote>
+<p>文創系，不文。我們很硬核。</p>
+</blockquote>
+<h3 id="請記得-好好地累積作品集"><a href="#請記得-好好地累積作品集" class="headerlink" title="請記得 好好地累積作品集"></a>請記得 好好地累積作品集</h3><h4 id="✅-延伸閱讀推薦"><a href="#✅-延伸閱讀推薦" class="headerlink" title="✅ 延伸閱讀推薦"></a>✅ 延伸閱讀推薦</h4><ol>
+<li><a href="https://blog.hhk.one/younger-long-term-care/">年輕人也能做長照？我在長照機構的數位轉型實驗</a></li>
+<li><a href="https://blog.hhk.one/company-onetop/">一站式公司線上申請？教你手把手進行公司登記</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>經驗分享</category>
+      </categories>
+      <tags>
+        <tag>聯大</tag>
+      </tags>
+  </entry>
 </search>
