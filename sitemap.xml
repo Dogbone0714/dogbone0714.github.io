@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.hhk.one/we-need-opennuu/</loc>
+    
+    <lastmod>2025-08-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.hhk.one/bananas-landlord-digital-management/</loc>
     
     <lastmod>2025-08-08</lastmod>
@@ -680,6 +689,13 @@
   
   <url>
     <loc>https://blog.hhk.one/tags/%E9%95%B7%E7%85%A7/</loc>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.hhk.one/tags/U%E7%94%9F%E6%B4%BB%E9%80%9A/</loc>
     <lastmod>2025-08-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
