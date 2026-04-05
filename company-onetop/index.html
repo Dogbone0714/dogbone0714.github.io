@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.2">
+
+
+<script data-ad-client="ca-pub-9671856733786866" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.hhk.one","root":"/","scheme":"Mist","version":"7.8.0","exturl":true,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+<!-- jquery -->
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <meta name="description" content="創業不再是繁瑣的流程，現在只需透過網路，你就可以輕鬆完成公司登記！本篇文章將帶你了解如何透過一站式線上申請系統，快速完成公司登記，讓你的創業之路更加順暢。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一站式公司線上申請？教你手把手進行公司登記">
+<meta property="og:url" content="https://blog.hhk.one/company-onetop/index.html">
+<meta property="og:site_name" content="康康的斜槓人生">
+<meta property="og:description" content="創業不再是繁瑣的流程，現在只需透過網路，你就可以輕鬆完成公司登記！本篇文章將帶你了解如何透過一站式線上申請系統，快速完成公司登記，讓你的創業之路更加順暢。">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/%E9%96%8B%E5%85%AC%E5%8F%B8%E6%B5%81%E7%A8%8B.webp">
+<meta property="og:image" content="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330203443204.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330203632171.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330204133485.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330204405705.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330204852368.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330205251151.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330205519094.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330210144763.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330210525453.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330210901173.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330211122507.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330211755040.png">
+<meta property="article:published_time" content="2025-03-30T10:09:46.000Z">
+<meta property="article:modified_time" content="2025-03-30T13:24:36.428Z">
+<meta property="article:author" content="康康 HHK">
+<meta property="article:tag" content="工商登記">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/%E9%96%8B%E5%85%AC%E5%8F%B8%E6%B5%81%E7%A8%8B.webp">
+
+<link rel="canonical" href="https://blog.hhk.one/company-onetop/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+
+  <title>一站式公司線上申請？教你手把手進行公司登記 | 康康的斜槓人生</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DMF3F131NL"></script>
+    <script data-pjax>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DMF3F131NL');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">康康的斜槓人生</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">一個從生活到創業故事的地方</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://blog.hhk.one/company-onetop/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="康康 HHK">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="康康的斜槓人生">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          一站式公司線上申請？教你手把手進行公司登記
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時間：2025-03-30 18:09:46 / 修改時間：21:24:36" itemprop="dateCreated datePublished" datetime="2025-03-30T18:09:46+08:00">2025-03-30</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%B5%E6%A5%AD%E8%AB%87/" itemprop="url" rel="index"><span itemprop="name">創業談</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="閱讀次數" id="busuanzi_container_page_pv" ;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">閱讀次數：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/company-onetop/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/company-onetop/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="文章字數">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word"></i>
+              </span>
+              <span>1.6k</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>創業不再是繁瑣的流程，現在只需透過網路，你就可以輕鬆完成公司登記！本篇文章將帶你了解如何透過一站式線上申請系統，快速完成公司登記，讓你的創業之路更加順暢。</p>
+<span id="more"></span>
+
+<h3 id="Step-1-：公司登記的基本準備"><a href="#Step-1-：公司登記的基本準備" class="headerlink" title="Step 1 ：公司登記的基本準備"></a>Step 1 ：公司登記的基本準備</h3><p>在開始申請之前，先確認以下事項：</p>
+<ul>
+<li><p>公司名稱：需先至<a target="_blank" rel="noopener" href="https://serv.gcis.nat.gov.tw/pub/cmpy/nameSearchListAction.do">經濟部商業司</a>網站查詢是否已被使用。 </p>
+</li>
+<li><p>公司型態：決定是「有限公司」還是「股份有限公司」、或者「行號」(泛指企業社等等的非 法人商業登記組織)。</p>
+</li>
+<li><p>營業項目：確認公司經營的行業別與營業項目，這邊有<a target="_blank" rel="noopener" href="https://gcis.nat.gov.tw/cod/browseAction.do?method=browse">營業項目一覽表</a>。</p>
+</li>
+<li><p>負責人與股東：需準備負責人與股東(or 合夥人) 的身分證明文件。</p>
+</li>
+<li><p>營業地址：確保有合法的營業登記地址。 (可找商務中心進行借址登記、願意給你進行營業登記的房東(Notice：這得特別問，很重要。經營商業行為，房屋稅率會提高，所以記得要問過房東)、亦或者登記在自己家中(但記得房屋稅率、電費等等也會提高，須謹慎考慮)</p>
+</li>
+<li><p>準備好你的自然人憑證，去你的縣市戶政事務所申請，這張卡很重要，未來你在開辦事業以及公司營運上，自然人憑證及工商憑證會是你一直用到的好寶貝。</p>
+</li>
+</ul>
+<h3 id="Step-2-一站式線上申請流程"><a href="#Step-2-一站式線上申請流程" class="headerlink" title="Step 2. 一站式線上申請流程"></a>Step 2. 一站式線上申請流程</h3><p><img src="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/%E9%96%8B%E5%85%AC%E5%8F%B8%E6%B5%81%E7%A8%8B.webp"></p>
+<p>(1) 申請公司名稱預查</p>
+<p>進入經濟部商業司網站，進行公司名稱預查輔助查詢，確保名稱未被使用。</p>
+<p>(2) 線上填寫公司設立登記</p>
+<p>進入「開辦企業 <a target="_blank" rel="noopener" href="https://onestop.nat.gov.tw/oss/identity/Identity/init.do">公司與商業及有限合夥一站式線上申請作業</a>」。</p>
+<p>選擇「開始線上申請」並登入。(插入你的自然人憑證)</p>
+<p>這裡可以這樣選就好</p>
+<p><img src="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330203443204.png"></p>
+<p>預查+商業登記+稅籍登記一次辦妥(當然如果你是要開有限公司或股份有限公司就要這樣選。</p>
+<p><img src="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330203632171.png"></p>
+<p>如果你公司未來會去國外做生意或進出口或跟國外有聯繫，建議英文名稱預查也給他勾下去。</p>
+<p><img src="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330204133485.png"></p>
+<ol>
+<li><p>如果你之前有先申請預查過，那預查編號才需要輸入。</p>
+</li>
+<li><p>申請人身分，只要你不是用公司名義開公司都是填自然人。</p>
+</li>
+<li><p>辦理方式只要你不是委託代辦都是填親自辦理。</p>
+</li>
+<li><p>聯絡人姓名可填你或公司負責人的名字。</p>
+</li>
+<li><p>電話跟手機可擇一填即可。</p>
+</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330204405705.png"></p>
+<ol>
+<li><p>章程得部分比較少人在公開。</p>
+</li>
+<li><p>最後的選項建議打勾，那個東西就像小精靈一樣，會提醒你很多事。</p>
+</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330204852368.png"></p>
+<ol>
+<li><p>請依公司類別選擇你的公司種類。</p>
+</li>
+<li><p>公司名稱預查建議至少給三個，他如果有查到一樣的公司名，就會順延一位下去取名看看。</p>
+</li>
+<li><p>營業項目請仔細跟夥伴好好討論，最後建議 ZZ99999 可以加。</p>
+</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330205251151.png"></p>
+<p>工商登記建議併案申請，可以省錢+之後辦一些資源比較方便；領件方式可選電子送達就好，這次我們主打能線上辦就線上辦就好。</p>
+<p><img src="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330205519094.png"></p>
+<ol>
+<li><p>稅籍登記地址就是你的公司營業地址。</p>
+</li>
+<li><p>公司營業地址的房屋稅及編號管理代碼請跟屋主要或商務中心要。</p>
+</li>
+<li><p>網路銷售指的大多是有囤貨的電商。</p>
+</li>
+</ol>
+<p>填寫完畢後，資料送出後繳費。</p>
+<p>在預查名稱通過後，我們會進到這個填寫範圍。</p>
+<p><img src="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330210144763.png"></p>
+<ol>
+<li><p>因為我們這次是採全線上申辦，所以登記表可以填沒有使用大小章的就好，但填是，安全度會比較高(但比較繁瑣)。</p>
+</li>
+<li><p>公司地址請填營業所在地。</p>
+</li>
+<li><p>章程訂定日期可以早，但不能晚，然後請跟要上傳的章程檔案裡寫的日期一樣。</p>
+</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330210525453.png"></p>
+<p>資本額請填實際要驗資的實際數額，然而財產跟技術比較難估值，你的金額要填多少，建議跟會計師事務所溝通討論。</p>
+<p><img src="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330210901173.png"></p>
+<ol>
+<li><p>就照實際狀況填寫</p>
+</li>
+<li><p>住所就填你的戶籍地即可</p>
+</li>
+<li><p>然後接下來的三個分頁「法人」、「經理人」、「分公司」，我們都用不到，不需填寫。</p>
+</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330211122507.png">接下來把規定上傳的資料傳一傳，去繳費，就可以等公司登記審查了。</p>
+<p>(3) 取得核准文件與開立銀行帳戶</p>
+<p>公司預查申請核准後，會收到「公司預查核准函」。</p>
+<p>帶著核准函至銀行開立公司帳戶，準備入資。</p>
+<p>(4) 完成資本驗資與稅籍登記</p>
+<p>於指定時間內將資本額存入銀行，並向會計師驗資。</p>
+<p>(5) 驗資上傳檔案，完成後會收到正式公文(含工商登記抄本)</p>
+<p><img src="https://raw.githubusercontent.com/Dogbone0714/imgur/main/data/image-20250330211755040.png"></p>
+<p>之後就可以進行稅籍登記，申請統一發票。</p>
+<ol start="3">
+<li>其他注意事項</li>
+</ol>
+<p>線上申請需使用自然人憑證或工商憑證登入。</p>
+<p>若營業地址為住宅，需確認是否符合商業使用規定。</p>
+<p>不同縣市可能有額外要求，建議至當地國稅局或商業登記機關確認。</p>
+<ol start="4">
+<li>結論</li>
+</ol>
+<p>透過一站式公司線上申請，創業變得更加簡單！只要依照步驟操作，你就能快速完成公司登記，正式展開事業之路。如果有任何疑問，也可以諮詢專業會計師或商業登記機關，以確保流程順利進行。</p>
+
+    </div>
+
+    
+    
+    
+
+<div>
+		
+		<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文結束<i class="fa fa-paw"></i>感謝您的閱讀-------------</div>
+    
+</div>
+		
+	</div>
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    捐贈
+  </button>
+  <div id="qr" style="display: none;">
+      <div style="display: inline-block;">
+        <img src="/images/donate.png" alt="康康 HHK Donate">
+        <p>Donate</p>
+      </div>
+
+  </div>
+</div>
+
+
+	<div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文標題:</span><a href="/company-onetop/">一站式公司線上申請？教你手把手進行公司登記</a></p>
+  <p><span>文章作者:</span>Hao-Hsiung Kang 康皓雄</a></p>
+  <p><span>發布時間:</span>2025年03月30日 - 18:09</p>
+  <p><span>最後更新:</span>2025年03月30日 - 21:24</p>
+  <p><span>原始連結:</span><a href="/company-onetop/" title="一站式公司線上申請？教你手把手進行公司登記">https://blog.hhk.one/company-onetop/</a>
+    <span class="copy-path"  title="點擊複製文章連結"><i class="fa fa-clipboard" data-clipboard-text="https://blog.hhk.one/company-onetop/"  aria-label="複製成功！"></i></span>
+  </p>
+  <p><span>許可協議:</span><i class="fa fa-creative-commons" aria-hidden="true"> </i><a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商業性使用-禁止演繹 4.0 國際</a> 轉載請保留連結並註明作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '複製成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+	});
+    });  
+</script>
+
+      
+	</div>
+        
+
+  <div class="followme">
+    <p>歡迎關注我的其它發布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://www.facebook.com/dogbone0714">
+            <span class="icon">
+              <i class="fab fa-facebook"></i>
+            </span>
+
+            <span class="label">FB</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://instagram.com/dogbone_0714">
+            <span class="icon">
+              <i class="fab fa-instagram"></i>
+            </span>
+
+            <span class="label">IG</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+	
+    
+			<script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+			<div class="commentbox.swig"></div>
+			<script type="text/javascript" src="/js/src/commentbox.js"></script>
+    
+	
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%B7%A5%E5%95%86%E7%99%BB%E8%A8%98/" rel="tag"><i class="fa fa-tag"></i> 工商登記</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/business-tax/" rel="prev" title="剛創業收支0 要怎麼報營業稅？">
+      <i class="fa fa-chevron-left"></i> 剛創業收支0 要怎麼報營業稅？
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/company-generator/" rel="next" title="工商登記 公司申辦文件產生器！">
+      工商登記 公司申辦文件產生器！ <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9671856733786866"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-h1+a+50+5-2d"
+     data-ad-client="ca-pub-9671856733786866"
+     data-ad-slot="3720470199"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-1-%EF%BC%9A%E5%85%AC%E5%8F%B8%E7%99%BB%E8%A8%98%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%BA%96%E5%82%99"><span class="nav-number">1.</span> <span class="nav-text">Step 1 ：公司登記的基本準備</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-2-%E4%B8%80%E7%AB%99%E5%BC%8F%E7%B7%9A%E4%B8%8A%E7%94%B3%E8%AB%8B%E6%B5%81%E7%A8%8B"><span class="nav-number">2.</span> <span class="nav-text">Step 2. 一站式線上申請流程</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="康康 HHK"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">康康 HHK</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">45</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">38</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2RvZ2JvbmUwNzE0" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;dogbone0714"><i class="fab fa-github fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="bWFpbHRvOmRvZ2JvbmUwNzE0QG9wZW5udXUuY29t" title="E-Mail → mailto:dogbone0714@opennuu.com"><i class="fa fa-envelope fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9wbHVzLmdvb2dsZS5jb20vZG9nYm9uZTA3MTQ=" title="Google → https:&#x2F;&#x2F;plus.google.com&#x2F;dogbone0714"><i class="fab fa-google fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS9kb2dib25lMDcxNA==" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;dogbone0714"><i class="fab fa-twitter fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2RvZ2JvbmUwNzE0" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;dogbone0714"><i class="fab fa-facebook fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9pbnN0YWdyYW0uY29tL2RvZ2JvbmVfMDcxNA==" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;dogbone_0714"><i class="fab fa-instagram fa-fw"></i></span>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-gw-3+1f-3d+2z"
+     data-ad-client="ca-pub-9671856733786866"
+     data-ad-slot="4368622637"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2026</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">康康 HHK</span>
+</div>
+
+<!-- 评论框美化 -->
+<style>
+    #comments .veditor{
+        min-height: 10rem;
+        background-image: url(https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200425091751.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-color: rgba(255,255,255,0);
+        resize: none;}
+</style>
+
+        
+<div class="busuanzi-count">
+  
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item"  ;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="訪客總數">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" ;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="總瀏覽次數">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+
+<script src="/js/Valine.min.js"></script>
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : true,
+      appId      : 'y2XobmI5J3xxVXKBCU3ohxxL-MdYXbMMI',
+      appKey     : 'UjiR0x4pQWUCPGVxeqWtQAfA',
+      placeholder: "都來了，不留言一下嗎？",
+      avatar     : 'retro',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-TW',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+
+    // 添加以下6行，删除Powered By Valine
+      var infoEle = document.querySelector('#valine-comments .info');
+      if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+        infoEle.childNodes.forEach(function(item) {
+          item.parentNode.removeChild(item);
+        });
+      }
+
+
+  }, window.Valine);
+});
+
+
+
+
+</script>
+
+
+    </div>
+  
+</body>
+</html>
+
