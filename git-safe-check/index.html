@@ -29,15 +29,19 @@
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="康康的斜槓人生">
-<meta property="og:url" content="https://blog.hhk.one/archives/page/5/index.html">
+  <meta name="description" content="當你遇到了以下的問題，別擔心，這不是 Hexo 的 bug，而是 Git 為了防止惡意軟體利用 .git 目錄進行攻擊的一種保護機制。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git 的安全性檢查問題">
+<meta property="og:url" content="https://blog.hhk.one/git-safe-check/index.html">
 <meta property="og:site_name" content="康康的斜槓人生">
+<meta property="og:description" content="當你遇到了以下的問題，別擔心，這不是 Hexo 的 bug，而是 Git 為了防止惡意軟體利用 .git 目錄進行攻擊的一種保護機制。">
 <meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2026-04-05T16:07:01.000Z">
+<meta property="article:modified_time" content="2026-04-05T16:12:26.000Z">
 <meta property="article:author" content="康康 HHK">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://blog.hhk.one/archives/page/5/">
+<link rel="canonical" href="https://blog.hhk.one/git-safe-check/">
 
 
 <script id="page-configurations">
@@ -45,12 +49,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-TW'
   };
 </script>
 
-  <title>歸檔 | 康康的斜槓人生</title>
+  <title>Git 的安全性檢查問題 | 康康的斜槓人生</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DMF3F131NL"></script>
     <script data-pjax>
@@ -164,163 +168,236 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://blog.hhk.one/git-safe-check/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="康康 HHK">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="康康的斜槓人生">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Git 的安全性檢查問題
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時間：2026-04-06 00:07:01 / 修改時間：00:12:26" itemprop="dateCreated datePublished" datetime="2026-04-06T00:07:01+08:00">2026-04-06</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%99%E5%AD%B8/" itemprop="url" rel="index"><span itemprop="name">教學</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="閱讀次數" id="busuanzi_container_page_pv" ;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">閱讀次數：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
   
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        
-        <span class="collection-header">還行! 目前共有 46 篇文章。 繼續努力。</span>
-      </div>
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/git-safe-check/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/git-safe-check/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="文章字數">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word"></i>
+              </span>
+              <span>1.3k</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+        <p>當你遇到了以下的問題，別擔心，這不是 Hexo 的 bug，而是 Git 為了防止惡意軟體利用 <code>.git</code> 目錄進行攻擊的一種保護機制。</p>
+<span id="more"></span>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">`To add an exception for this directory, call:`</span><br><span class="line"></span><br><span class="line">        git config --global --add safe.directory D:/website/.deploy_git</span><br><span class="line"></span><br><span class="line">`FATAL &#123;`</span><br><span class="line">  `err: Error: Spawn failed`</span><br><span class="line">      `at ChildProcess.&lt;anonymous&gt; (D:\website\node_modules\hexo-util\lib\spawn.js:51:21)`</span><br><span class="line">      `at ChildProcess.emit (node:events:508:28)`</span><br><span class="line">      `at cp.emit (D:\website\node_modules\cross-spawn\lib\enoent.js:34:29)`</span><br><span class="line">      `at ChildProcess._handle.onexit (node:internal/child_process:294:12) &#123;`</span><br><span class="line">    `code: 128`</span><br><span class="line">  `&#125;`</span><br><span class="line">`&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html`</span><br></pre></td></tr></table></figure>
+
+<p>這其實是你在執行 <code>hexo d</code> (deploy) 時遇到了 Git 的安全性檢查問題。這通常發生在 Windows 環境下，當 Git 發現目前的資料夾所有者與執行命令的使用者不一致時（這在「搬家」到新電腦、重裝系統或從外接硬碟讀取檔案時非常常見）。</p>
+<h1 id="解決方法"><a href="#解決方法" class="headerlink" title="解決方法"></a>解決方法</h1><p>請打開你的終端機（PowerShell 或 CMD），直接複製並執行錯誤訊息中建議的那行指令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global --add safe.directory D:/website/.deploy_git</span><br></pre></td></tr></table></figure>
+
+<p>這行指令會告訴 Git：「這個目錄是安全的，請信任它並允許執行操作。」</p>
+<h3 id="如果執行後還是報錯，請嘗試以下進階方案："><a href="#如果執行後還是報錯，請嘗試以下進階方案：" class="headerlink" title="如果執行後還是報錯，請嘗試以下進階方案："></a>如果執行後還是報錯，請嘗試以下進階方案：</h3><h4 id="1-信任整個專案目錄"><a href="#1-信任整個專案目錄" class="headerlink" title="1. 信任整個專案目錄"></a>1. 信任整個專案目錄</h4><p>有時候除了 <code>.deploy_git</code>，外層的 <code>D:/website</code> 也會被攔截。你可以直接信任整個專案路徑：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global --add safe.directory D:/website</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-最暴力的解決方式（信任所有目錄）"><a href="#2-最暴力的解決方式（信任所有目錄）" class="headerlink" title="2. 最暴力的解決方式（信任所有目錄）"></a>2. 最暴力的解決方式（信任所有目錄）</h4><p>如果你是在個人電腦上操作，且有多個專案都遇到同樣問題，可以讓 Git 信任這台電腦上的所有目錄（請確保你不會隨便下載不明來源的 Git 專案）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global --add safe.directory &quot;*&quot;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-刪除並重新生成部署資料夾"><a href="#3-刪除並重新生成部署資料夾" class="headerlink" title="3. 刪除並重新生成部署資料夾"></a>3. 刪除並重新生成部署資料夾</h4><p>如果上述指令無效，可能是 <code>.deploy_git</code> 內的快取檔案損壞或權限混亂：</p>
+<ol>
+<li>手動刪除專案根目錄下的 <code>.deploy_git</code> 資料夾。</li>
+<li>執行 <code>hexo clean</code>。</li>
+<li>重新執行 <code>hexo g -d</code>。</li>
+</ol>
+<h3 id="理論上-執行完第一條-safe-directory-指令後，應該就能順利完成部署了！"><a href="#理論上-執行完第一條-safe-directory-指令後，應該就能順利完成部署了！" class="headerlink" title="理論上 執行完第一條 safe.directory 指令後，應該就能順利完成部署了！"></a>理論上 執行完第一條 <code>safe.directory</code> 指令後，應該就能順利完成部署了！</h3>
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-03-24T00:56:47+08:00"
-              content="2021-03-24">
-          03-24
-        </time>
+<div>
+		
+		<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文結束<i class="fa fa-paw"></i>感謝您的閱讀-------------</div>
+    
+</div>
+		
+	</div>
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    捐贈
+  </button>
+  <div id="qr" style="display: none;">
+      <div style="display: inline-block;">
+        <img src="/images/donate.png" alt="康康 HHK Donate">
+        <p>Donate</p>
       </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/darkweb-newbie/" itemprop="url">
-            <span itemprop="name">淺談暗網入門及常用入口網站介紹</span>
+  </div>
+</div>
+
+
+	<div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文標題:</span><a href="/git-safe-check/">Git 的安全性檢查問題</a></p>
+  <p><span>文章作者:</span>Hao-Hsiung Kang 康皓雄</a></p>
+  <p><span>發布時間:</span>2026年04月06日 - 00:07</p>
+  <p><span>最後更新:</span>2026年04月06日 - 00:12</p>
+  <p><span>原始連結:</span><a href="/git-safe-check/" title="Git 的安全性檢查問題">https://blog.hhk.one/git-safe-check/</a>
+    <span class="copy-path"  title="點擊複製文章連結"><i class="fa fa-clipboard" data-clipboard-text="https://blog.hhk.one/git-safe-check/"  aria-label="複製成功！"></i></span>
+  </p>
+  <p><span>許可協議:</span><i class="fa fa-creative-commons" aria-hidden="true"> </i><a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商業性使用-禁止演繹 4.0 國際</a> 轉載請保留連結並註明作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '複製成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+	});
+    });  
+</script>
+
+      
+	</div>
+        
+
+  <div class="followme">
+    <p>歡迎關注我的其它發布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://www.facebook.com/dogbone0714">
+            <span class="icon">
+              <i class="fab fa-facebook"></i>
+            </span>
+
+            <span class="label">FB</span>
           </a>
-      </div>
+        </div>
 
-    </header>
-  </article>
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://instagram.com/dogbone_0714">
+            <span class="icon">
+              <i class="fab fa-instagram"></i>
+            </span>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-03-23T23:55:47+08:00"
-              content="2021-03-23">
-          03-23
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/hexo-markdown/" itemprop="url">
-            <span itemprop="name">撰寫 Hexo 文章 - Markdown 語法大全</span>
+            <span class="label">IG</span>
           </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-03-23T16:36:25+08:00"
-              content="2021-03-23">
-          03-23
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/why-use-hexo/" itemprop="url">
-            <span itemprop="name">為甚麼我使用 Github Pages及 Hexo 搭建我的部落格</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-03-23T16:27:09+08:00"
-              content="2021-03-23">
-          03-23
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/TRA/" itemprop="url">
-            <span itemprop="name">TRA 臺灣關係法</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-12-17T18:40:59+08:00"
-              content="2020-12-17">
-          12-17
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/Scrcpy/" itemprop="url">
-            <span itemprop="name">Scrcpy 將 Android 手機畫面投影到電腦中，同時還可雙向操控</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-11-26T17:02:12+08:00"
-              content="2020-11-26">
-          11-26
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/First-Page/" itemprop="url">
-            <span itemprop="name">Text2MindMap 文字大綱轉心智圖超簡易線上工具</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-
+        </div>
     </div>
   </div>
-  
-  
-  
 
+	
+    
+			<script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+			<div class="commentbox.swig"></div>
+			<script type="text/javascript" src="/js/src/commentbox.js"></script>
+    
+	
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/picgo-settings/" rel="prev" title="每次搬新家都會忘記的 PicGo 設定">
+      <i class="fa fa-chevron-left"></i> 每次搬新家都會忘記的 PicGo 設定
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
   
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/page/4/"><i class="fa fa-angle-left" aria-label="上一頁"></i></a><a class="page-number" href="/archives/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/4/">4</a><span class="page-number current">5</span>
-  </nav>
+  
+  
 
 
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -377,6 +454,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A7%A3%E6%B1%BA%E6%96%B9%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">解決方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A6%82%E6%9E%9C%E5%9F%B7%E8%A1%8C%E5%BE%8C%E9%82%84%E6%98%AF%E5%A0%B1%E9%8C%AF%EF%BC%8C%E8%AB%8B%E5%98%97%E8%A9%A6%E4%BB%A5%E4%B8%8B%E9%80%B2%E9%9A%8E%E6%96%B9%E6%A1%88%EF%BC%9A"><span class="nav-number">1.0.1.</span> <span class="nav-text">如果執行後還是報錯，請嘗試以下進階方案：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E4%BF%A1%E4%BB%BB%E6%95%B4%E5%80%8B%E5%B0%88%E6%A1%88%E7%9B%AE%E9%8C%84"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">1. 信任整個專案目錄</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E6%9C%80%E6%9A%B4%E5%8A%9B%E7%9A%84%E8%A7%A3%E6%B1%BA%E6%96%B9%E5%BC%8F%EF%BC%88%E4%BF%A1%E4%BB%BB%E6%89%80%E6%9C%89%E7%9B%AE%E9%8C%84%EF%BC%89"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">2. 最暴力的解決方式（信任所有目錄）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E5%88%AA%E9%99%A4%E4%B8%A6%E9%87%8D%E6%96%B0%E7%94%9F%E6%88%90%E9%83%A8%E7%BD%B2%E8%B3%87%E6%96%99%E5%A4%BE"><span class="nav-number">1.0.1.3.</span> <span class="nav-text">3. 刪除並重新生成部署資料夾</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%90%86%E8%AB%96%E4%B8%8A-%E5%9F%B7%E8%A1%8C%E5%AE%8C%E7%AC%AC%E4%B8%80%E6%A2%9D-safe-directory-%E6%8C%87%E4%BB%A4%E5%BE%8C%EF%BC%8C%E6%87%89%E8%A9%B2%E5%B0%B1%E8%83%BD%E9%A0%86%E5%88%A9%E5%AE%8C%E6%88%90%E9%83%A8%E7%BD%B2%E4%BA%86%EF%BC%81"><span class="nav-number">1.0.2.</span> <span class="nav-text">理論上 執行完第一條 safe.directory 指令後，應該就能順利完成部署了！</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

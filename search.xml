@@ -3232,4 +3232,34 @@
         <category>教學</category>
       </categories>
   </entry>
+  <entry>
+    <title>Git 的安全性檢查問題</title>
+    <url>/git-safe-check/</url>
+    <content><![CDATA[<p>當你遇到了以下的問題，別擔心，這不是 Hexo 的 bug，而是 Git 為了防止惡意軟體利用 <code>.git</code> 目錄進行攻擊的一種保護機制。</p>
+<span id="more"></span>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">`To add an exception for this directory, call:`</span><br><span class="line"></span><br><span class="line">        git config --global --add safe.directory D:/website/.deploy_git</span><br><span class="line"></span><br><span class="line">`FATAL &#123;`</span><br><span class="line">  `err: Error: Spawn failed`</span><br><span class="line">      `at ChildProcess.&lt;anonymous&gt; (D:\website\node_modules\hexo-util\lib\spawn.js:51:21)`</span><br><span class="line">      `at ChildProcess.emit (node:events:508:28)`</span><br><span class="line">      `at cp.emit (D:\website\node_modules\cross-spawn\lib\enoent.js:34:29)`</span><br><span class="line">      `at ChildProcess._handle.onexit (node:internal/child_process:294:12) &#123;`</span><br><span class="line">    `code: 128`</span><br><span class="line">  `&#125;`</span><br><span class="line">`&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html`</span><br></pre></td></tr></table></figure>
+
+<p>這其實是你在執行 <code>hexo d</code> (deploy) 時遇到了 Git 的安全性檢查問題。這通常發生在 Windows 環境下，當 Git 發現目前的資料夾所有者與執行命令的使用者不一致時（這在「搬家」到新電腦、重裝系統或從外接硬碟讀取檔案時非常常見）。</p>
+<h1 id="解決方法"><a href="#解決方法" class="headerlink" title="解決方法"></a>解決方法</h1><p>請打開你的終端機（PowerShell 或 CMD），直接複製並執行錯誤訊息中建議的那行指令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --add safe.directory D:/website/.deploy_git</span><br></pre></td></tr></table></figure>
+
+<p>這行指令會告訴 Git：「這個目錄是安全的，請信任它並允許執行操作。」</p>
+<h3 id="如果執行後還是報錯，請嘗試以下進階方案："><a href="#如果執行後還是報錯，請嘗試以下進階方案：" class="headerlink" title="如果執行後還是報錯，請嘗試以下進階方案："></a>如果執行後還是報錯，請嘗試以下進階方案：</h3><h4 id="1-信任整個專案目錄"><a href="#1-信任整個專案目錄" class="headerlink" title="1. 信任整個專案目錄"></a>1. 信任整個專案目錄</h4><p>有時候除了 <code>.deploy_git</code>，外層的 <code>D:/website</code> 也會被攔截。你可以直接信任整個專案路徑：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --add safe.directory D:/website</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-最暴力的解決方式（信任所有目錄）"><a href="#2-最暴力的解決方式（信任所有目錄）" class="headerlink" title="2. 最暴力的解決方式（信任所有目錄）"></a>2. 最暴力的解決方式（信任所有目錄）</h4><p>如果你是在個人電腦上操作，且有多個專案都遇到同樣問題，可以讓 Git 信任這台電腦上的所有目錄（請確保你不會隨便下載不明來源的 Git 專案）：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --add safe.directory &quot;*&quot;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-刪除並重新生成部署資料夾"><a href="#3-刪除並重新生成部署資料夾" class="headerlink" title="3. 刪除並重新生成部署資料夾"></a>3. 刪除並重新生成部署資料夾</h4><p>如果上述指令無效，可能是 <code>.deploy_git</code> 內的快取檔案損壞或權限混亂：</p>
+<ol>
+<li>手動刪除專案根目錄下的 <code>.deploy_git</code> 資料夾。</li>
+<li>執行 <code>hexo clean</code>。</li>
+<li>重新執行 <code>hexo g -d</code>。</li>
+</ol>
+<h3 id="理論上-執行完第一條-safe-directory-指令後，應該就能順利完成部署了！"><a href="#理論上-執行完第一條-safe-directory-指令後，應該就能順利完成部署了！" class="headerlink" title="理論上 執行完第一條 safe.directory 指令後，應該就能順利完成部署了！"></a>理論上 執行完第一條 <code>safe.directory</code> 指令後，應該就能順利完成部署了！</h3>]]></content>
+      <categories>
+        <category>教學</category>
+      </categories>
+  </entry>
 </search>
